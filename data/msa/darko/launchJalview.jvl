@@ -1,0 +1,4 @@
+# Jalview Launch File
+# Please install the Jalview Desktop and then try to open this file again
+jalview.apparg=-open
+jalview.apparg=http://www.ebi.ac.uk/Tools/services/rest/tcoffee/result/tcoffee-I20201128-154618-0565-98773955-p1m/aln-fasta
