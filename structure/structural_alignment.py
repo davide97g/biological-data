@@ -29,8 +29,8 @@ if tm_align:
         # ? loop over all other domains
         for pdb_j in pdb_ids:
             print(pdb_i + " - vs - " + pdb_j)
-            cmd = "..\\binx\\TMalign ..\\data\\structure\\{}\\pdb{}_cut.ent ..\\data\\structure\\{}\\pdb{}_cut.ent -o ..\\data\\structure\\{}\\structural_alignments\\{}\\{}_{}.sup > ..\\data\\structure\\{}\\structural_alignments\\{}\\{}_{}.out".format(user,
-                                                                                                                                                                                                                                                            pdb_i, user, pdb_j, user, pdb_i, pdb_i, pdb_j, user, pdb_i, pdb_i, pdb_j)
+            cmd = "..\\.binx\\TMalign ..\\data\\structure\\{}\\pdb{}_cut.ent ..\\data\\structure\\{}\\pdb{}_cut.ent -o ..\\data\\structure\\{}\\structural_alignments\\{}\\{}_{}.sup > ..\\data\\structure\\{}\\structural_alignments\\{}\\{}_{}.out".format(user,
+                                                                                                                                                                                                                                                             pdb_i, user, pdb_j, user, pdb_i, pdb_i, pdb_j, user, pdb_i, pdb_i, pdb_j)
             os.system(cmd)
         print("---")
 

@@ -1,4 +1,4 @@
-#!/usr/binx/env python
+#!/usr/.binx/env python
 
 import gzip
 from Bio import SeqIO

@@ -1,4 +1,4 @@
-#!/usr/binx/env python
+#!/usr/.binx/env python
 '''
 Basic parsing and iteration of Structure objects implemented by the BIO module of BioPython
 Save selected residues into a new PDB file

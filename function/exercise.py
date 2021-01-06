@@ -1,4 +1,4 @@
-#!/usr/binx/env python
+#!/usr/.binx/env python
 
 import gzip
 import copy
@@ -18,9 +18,11 @@ def gen_block(f):
     for line in f:
         line = line.decode()
         if line and line[0] != "!":
-            _, name, _, _, term, _, ec, _, namespace, protein_name = line.split("\t")[:10]
+            _, name, _, _, term, _, ec, _, namespace, protein_name = line.split("\t")[
+                :10]
             if name != old_name and old_name:
-                yield (old_name, set(chunk))  # return a set as there can be repetitions, i.e. the same term with different evidence codes
+                # return a set as there can be repetitions, i.e. the same term with different evidence codes
+                yield (old_name, set(chunk))
                 chunk = []
             old_name = name
             chunk.append(term)
@@ -54,7 +56,7 @@ if __name__ == "__main__":
     dataset = dataset.split(",")
 
     terms_set = {}  # { term : count }  dataset proteins
-    terms_rest = {}  #  { term : count }  other proteins
+    terms_rest = {}  # { term : count }  other proteins
     proteins_set = 0  # number of dataset proteins
     proteins_rest = 0  # number of remaining proteins
     with gzip.open("../data/function/goa_human.gaf.gz") as f:
@@ -82,9 +84,11 @@ if __name__ == "__main__":
     data = []
     for term in terms_set:
         ratio_set = (terms_set[term] + 1) / proteins_set  # add pseudo count
-        ratio_rest = terms_rest.get(term, 1) / proteins_rest  # add pseudo count
+        ratio_rest = terms_rest.get(
+            term, 1) / proteins_rest  # add pseudo count
         fold_increase = ratio_set / ratio_rest
-        data.append((term, terms_set[term], terms_rest.get(term, 0), ratio_set, ratio_rest, fold_increase))
+        data.append((term, terms_set[term], terms_rest.get(
+            term, 0), ratio_set, ratio_rest, fold_increase))
     for ele in sorted(data, key=lambda x: x[5], reverse=True)[:20]:
-        print("{} {} {} {:.2g} {:.2g} {:.2g} {} {}".format(*ele, depth[ele[0]], graph[ele[0]]))
-
+        print("{} {} {} {:.2g} {:.2g} {:.2g} {} {}".format(
+            *ele, depth[ele[0]], graph[ele[0]]))

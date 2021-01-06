@@ -1,4 +1,4 @@
-#!/usr/binx/env python
+#!/usr/.binx/env python
 
 import gzip
 import copy
@@ -18,9 +18,11 @@ def gen_block(f):
     for line in f:
         line = line.decode()
         if line and line[0] != "!":
-            _, name, _, _, term, _, ec, _, namespace, protein_name = line.split("\t")[:10]
+            _, name, _, _, term, _, ec, _, namespace, protein_name = line.split("\t")[
+                :10]
             if name != old_name and old_name:
-                yield (old_name, set(chunk))  # return a set as there can be repetitions, i.e. the same term with different evidence codes
+                # return a set as there can be repetitions, i.e. the same term with different evidence codes
+                yield (old_name, set(chunk))
                 chunk = []
             old_name = name
             chunk.append(term)
@@ -36,7 +38,6 @@ if __name__ == "__main__":
     ancestors, depth, roots = parse_go_obo.get_ancestors(graph)
     children = parse_go_obo.get_children(ancestors)
 
-
     # *** How many proteins are directly annotated with "regulation of kinase activity" (GO:0043549)
     #     and "mitochondrion" (GO:0005739)?
     proteins_counts = {}  # { term : number_of_proteins }
@@ -47,7 +48,6 @@ if __name__ == "__main__":
                 proteins_counts[term] += 1
     print(graph["GO:0043549"]["def"], proteins_counts["GO:0043549"])
     print(graph["GO:0005739"]["def"], proteins_counts["GO:0005739"])
-
 
     # *** How many proteins are "regulation of kinase activity" (GO:0043549)?
     #     According to the "true path rule" you have to count direct annotations
@@ -67,7 +67,6 @@ if __name__ == "__main__":
     print(graph["GO:0043549"]["def"], len(proteins["GO:0043549"]))
     print(graph["GO:0005739"]["def"], len(proteins["GO:0005739"]))
 
-
     # *** Which are the 5 most abundant "biological process" terms in mitochondrial proteins (GO:0005739 mitochondrion)?
     terms_count = {}  # { term : count } count within the mitochondrial proteins set
     with gzip.open("../data/function/goa_human.gaf.gz") as f:
@@ -84,16 +83,16 @@ if __name__ == "__main__":
                     terms_count[term] += 1
 
     # Sort by count and filter by biological_process namespace
-    data = sorted([(k, v) for k, v in terms_count.items()], key=lambda x: x[1], reverse=True)
+    data = sorted([(k, v) for k, v in terms_count.items()],
+                  key=lambda x: x[1], reverse=True)
     for (k, v) in list(filter(lambda x: graph[x[0]]["namespace"] == "biological_process", data))[:20]:
         print(k, v, graph[k]["def"])
-
 
     # *** Which are the top 20 most enriched terms in mitochondrial proteins (annotated with GO:0005739)?
     #     Measure the ratio between a term in mitochondrial proteins and in the rest of the human proteins
     #     and select those with the higher "fold-increase" (ratio)
     terms_set = {}  # { term : count }  mitochondrial proteins
-    terms_rest = {}  #  { term : count }  other proteins
+    terms_rest = {}  # { term : count }  other proteins
     proteins_set = 0  # number of mitochondrial proteins
     proteins_rest = 0  # number of remaining proteins
     with gzip.open("../data/function/goa_human.gaf.gz") as f:
@@ -119,9 +118,10 @@ if __name__ == "__main__":
     data = []
     for term in terms_set:
         ratio_set = (terms_set[term] + 1) / proteins_set  # add pseudo count
-        ratio_rest = terms_rest.get(term, 1) / proteins_rest  # add pseudo count
+        ratio_rest = terms_rest.get(
+            term, 1) / proteins_rest  # add pseudo count
         fold_increase = ratio_set / ratio_rest
-        data.append((term, terms_set[term], terms_rest.get(term, 0), ratio_set, ratio_rest, fold_increase, graph[term]["namespace"], graph[term]["def"]))
+        data.append((term, terms_set[term], terms_rest.get(
+            term, 0), ratio_set, ratio_rest, fold_increase, graph[term]["namespace"], graph[term]["def"]))
     for ele in sorted(data, key=lambda x: x[5], reverse=True)[:20]:
         print("{} {} {} {:.2g} {:.2g} {:.2g} {} {}".format(*ele))
-
