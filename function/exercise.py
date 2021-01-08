@@ -3,7 +3,7 @@
 import gzip
 import copy
 import parse_go_obo
-
+from fisher import pvalue
 
 user = input("user:")
 
@@ -29,7 +29,7 @@ def gen_block(f):
     for line in f:
         line = line.decode()
         if line and line[0] != "!":
-            _, name, _, _, term, _, ec, _, namespace, protein_name = line.split("\t")[
+            _, name, _, _, term, _, _, _, _, _ = line.split("\t")[
                 :10]
             if name != old_name and old_name:
                 # return a set as there can be repetitions, i.e. the same term with different evidence codes
@@ -47,7 +47,7 @@ if __name__ == "__main__":
     # Get ontology data from parse_go_obo lib
     graph = parse_go_obo.parse_obo("../data/function/go.obo")
     ancestors, depth, roots = parse_go_obo.get_ancestors(graph)
-    # children = parse_go_obo.get_children(ancestors)
+    children = parse_go_obo.get_children(ancestors)
 
     proteins = {}  # { term : proteins_annotated_with_term } It contains proteins annotated directly with the term or its children
     with gzip.open("../data/function/goa_human.gaf.gz") as f:
@@ -60,9 +60,8 @@ if __name__ == "__main__":
             # For each term add protein accession to proteins dict
             for term in terms:
                 proteins.setdefault(term, set()).add(acc)
-    print(graph["GO:0043549"]["def"], len(proteins["GO:0043549"]))
-    print(graph["GO:0005739"]["def"], len(proteins["GO:0005739"]))
 
+    # * 2
     terms_set = {}  # { term : count }  dataset proteins
     terms_rest = {}  # { term : count }  other proteins
     proteins_set = 0  # number of dataset proteins
@@ -89,6 +88,67 @@ if __name__ == "__main__":
                     terms_rest.setdefault(term, 0)
                     terms_rest[term] += 1
 
+    leaf_terms = set(graph.keys()) - set(children.keys()
+                                         )     # number of total leaf terms
+
+    print("\n2.\n")
+    print("\ta)", proteins_set)
+    print("\tb)", proteins_rest)
+    print("\tc)", len(terms_set.keys()))
+    print("\td)", len(terms_rest.keys()))
+    print("\te)", len([leaf for leaf in leaf_terms if leaf in terms_set]))
+    print("\n")
+
+    # * 3
+    terms_count = {}  # { term : count } count within the mitochondrial proteins set
+    with gzip.open("../data/function/goa_human.gaf.gz") as f:
+        for acc, annotations in gen_block(f):
+            if acc in dataset:
+                # Copy direct annotations
+                terms = copy.copy(annotations)
+                # Add ancestors
+                # for term in annotations:
+                #     terms.update(ancestors.get(term, set()))
+                # For each term add protein accession to proteins dict
+                for term in terms:
+                    terms_count.setdefault(term, 0)
+                    terms_count[term] += 1
+
+    # Sort by count and filter by biological_process namespace
+    data = sorted([(k, v) for k, v in terms_count.items()],
+                  key=lambda x: x[1], reverse=True)
+
+    print("\n3.\n")
+    for root in roots:
+        print("\n\t", graph[root]["namespace"])
+        for (k, v) in list(filter(lambda x: graph[x[0]]["namespace"] == graph[root]["namespace"], data))[:10]:
+            print("\t\t", k, v, graph[k]["def"])
+
+    # * 4
+    terms_count = {}  # { term : count } count within the mitochondrial proteins set
+    with gzip.open("../data/function/goa_human.gaf.gz") as f:
+        for acc, annotations in gen_block(f):
+            if acc in dataset:
+                # Copy direct annotations
+                terms = copy.copy(annotations)
+                # Add ancestors
+                for term in annotations:
+                    terms.update(ancestors.get(term, set()))
+                # For each term add protein accession to proteins dict
+                for term in terms:
+                    terms_count.setdefault(term, 0)
+                    terms_count[term] += 1
+
+    # Sort by count and filter by biological_process namespace
+    data = sorted([(k, v) for k, v in terms_count.items()],
+                  key=lambda x: x[1], reverse=True)
+    print("\n4.\n")
+    for root in roots:
+        print("\n\t", graph[root]["namespace"])
+        for (k, v) in list(filter(lambda x: graph[x[0]]["namespace"] == graph[root]["namespace"], data))[:10]:
+            print("\t\t", k, v, graph[k]["def"])
+
+    # * 5
     data = []
     for term in terms_set:
         ratio_set = (terms_set[term] + 1) / proteins_set  # add pseudo count
@@ -97,6 +157,17 @@ if __name__ == "__main__":
         fold_increase = ratio_set / ratio_rest
         data.append((term, terms_set[term], terms_rest.get(
             term, 0), ratio_set, ratio_rest, fold_increase))
-    for ele in sorted(data, key=lambda x: x[5], reverse=True)[:20]:
-        print("{} {} {} {:.2g} {:.2g} {:.2g} {} {}".format(
-            *ele, depth[ele[0]], graph[ele[0]]))
+    print("\n5.\n")
+    print("\n\ta)", len([x for x in data if x[5] > 1]))
+    print("\n\tb)")
+    for root in roots:
+        print("\n\t", graph[root]["namespace"])
+        for ele in list(filter(lambda x: graph[x[0]]["namespace"] == graph[root]["namespace"], sorted(data, key=lambda x: x[5], reverse=True)))[:10]:
+            # print("\t\t{} {} {} {:.2g} {:.2g} {:.2g} {} {}".format(
+            #     *ele, depth[ele[0]], graph[ele[0]]))
+            print("\t\t{}".format(*ele))
+
+    print("\n6.\n")
+    mat = [[12, 5], [29, 2]]
+    p = pvalue(12, 5, 29, 2)
+    print(p.left_tail, p.right_tail, p.two_tail)
