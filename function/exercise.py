@@ -74,6 +74,8 @@ if __name__ == "__main__":
     terms_rest = {}  # { term : count }  other proteins
     proteins_set = 0  # number of dataset proteins
     proteins_rest = 0  # number of remaining proteins
+    annotations_set = 0  # number of annotations of dataset
+    annotations_rest = 0  # number of annotations of the rest
     with gzip.open("../data/function/goa_human.gaf.gz") as f:
         for acc, annotations in gen_block(f):
 
@@ -87,11 +89,13 @@ if __name__ == "__main__":
             # For each term add protein accession to proteins dict
             if acc in dataset:
                 proteins_set += 1
+                annotations_set += len(annotations)
                 for term in terms:
                     terms_set.setdefault(term, 0)
                     terms_set[term] += 1
             else:
                 proteins_rest += 1
+                annotations_rest += len(annotations)
                 for term in terms:
                     terms_rest.setdefault(term, 0)
                     terms_rest[term] += 1
@@ -100,16 +104,16 @@ if __name__ == "__main__":
                                          )     # number of total leaf terms
 
     print("\n2.\n")
-    print("\ta)", proteins_set)
-    print("\tb)", proteins_rest)
+    print("\ta)", annotations_set)
+    print("\tb)", annotations_rest)
     print("\tc)", len(terms_set.keys()))
     print("\td)", len(terms_rest.keys()))
     print("\te)", len([leaf for leaf in leaf_terms if leaf in terms_set]))
     print("\n")
     # saving the answers
     answers += "\n## Q2\n"
-    answers += "\ta) " + str(proteins_set)
-    answers += "\tb) " + str(proteins_rest)
+    answers += "\ta) " + str(annotations_set)
+    answers += "\tb) " + str(annotations_rest)
     answers += "\tc) " + str(len(terms_set.keys()))
     answers += "\td) " + str(len(terms_rest.keys()))
     answers += "\te) " + \
@@ -192,8 +196,8 @@ if __name__ == "__main__":
         for ele in list(filter(lambda x: graph[x[0]]["namespace"] == graph[root]["namespace"], sorted(data, key=lambda x: x[5], reverse=True)))[:10]:
             # print("\t\t{} {} {} {:.2g} {:.2g} {:.2g} {} {}".format(
             #     *ele, depth[ele[0]], graph[ele[0]]))
-            print("\t\t{}".format(ele[0]))
-            answers += "\t\t{}".format(ele[0])
+            print("\t\t{} fold increase {}".format(ele[0], ele[5]))
+            answers += "\t\t{} fold increase {}".format(ele[0], ele[5])
 
     print("\n6.\n")
     print("\ta) The enriched terms are the ones with low right tail values (usually is <0.05)")
@@ -209,7 +213,7 @@ if __name__ == "__main__":
             #     *ele, depth[ele[0]], graph[ele[0]]))
             p = pvalue(terms_set[ele[0]] + 1, proteins_set,
                        terms_rest.get(ele[0], 1), proteins_rest)
-            print("\t\t{}\n\t\tp-values:\n\t\t\tleft {} - right: {} - two tail: {}".format(
+            print("\t\t{} p-values: left {} - right: {} - two tail: {}".format(
                 ele[0], p.left_tail, p.right_tail, p.two_tail))
             answers += "\t\t{}\n\t\tp-values:\n\t\t\tleft {} - right: {} - two tail: {}".format(
                 ele[0], p.left_tail, p.right_tail, p.two_tail)
