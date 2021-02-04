@@ -9,13 +9,12 @@ Here I will transcribe every step in order to reproduce the results of the proje
 3.
 4.
 5.
-6.
+6. generate the HMM model from the MSA from [Skylign](http://skylign.org/) `web service`.
 7.
 8.
 9.
 10.
 11.
-
 
 ## Dataset definitions
 
@@ -25,33 +24,21 @@ Here I will transcribe every step in order to reproduce the results of the proje
 ## Structural characterization
 
 1.
-
 2.
-
 3.
-
 4.
-
 5.
-
 6.
-
 7.
-
 
 ## Taxonomy
 
 8.
-
 9.
-
 
 ## Functional characterization
 
 10.
-
 11.
-
 12.
-
 13.
