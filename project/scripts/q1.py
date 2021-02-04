@@ -32,7 +32,8 @@ with open('../data/domain_positions.json') as f:
                                 end = f['end']
                                 ground_truth_map[accession].append(
                                     [start, end])
-                                ground_truth.append([accession, start, end])
+                                ground_truth.append(
+                                    [accession, True, start, end])
                         else:
                             print(accession, "no fragments")
                 else:
@@ -48,6 +49,17 @@ with open('../data/domain_positions.json') as f:
 #     if len(ground_truth_map.get(accession)) > 1:
 #         print(accession, ground_truth_map.get(accession))
 
+# ? get the proteins that do not contain the Pfam domain assigned
+uniprot_not_annotated = pd.read_csv("../data/uniprot_not_annotated.csv")
+
+for i in range(len(uniprot_not_annotated)):
+    x = uniprot_not_annotated['Accession'][i]
+    if ground_truth_map.get(x) is not None:
+        print(x, "is a problem")
+    else:
+        ground_truth.append([x, False, 0, 0])
+
 # ? create dataframe from array data and save to .csv file
-gt = pd.DataFrame(data=ground_truth, columns=['Accession ID', 'start', 'end'])
+gt = pd.DataFrame(data=ground_truth, columns=[
+                  'Accession ID', 'Annotated', 'start', 'end'])
 gt.to_csv("../data/ground_truth.csv", index=False)

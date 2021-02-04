@@ -4,7 +4,7 @@ Here I will transcribe every step in order to reproduce the results of the proje
 
 ## Building the models
 
-1. downloaded the matching proteins related to the assigned Pfam domain using [InterPro API](https://www.ebi.ac.uk/interpro/api/protein/reviewed/entry/pfam/PF01582?page_size=1000). Then with a script I extracted the `accession id` and the position inside the domain of every sequence.
+1. downloaded the matching proteins related to the assigned Pfam domain using [InterPro API](https://www.ebi.ac.uk/interpro/api/protein/reviewed/entry/pfam/PF01582?page_size=1000). Then with a script I extracted the `accession id` and the position inside the domain of every sequence. Once done for the proteins that have the assigned Pfam domain, I downloaded the rest of the proteins that do not contain the Pfam domain from the [uniprot webiste](https://www.uniprot.org/uniprot/?query=reviewed%3Ayes+%21PF01582&sort=score), filtering out the Pfam domain.
 2.
 3.
 4.
