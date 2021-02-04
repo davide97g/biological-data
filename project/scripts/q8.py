@@ -13,6 +13,8 @@ df_gt = pd.read_csv("../data/ground_truth.csv")
 print(df_gt.head())
 print(len(df_gt))
 
+
+# ! better generalization of the mapping/conversion process for the ids
 # load the mapping for the ids
 df_mapping_ids = pd.read_csv("../data/converted_ids.tsv", delimiter="\t")
 print(df_mapping_ids.head())

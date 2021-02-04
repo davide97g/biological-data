@@ -10,8 +10,8 @@ Here I will transcribe every step in order to reproduce the results of the proje
 4.
 5.
 6. generate the HMM model from the MSA from [Skylign](http://skylign.org/) `web service`.
-7.
-8.
+7. just did an hmm search from hmmer website filtering only human (psi blast not already done)
+8. downloaded the results from hmmsearch and converted the Target Accession with Uniprot mapping service. Then construct a Confusion matrix based the ground truth data (too many false positives and false negatives).
 9.
 10.
 11.
