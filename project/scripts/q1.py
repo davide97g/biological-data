@@ -30,10 +30,12 @@ with open('../data/domain_positions.json') as f:
                             for f in fragments:
                                 start = f['start']
                                 end = f['end']
+                                # do not save twice the same accession id
+                                if len(ground_truth_map.get(accession)) == 0:
+                                    ground_truth.append(
+                                        [accession, True, start, end])
                                 ground_truth_map[accession].append(
                                     [start, end])
-                                ground_truth.append(
-                                    [accession, True, start, end])
                         else:
                             print(accession, "no fragments")
                 else:
