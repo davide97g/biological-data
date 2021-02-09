@@ -1,9 +1,9 @@
 import pandas as pd
 
-hmm_search = pd.read_csv("../data/hmm_search.tsv", delimiter="\t")
+# hmm_search = pd.read_csv("../data/hmm_search.tsv", delimiter="\t")
 
-print(hmm_search.head())
-print(len(hmm_search))
+# print(hmm_search.head())
+# print(len(hmm_search))
 
 
 # load GROUND TRUTH data
@@ -16,20 +16,30 @@ print(len(df_gt))
 
 # ! better generalization of the mapping/conversion process for the ids
 # load the mapping for the ids
-df_mapping_ids = pd.read_csv("../data/converted_ids.tsv", delimiter="\t")
-print(df_mapping_ids.head())
+# df_mapping_ids = pd.read_csv("../data/converted_ids.tsv", delimiter="\t")
+# print(df_mapping_ids.head())
 
-mapping_ids = {}
-for i in range(len(df_mapping_ids)):
-    x = df_mapping_ids.iloc[i]
-    mapping_ids[x['Original']] = x['Converted']
+# mapping_ids = {}
+# for i in range(len(df_mapping_ids)):
+#     x = df_mapping_ids.iloc[i]
+#     mapping_ids[x['Original']] = x['Converted']
 
-# create a map for the hmm search results
-pp_map = {}  # predicted positives map
-for i in range(len(hmm_search)):
-    x = hmm_search.iloc[i]
-    pp_map[mapping_ids.get(x['Target Accession'])] = [
-        x['Target Ali. Start'], x['Target Ali. End']]
+# # create a map for the hmm search results
+# pp_map = {}  # predicted positives map
+# for i in range(len(hmm_search)):
+#     x = hmm_search.iloc[i]
+#     pp_map[mapping_ids.get(x['Target Accession'])] = [
+#         x['Target Ali. Start'], x['Target Ali. End']]
+
+# print(pp_map.keys())
+
+# ? new version
+
+hmm_model_hits = pd.read_csv("../data/hmm_model_hits.csv")
+pp_map = {}
+for i in range(len(hmm_model_hits)):
+    x = hmm_model_hits.iloc[i]
+    pp_map[x['Target Accession']] = [x['start'], x['end']]
 
 print(pp_map.keys())
 
