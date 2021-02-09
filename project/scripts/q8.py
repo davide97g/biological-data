@@ -14,15 +14,15 @@ for i in range(len(hmm_model_hits)):
     x = hmm_model_hits.iloc[i]
     pp_map[x['Target Accession']] = [x['start'], x['end']]
 
-print(pp_map.keys())
+# print(pp_map.keys())
 
 # positives
 positives = df_gt.loc[df_gt['Annotated'] == True, ]
 P = len(positives)
-print("P", P)
+# print("P", P)
 # negatives
 N = len(df_gt)-P
-print("N", N)
+# print("N", N)
 
 TP = 0
 for i in range(P):
@@ -30,9 +30,9 @@ for i in range(P):
     if pp_map.get(x['Accession ID']) is not None:
         TP += 1
 
-FP = P-TP
-FN = len(pp_map)-TP
-TN = N - FN
+FN = P-TP  # from all the positives, remove the ones correctly classified
+FP = len(pp_map)-TP  # from the predicted positives, remove the true positives
+TN = N - FN  # the true negatives are the ones not false negatives
 CM = [[TP, FP], [FN, TN]]
 print("\nConfusion Matrix")
 for row in CM:
