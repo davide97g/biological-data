@@ -1,14 +1,13 @@
 import pandas as pd
 
-hmm_search = pd.read_csv("../data/hmm_search_v2.1.tsv", delimiter="\t")
+version = "v"+input("version ")
+hmm_search = pd.read_csv("../data/hmm/"+version +
+                         "/hmm_search.tsv", delimiter="\t")
 
 
-# for i in range(len(hmm_search)):
-# x = hmm_search.iloc[i]
-# print(x['Target Accession'])
+# todo: check if file "mapping" exists
 
-
-converted = pd.read_csv("../data/mapping_table_v2.1.csv")
+converted = pd.read_csv("../data/hmm/"+version+"/mapping.csv")
 data = []
 
 for i in range(len(hmm_search)):
@@ -18,8 +17,9 @@ for i in range(len(hmm_search)):
     data.append(
         [accession, start, end])
 
-print(data)
+# print(data)
 df = pd.DataFrame(data=data, columns=[
     'Target Accession', 'start', 'end'])
 
-df.to_csv("../data/hmm_model_hits.csv", index=False)
+df.to_csv("../data/hmm/"+version+"/hmm_hits.csv", index=False)
+print("hmm hits saved")
