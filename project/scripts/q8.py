@@ -1,6 +1,7 @@
 import pandas as pd
 import parse_psiblast as psiblast
 import parse_hmm as hmm
+import math
 
 # load GROUND TRUTH data
 
@@ -26,11 +27,11 @@ def stastistics(pp_map):
     FP = len(pp_map)-TP
     TN = N - FN  # the true negatives are the ones not false negatives
     CM = [[TP, FP], [FN, TN]]
-    print("\n#####\nConfusion Matrix")
+    print("\n---------------\nConfusion Matrix")
     for row in CM:
         print(row)
 
-    print("\n#####\nStatistics")
+    print("\n---------------\nStatistics")
 
     # sensitivity
     sensitivity = TP/P
@@ -56,13 +57,17 @@ def stastistics(pp_map):
     f1 = 2*TP/(2*TP+FP+FN)
     print("\tf1", f1)
 
+    # mcc
+    mcc = (TP*TN-FP*FN) / math.sqrt((TP+FP)*(TP+FN)*(TN+FP)*(TN+FN))
+    print("\tMCC", mcc)
+
 
 # hmm
 pp_map_hmm = hmm.build_map()
 stastistics(pp_map_hmm)
-print("-----------\n")
+print("---------------\n")
 
 # psiblast
 pp_map_psiblast = psiblast.build_map()
 stastistics(pp_map_psiblast)
-print("-----------\n")
+print("---------------\n")
