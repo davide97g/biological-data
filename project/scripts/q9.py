@@ -1,9 +1,9 @@
 import pandas as pd
 import parse_hmm as hmm
-
 import requests as r
 from Bio import SeqIO
 from io import StringIO
+import os.path
 
 
 def getSeq(ID):
@@ -37,9 +37,24 @@ def match(full_map):
     print("\n---------------")
     print("match\n")
     for x in full_map:
-        print(full_map.get(x).get("model"),
-              " <--> ", full_map.get(x).get("gt"))
-
+        seq = full_map.get(x).get("seq")
+        model = full_map.get(x).get("model")
+        gt = full_map.get(x).get("gt")
+        print(model, " - ", gt)
+        model_cut = seq[model[0]:model[1]]
+        gt_cut = seq[gt[0]:gt[1]]
+        print(model_cut)
+        print(gt_cut)
+        shorter = len(gt_cut)
+        if len(model_cut) < shorter:
+            shorter = len(model_cut)
+        count = 0
+        for i in range(shorter):
+            s1 = model_cut[i]
+            s2 = gt_cut[i]
+            if s1 == s2:
+                count += 1
+        print(count, "matches")
 
 # Find all the sequences that are present in the ground truth
 
@@ -54,17 +69,26 @@ def intersect():
     # extract only the positives
     positives = gt.loc[gt['Annotated'] == True, ]
     # download all the sequences for the positives
-    # downloadAllSeqs(positives) # ? only if not already downloaded
+    if not os.path.isfile("../data/sequences.csv"):
+        downloadAllSeqs(positives)
+    # load sequences
+    sequences = pd.read_csv("../data/sequences.csv")
+    # create map
+    seq_map = {}
+    for i in range(len(sequences)):
+        x = sequences.iloc[i]
+        seq_map[x['ID']] = x['Sequence']
     # map of all the matches found and the positions of the residues
     full_map = {}
     # loop
     for i in range(len(positives)):
         x = positives.iloc[i]
-        if pp_map.get(x['Accession ID']) is not None:
-            full_map[x['Accession ID']] = {
-                # position of my model
-                'model': pp_map.get(x['Accession ID']),
-                'gt': [x['start'], x['end']]  # position of the ground truth
+        accession = x['Accession ID']
+        if pp_map.get(accession) is not None:
+            full_map[accession] = {
+                'model': pp_map.get(accession),
+                'gt': [x['start'], x['end']],
+                'seq': seq_map.get(accession)
             }
     print("found "+str(len(full_map))+"/"+str(len(pp_map))+" sequences")
     match(full_map)
