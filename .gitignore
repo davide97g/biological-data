@@ -2,6 +2,7 @@
 
 .binx/**/
 
+.idea
 
 data/structure/**/
 
