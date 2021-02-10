@@ -3,18 +3,19 @@ import parse_psiblast as psiblast
 import parse_hmm as hmm
 import math
 
-# load GROUND TRUTH data
+if __name__ == "__main__":
+    # load GROUND TRUTH data
 
-df_gt = pd.read_csv("../data/ground_truth.csv")
+    df_gt = pd.read_csv("../data/ground_truth.csv")
 
-# positives
-positives = df_gt.loc[df_gt['Annotated'] == True, ]
-P = len(positives)
-# negatives
-N = len(df_gt)-P
+    # positives
+    positives = df_gt.loc[df_gt['Annotated'] == True, ]
+    P = len(positives)
+    # negatives
+    N = len(df_gt)-P
 
 
-def stastistics(pp_map):
+def buildCM(pp_map):
 
     TP = 0
     for i in range(P):
@@ -30,7 +31,16 @@ def stastistics(pp_map):
     print("\n---------------\nConfusion Matrix")
     for row in CM:
         print(row)
+    return CM
 
+
+def statistics(CM):
+    TP = CM[0][0]
+    FP = CM[0][1]
+    FN = CM[1][0]
+    TN = CM[1][1]
+    P = TP+FN
+    N = FP+TN
     print("\n---------------\nStatistics")
 
     # sensitivity
@@ -62,12 +72,15 @@ def stastistics(pp_map):
     print("\tMCC", mcc)
 
 
-# hmm
-pp_map_hmm = hmm.build_map()
-stastistics(pp_map_hmm)
-print("---------------\n")
+if __name__ == "__main__":
+    # hmm
+    pp_map_hmm = hmm.build_map()
+    CM = buildCM(pp_map_hmm)
+    statistics(CM)
+    print("---------------\n")
 
-# psiblast
-pp_map_psiblast = psiblast.build_map()
-stastistics(pp_map_psiblast)
-print("---------------\n")
+    # psiblast
+    pp_map_psiblast = psiblast.build_map()
+    CM = buildCM(pp_map_psiblast)
+    statistics(CM)
+    print("---------------\n")

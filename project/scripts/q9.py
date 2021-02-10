@@ -1,9 +1,11 @@
 import pandas as pd
 import parse_hmm as hmm
+import parse_psiblast as psiblast
 import requests as r
 from Bio import SeqIO
 from io import StringIO
 import os.path
+from q8 import statistics
 
 
 def getSeq(ID):
@@ -36,34 +38,54 @@ def downloadAllSeqs(positives):
 def match(full_map):
     print("\n---------------")
     print("match\n")
+    global_CM = [[0, 0], [0, 0]]  # every single CM sums into this one
     for x in full_map:
         seq = full_map.get(x).get("seq")
         model = full_map.get(x).get("model")
         gt = full_map.get(x).get("gt")
-        print(model, " - ", gt)
-        model_cut = seq[model[0]:model[1]]
-        gt_cut = seq[gt[0]:gt[1]]
-        print(model_cut)
-        print(gt_cut)
-        shorter = len(gt_cut)
-        if len(model_cut) < shorter:
-            shorter = len(model_cut)
-        count = 0
-        for i in range(shorter):
-            s1 = model_cut[i]
-            s2 = gt_cut[i]
-            if s1 == s2:
-                count += 1
-        print(count, "matches")
+        # print(gt, " - ", model, " / ", len(seq))
+        # for every residues, put 1 or 0 if the residues is present in gt or in model
+        array_gt = []
+        array_model = []
+        for i in range(len(seq)):
+            # ground truth
+            if i >= gt[0] and i <= gt[1]:
+                array_gt.append(True)
+            else:
+                array_gt.append(False)
+            # model
+            if i >= model[0] and i <= model[1]:
+                array_model.append(True)
+            else:
+                array_model.append(False)
 
-# Find all the sequences that are present in the ground truth
+        # construct confusion matrix
+        CM = [[0, 0], [0, 0]]
+        for i in range(len(seq)):
+            if array_model[i] == True and array_gt[i] == True:
+                CM[0][0] += 1
+            elif array_model[i] == True and array_gt[i] == False:
+                CM[0][1] += 1
+            elif array_model[i] == False and array_gt[i] == True:
+                CM[1][0] += 1
+            else:
+                CM[1][1] += 1
+
+        # update global CM
+        global_CM[0][0] += CM[0][0]
+        global_CM[0][1] += CM[0][1]
+        global_CM[1][0] += CM[1][0]
+        global_CM[1][1] += CM[1][1]
+
+    print("GLOBAL CONFUSION MATRIX")
+    for row in global_CM:
+        print(row)
+    statistics(global_CM)
 
 
-def intersect():
+def intersect(pp_map):
     print("\n---------------")
     print("intersect\n")
-    # hmm
-    pp_map = hmm.build_map()
     # ground truth
     gt = pd.read_csv("../data/ground_truth.csv")
     # extract only the positives
@@ -101,5 +123,11 @@ def stastistics():
 
 
 if __name__ == "__main__":
-    # getSeq("Q01638")
-    intersect()
+    # hmm
+    print("\nHMM")
+    pp_map_hmm = hmm.build_map()
+    intersect(pp_map_hmm)
+    print("\nPSI BLAST")
+    # psi blast
+    pp_map_psiblast = psiblast.build_map()
+    intersect(pp_map_psiblast)
