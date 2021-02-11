@@ -7,6 +7,9 @@ from io import StringIO
 import os.path
 from q8 import statistics
 
+# total number of residues in SwissProt
+total_residues_swissprot = 5000000
+
 
 def getSeq(ID):
 
@@ -18,15 +21,15 @@ def getSeq(ID):
     return list(SeqIO.parse(StringIO(cData), 'fasta'))[0].seq
 
 
-def downloadAllSeqs(positives):
+def downloadAllSeqs(data):
     # here we download all the sequences from the matches
     seqs = []
-    for i in range(len(positives)):
-        x = positives.iloc[i]
+    for i in range(len(data)):
+        x = data.iloc[i]
         accession = x['Accession ID']
         seqs.append([accession, getSeq(accession)])
         print("downloaded", accession)
-    print("downloaded", len(positives), "sequences")
+    print("downloaded", len(data), "sequences")
     df = pd.DataFrame(data=seqs, columns=[
         'ID', 'Sequence'])
     df.to_csv("../data/sequences.csv", index=False)
@@ -35,55 +38,7 @@ def downloadAllSeqs(positives):
 # Evaluate the ability of matching domain position considering your ground truth, i.e. residues overlapping (and non overlapping) with Pfam domains.
 
 
-def match(full_map):
-    print("\n---------------")
-    print("match\n")
-    global_CM = [[0, 0], [0, 0]]  # every single CM sums into this one
-    for x in full_map:
-        seq = full_map.get(x).get("seq")
-        model = full_map.get(x).get("model")
-        gt = full_map.get(x).get("gt")
-        # print(gt, " - ", model, " / ", len(seq))
-        # for every residues, put 1 or 0 if the residues is present in gt or in model
-        array_gt = []
-        array_model = []
-        for i in range(len(seq)):
-            # ground truth
-            if i >= gt[0] and i <= gt[1]:
-                array_gt.append(True)
-            else:
-                array_gt.append(False)
-            # model
-            if i >= model[0] and i <= model[1]:
-                array_model.append(True)
-            else:
-                array_model.append(False)
-
-        # construct confusion matrix
-        CM = [[0, 0], [0, 0]]
-        for i in range(len(seq)):
-            if array_model[i] == True and array_gt[i] == True:
-                CM[0][0] += 1
-            elif array_model[i] == True and array_gt[i] == False:
-                CM[0][1] += 1
-            elif array_model[i] == False and array_gt[i] == True:
-                CM[1][0] += 1
-            else:
-                CM[1][1] += 1
-
-        # update global CM
-        global_CM[0][0] += CM[0][0]
-        global_CM[0][1] += CM[0][1]
-        global_CM[1][0] += CM[1][0]
-        global_CM[1][1] += CM[1][1]
-
-    print("GLOBAL CONFUSION MATRIX")
-    for row in global_CM:
-        print(row)
-    statistics(global_CM)
-
-
-def intersect(pp_map):
+def intersect(pp_map, model_seqs):
     print("\n---------------")
     print("intersect\n")
     # ground truth
@@ -94,40 +49,110 @@ def intersect(pp_map):
     if not os.path.isfile("../data/sequences.csv"):
         downloadAllSeqs(positives)
     # load sequences
-    sequences = pd.read_csv("../data/sequences.csv")
-    # create map
-    seq_map = {}
-    for i in range(len(sequences)):
-        x = sequences.iloc[i]
-        seq_map[x['ID']] = x['Sequence']
-    # map of all the matches found and the positions of the residues
-    full_map = {}
-    # loop
-    for i in range(len(positives)):
-        x = positives.iloc[i]
-        accession = x['Accession ID']
-        if pp_map.get(accession) is not None:
-            full_map[accession] = {
-                'model': pp_map.get(accession),
-                'gt': [x['start'], x['end']],
-                'seq': seq_map.get(accession)
-            }
-    print("found "+str(len(full_map))+"/"+str(len(pp_map))+" sequences")
-    match(full_map)
+    gt_seqs = pd.read_csv("../data/sequences.csv")
 
-# Calculate accuracy, precision, sensitivity, specificity, MCC, F-score, etc.
+    # ? the correct solution is to create two separated maps
+    # ? one for the sequences of the model
+    # ? the other for the positives sequences of the ground truth
+    # ? every map contains as keys the accession ID and as values the tuple:
+    # ? (sequence,start,stop)
+    model_map = {}
+    gt_map = {}
+    for i in range(len(model_seqs)):
+        x = model_seqs.iloc[i]
+        model_map[x['ID']] = {
+            'seq': x['Sequence'],
+            'start': pp_map.get(x['ID'])[0],
+            'stop': pp_map.get(x['ID'])[1]
+        }
+    for i in range(len(gt_seqs)):
+        x = gt_seqs.iloc[i]
+        gt_map[x['ID']] = {
+            'seq': x['Sequence'],
+            'start': positives.iloc[i]['start'],
+            'stop': positives.iloc[i]['end']
+        }
+    # compare
+    evaluate(gt_map, model_map)
 
 
-def stastistics():
-    print("statistics")
+def evaluate(gt_map, model_map):
+    print("\nevaluate\n")
+    gt_set = set(gt_map.keys())
+    model_set = set(model_map.keys())
+    overlapping_set = gt_set & model_set  # ? need to compare residue by residue
+    print("overlapping set", len(overlapping_set))
+    overlapping_CM = evaluateOverlapping(overlapping_set, gt_map, model_map)
+    # ? no need to compare
+    false_negatives_set = gt_set - model_set  # ? all false negatives
+    false_positives_set = model_set - gt_set  # ? all false positives
+    print("false negatives set", len(false_negatives_set))
+    print("false positives set", len(false_positives_set))
+    FN = 0
+    FP = 0
+    for x in false_negatives_set:
+        FN += len(gt_map.get(x)['seq'])
+    for x in false_positives_set:
+        FP += len(model_map.get(x)['seq'])
+
+    # update values from overlapping CM
+    TP = overlapping_CM[0][0]
+    FN += overlapping_CM[1][0]
+    FP += overlapping_CM[0][1]
+    # ? the negatives are all that remains
+    TN = total_residues_swissprot - TP - FN - FP
+    # print("TP", TP)
+    # print("FN", FN)
+    # print("FP", FP)
+    # print("TN", TN)
+    CM = [[TP, FP], [FN, TN]]
+    print("Confusion Matrix")
+    for row in CM:
+        print(row)
+    statistics(CM)
+
+
+def evaluateOverlapping(overlapping_set, gt_map, model_map):
+    CM = [[0, 0], [0, 0]]
+    for x in overlapping_set:
+        seq = gt_map.get(x)['seq']
+        array_gt = []
+        array_model = []
+        for i in range(len(seq)):
+            # ground truth
+            if i >= gt_map.get(x)['start'] and i <= gt_map.get(x)['stop']:
+                array_gt.append(True)
+            else:
+                array_gt.append(False)
+            # model
+            if i >= model_map.get(x)['start'] and i <= model_map.get(x)['stop']:
+                array_model.append(True)
+            else:
+                array_model.append(False)
+
+        # update confusion matrix
+        for i in range(len(seq)):
+            if array_model[i] == True and array_gt[i] == True:
+                CM[0][0] += 1
+            elif array_model[i] == True and array_gt[i] == False:
+                CM[0][1] += 1
+            elif array_model[i] == False and array_gt[i] == True:
+                CM[1][0] += 1
+            else:
+                CM[1][1] += 1
+    # return the complete confusion matrix
+    return CM
 
 
 if __name__ == "__main__":
     # hmm
     print("\nHMM")
     pp_map_hmm = hmm.build_map()
-    intersect(pp_map_hmm)
-    print("\nPSI BLAST")
+    hmm_seqs = hmm.downloadSequences(pp_map_hmm)
+    intersect(pp_map_hmm, hmm_seqs)
+
     # psi blast
+    print("\nPSI BLAST")
     pp_map_psiblast = psiblast.build_map()
-    intersect(pp_map_psiblast)
+    psiblast_seqs = psiblast.downloadSequences(pp_map_psiblast)
+    intersect(pp_map_psiblast, psiblast_seqs)

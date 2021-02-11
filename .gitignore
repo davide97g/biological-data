@@ -7,3 +7,5 @@
 data/structure/**/
 
 __pycache__
+
+**.gz

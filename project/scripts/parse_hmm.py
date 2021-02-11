@@ -1,5 +1,9 @@
 import pandas as pd
 import os.path
+import requests as r
+from Bio import SeqIO
+from io import StringIO
+from progress.bar import ChargingBar
 
 if __name__ == "__main__":
     version = "v"+input("hmm version: ")
@@ -59,6 +63,37 @@ if __name__ == "__main__":
         print(ids_to_map)
         ids_to_map.to_csv("../data/hmm/"+version +
                           "/to_map.csv", header=False, index=False)
+
+
+def getSeq(ID):
+
+    baseUrl = "http://www.uniprot.org/uniprot/"
+    currentUrl = baseUrl+ID+".fasta"
+    response = r.post(currentUrl)
+    cData = ''.join(response.text)
+
+    return list(SeqIO.parse(StringIO(cData), 'fasta'))[0].seq
+
+
+def downloadSequences(pp_map):
+    version = "v"+input("sequences version: ")
+    if os.path.isfile("../data/hmm/"+version+"/sequences.csv"):
+        print("Already downloaded sequences")
+        df = pd.read_csv("../data/hmm/"+version+"/sequences.csv")
+        return df
+    else:
+        # here we download all the sequences from the matches
+        seqs = []
+        bar = ChargingBar('Downloading sequences', max=len(pp_map))
+        for accession in pp_map:
+            seqs.append([accession, getSeq(accession), pp_map.get(
+                accession)[0], pp_map.get(accession)[1]])
+            bar.next()
+        bar.finish()
+        df = pd.DataFrame(data=seqs, columns=[
+            'ID', 'Sequence', 'Start', 'Stop'])
+        df.to_csv("../data/hmm/"+version+"/sequences.csv", index=False)
+        return df
 
 
 def build_map():

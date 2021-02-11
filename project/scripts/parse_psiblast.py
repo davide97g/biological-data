@@ -1,8 +1,40 @@
 import pandas as pd
+import os.path
+import requests as r
+from Bio import SeqIO
+from io import StringIO
+from progress.bar import ChargingBar
 
 
-# print(df.head())
-# print(len(df))
+def getSeq(ID):
+
+    baseUrl = "http://www.uniprot.org/uniprot/"
+    currentUrl = baseUrl+ID+".fasta"
+    response = r.post(currentUrl)
+    cData = ''.join(response.text)
+
+    return list(SeqIO.parse(StringIO(cData), 'fasta'))[0].seq
+
+
+def downloadSequences(pp_map):
+    version = "v"+input("sequences version: ")
+    if os.path.isfile("../data/psiblast/"+version+"/sequences.csv"):
+        print("Already downloaded sequences")
+        df = pd.read_csv("../data/psiblast/"+version+"/sequences.csv")
+        return df
+    else:
+        # here we download all the sequences from the matches
+        seqs = []
+        bar = ChargingBar('Downloading sequences', max=len(pp_map))
+        for accession in pp_map:
+            seqs.append([accession, getSeq(accession), pp_map.get(
+                accession)[0], pp_map.get(accession)[1]])
+            bar.next()
+        bar.finish()
+        df = pd.DataFrame(data=seqs, columns=[
+            'ID', 'Sequence', 'Start', 'Stop'])
+        df.to_csv("../data/psiblast/"+version+"/sequences.csv", index=False)
+        return df
 
 
 def build_map():
