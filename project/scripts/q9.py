@@ -8,7 +8,7 @@ import os.path
 from q8 import statistics
 
 # total number of residues in SwissProt
-total_residues_swissprot = 5000000
+total_residues_swissprot = 200000000
 
 
 def getSeq(ID):
