@@ -9,3 +9,7 @@ data/structure/**/
 __pycache__
 
 **.gz
+
+project/data/structure/**/
+
+project/data/mapping/**
