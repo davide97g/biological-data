@@ -6,6 +6,12 @@ from Bio.PDB import PDBList, NeighborSearch
 from Bio.PDB.PDBParser import PDBParser
 import numpy as np
 
+from scipy.cluster.hierarchy import dendrogram, linkage
+from matplotlib import pyplot as plt
+
+
+path = "../../data/structure/"
+
 
 def get_distance_matrix(residues, seq_sep=6):
 
@@ -32,12 +38,10 @@ def get_distance_matrix(residues, seq_sep=6):
 pdbl = PDBList()
 
 # Input
-pdb_id = '1ucd'
+pdb_id = '1fyv'
 
-pdbl.retrieve_pdb_file(pdb_id, pdir='../data/structure/',
-                       file_format='pdb')  # Will save to pdbXXXX.ent
 structure = PDBParser(QUIET=True).get_structure(
-    pdb_id, "../data/structure/pdb{}.ent".format(pdb_id))
+    pdb_id, path+"pdb/pdb{}.ent".format(pdb_id))
 selected_residues = structure[0]['A']  # select chain A of first model (0)
 
 # Calculate the contact map using the NeighborSearch module (fast)
@@ -55,7 +59,6 @@ sequence_separation = 12
 
 dist_matrix = get_distance_matrix(selected_residues, sequence_separation)
 
-
 # Plot distance matrix
 
 # Alter the color map to highlight nan values (the diagonal)
@@ -65,24 +68,24 @@ current_cmap.set_bad(color='white')
 fig, ax = plt.subplots(figsize=(12, 12))
 im = ax.imshow(dist_matrix)
 fig.colorbar(im, fraction=0.03, pad=0.05)
-plt.savefig('../data/structure/ca_distances_{}.png'.format(pdb_id),
+plt.savefig(path+'ca_distances_{}.png'.format(pdb_id),
             bbox_inches='tight')
 
 
 # Calculate distance matrix of another PDB
 # Input
-pdb_id = '1ioo'
-pdbl.retrieve_pdb_file(pdb_id, pdir='../data/structure/',
+pdb_id = '1fyw'
+pdbl.retrieve_pdb_file(pdb_id, pdir=path+"pdb/",
                        file_format='pdb')  # Will save to pdbXXXX.ent
 structure = PDBParser(QUIET=True).get_structure(
-    pdb_id, "../data/structure/pdb{}.ent".format(pdb_id))
+    pdb_id, path+"pdb/pdb{}.ent".format(pdb_id))
 selected_residues = structure[0]['A']  # select chain A of first model (0)
 dist_matrix2 = get_distance_matrix(selected_residues, sequence_separation)
 
 fig, ax = plt.subplots(figsize=(12, 12))
 im = ax.imshow(dist_matrix2)
 fig.colorbar(im, fraction=0.03, pad=0.05)
-plt.savefig('../data/structure/ca_distances_{}.png'.format(pdb_id),
+plt.savefig(path+'ca_distances_{}.png'.format(pdb_id),
             bbox_inches='tight')
 
 
@@ -94,10 +97,10 @@ plt.savefig('../data/structure/ca_distances_{}.png'.format(pdb_id),
 
 # Remove NaN from distance matrix in place (not necessary if sequence separation threshold is set to 0)
 # Would be better removing diagonal NaN values
-# np.nan_to_num(dist_matrix, copy=False, nan=0.0)
-# np.nan_to_num(dist_matrix2, copy=False, nan=0.0)
-# contact_matrix = dist_matrix
-# contact_matrix2 = dist_matrix2
+np.nan_to_num(dist_matrix, copy=False, nan=0.0)
+np.nan_to_num(dist_matrix2, copy=False, nan=0.0)
+contact_matrix = dist_matrix
+contact_matrix2 = dist_matrix2
 
 
 # Contact maps
@@ -107,6 +110,19 @@ contact_matrix2 = (dist_matrix2[:] < 8).astype(float)
 
 
 print(contact_matrix)
+
+
+# X = [[i] for i in [2, 8, 0, 4, 1, 9, 9, 0]]
+X = contact_matrix
+
+Z = linkage(X, 'ward')
+fig = plt.figure(figsize=(25, 10))
+dn = dendrogram(Z)
+
+# Z = linkage(X, 'single')
+# fig = plt.figure(figsize=(25, 10))
+# dn = dendrogram(Z)
+plt.show()
 
 # Shuffle one matrix
 random_matrix = np.copy(contact_matrix)
@@ -127,7 +143,7 @@ print(x, y)
 fig, ax = plt.subplots(figsize=(12, 12))
 im = ax.imshow(corr)
 fig.colorbar(im, fraction=0.03, pad=0.05)
-plt.savefig('../data/structure/ca_distances_correlation.png'.format(pdb_id),
+plt.savefig(path+'ca_distances_correlation.png'.format(pdb_id),
             bbox_inches='tight')
 plt.close()
 
@@ -135,7 +151,7 @@ plt.close()
 fig, ax = plt.subplots(figsize=(12, 12))
 im = ax.imshow(corr_random)
 fig.colorbar(im, fraction=0.03, pad=0.05)
-plt.savefig('../data/structure/ca_distances_correlation_random.png'.format(pdb_id),
+plt.savefig(path+'ca_distances_correlation_random.png'.format(pdb_id),
             bbox_inches='tight')
 
 
