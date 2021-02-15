@@ -87,4 +87,5 @@ for pdb_id in covered_pdb_ids:
 df = pd.DataFrame(data=pdb_cut_positions, columns=[
     'PDB ID', 'Chain', 'Begin', 'End'])
 df.to_csv("../../data/structure/pdb_cut_positions.csv", index=False)
+df.to_csv("../../data/datasets/family structures/family_structures.csv", index=False)
 print("pdb_cut_positions.csv created")
