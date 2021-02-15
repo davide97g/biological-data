@@ -52,7 +52,6 @@ def extract(data: []):
 
 
 # *** read scores
-# pdb_ids = pdb_ids[:2]  # only the first for now
 show_psi = False
 show_rmsd = True
 
@@ -61,14 +60,13 @@ flags = ['psi', 'rmsd']
 mapping_psi_rmsd = {}
 totals_psi = []
 totals_rmsd = []
+# full matrix
+results = {}
+
 for flag in flags:
-
-    if flag == 'psi':
-        print("4.a\tPaste below a 10 x 10 matrix where cells represent the pairwise sequence identity obtained with the structural alignment (not sequence alignment).")
-    else:
-        print("4.b\tPaste below a 10 x 10 matrix where cells represent the pairwise RMSD.")
-
+    print(flag.upper())
     for pdb_i in pdb_ids:
+        results[pdb_i] = {}
         output = pdb_i+"  "
         sum_psi = 0  # total psi over all domains
         sum_rmsd = 0  # total rmsd over all domains
@@ -88,6 +86,7 @@ for flag in flags:
                     # data lines
                     data.append(line)
             psi, rmsd = extract(data)
+            results[pdb_i][pdb_j] = {'psi': psi, 'rmsd': rmsd}
             sum_psi += psi
             sum_rmsd += rmsd
             if flag == 'psi':
@@ -101,11 +100,34 @@ for flag in flags:
         totals_rmsd.append(sum_rmsd)
     print("\n")
 
-print("4.c\tWhich is the domain more similar to all other domains looking at the sequence identity?")
-for pdb in mapping_psi_rmsd:
-    if mapping_psi_rmsd.get(pdb).get("total_psi") == max(totals_psi):
-        print(pdb, max(totals_psi))
-print("4.d\tWhich is the domain more similar to all other domains looking at the RMSD?")
-for pdb in mapping_psi_rmsd:
-    if mapping_psi_rmsd.get(pdb).get("total_rmsd") == min(totals_rmsd):
-        print(pdb, min(totals_rmsd))
+print("Flattening...\n")
+results_flat_psi = [["TM-Align | PSI"]]
+results_flat_rmsd = [["TM-Align | RMSD"]]
+
+# save the ids in the first row
+for pdb_i in results:
+    results_flat_psi[0].append(pdb_i)
+    results_flat_rmsd[0].append(pdb_i)
+
+for pdb_i in results:
+    array_psi_i = [pdb_i]
+    array_rmsd_i = [pdb_i]
+    for pdb_j in results:
+        array_psi_i.append(results[pdb_i][pdb_j]['psi'])
+        array_rmsd_i.append(results[pdb_i][pdb_j]['rmsd'])
+    results_flat_psi.append(array_psi_i)
+    results_flat_rmsd.append(array_rmsd_i)
+
+print("PSI")
+for row in results_flat_psi:
+    print(row)
+
+print("RSMD")
+for row in results_flat_rmsd:
+    print(row)
+
+df_psi = pd.DataFrame(data=results_flat_psi, columns=results_flat_psi[0])
+df_psi.to_csv("../../data/structure/psi.csv", index=False, header=False)
+
+df_rmsd = pd.DataFrame(data=results_flat_rmsd, columns=results_flat_rmsd[0])
+df_rmsd.to_csv("../../data/structure/rmsd.csv", index=False, header=False)
