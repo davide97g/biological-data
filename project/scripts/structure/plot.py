@@ -1,13 +1,14 @@
 from scipy.cluster.hierarchy import dendrogram, linkage
 from matplotlib import pyplot as plt
+import pandas as pd
 
-X = [[i] for i in [2, 8, 0, 4, 1, 9, 9, 0]]
+df = pd.read_csv("../../data/structure/tm_score.csv")
 
-Z = linkage(X, 'ward')
-fig = plt.figure(figsize=(25, 10))
-dn = dendrogram(Z)
+df = df.drop(columns=[df.columns[0]])
 
-Z = linkage(X, 'single')
-fig = plt.figure(figsize=(25, 10))
-dn = dendrogram(Z)
+Z = linkage(df.to_numpy())
+dn = dendrogram(Z, labels=df.columns,
+                above_threshold_color='#bcbddc',
+                orientation='left')
+plt.savefig('../../data/structure/dendrogram.png')
 plt.show()
