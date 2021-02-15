@@ -2,14 +2,8 @@ import os
 import pandas as pd
 from progress.bar import ChargingBar
 
-input_align = input("tm-align? ")
-tm_align = False
-print(input_align)
-if "yes" in input_align:
-    tm_aling = True
-else:
-    tm_aling = False
 
+tm_align = False
 
 path = "../../data/structure/"
 
