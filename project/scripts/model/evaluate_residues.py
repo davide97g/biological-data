@@ -8,7 +8,7 @@ import parse_hmm as hmm
 import parse_psiblast as psiblast
 
 # total number of residues in SwissProt
-total_residues_swissprot = 200000000
+total_residues_swissprot = 200000000  # 200 millions
 
 
 def getSeq(ID):
@@ -62,15 +62,15 @@ def statistics(CM):
 
     # balanced accuracy
     balanced_accuracy = (sensitivity+specificity)/2
-    print("\tbalanced accuracy", balanced_accuracy)
+    print("\tbalanced accuracy", round(balanced_accuracy, 3))
 
     # f1 score
     f1 = 2*TP/(2*TP+FP+FN)
-    print("\tf1", f1)
+    print("\tf1", round(f1, 3))
 
     # mcc
     mcc = (TP*TN-FP*FN) / math.sqrt((TP+FP)*(TP+FN)*(TN+FP)*(TN+FN))
-    print("\tMCC", mcc)
+    print("\tMCC", round(mcc, 3))
 
 # 9.
 # Evaluate the ability of matching domain position considering your ground truth, i.e. residues overlapping (and non overlapping) with Pfam domains.

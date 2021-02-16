@@ -61,15 +61,15 @@ def statistics(CM):
 
     # balanced accuracy
     balanced_accuracy = (sensitivity+specificity)/2
-    print("\tbalanced accuracy", balanced_accuracy)
+    print("\tbalanced accuracy", round(balanced_accuracy, 3))
 
     # f1 score
     f1 = 2*TP/(2*TP+FP+FN)
-    print("\tf1", f1)
+    print("\tf1", round(f1, 3))
 
     # mcc
     mcc = (TP*TN-FP*FN) / math.sqrt((TP+FP)*(TP+FN)*(TN+FP)*(TN+FN))
-    print("\tMCC", mcc)
+    print("\tMCC", round(mcc, 3))
 
 
 if __name__ == "__main__":
