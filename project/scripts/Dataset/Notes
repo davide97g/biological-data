@@ -1,7 +1,0 @@
-File: parse_xml.py
-
-from file .xml in Family Sequence I retrieve the all the data necessary for the purpose.
-
--> Two dictionary:
-    1. Sequence_Id : GO_Ids (list)
-    2. Go_Id: no. of occurrence
