@@ -1,0 +1,685 @@
+Term       | #Term Set  | #Term Rest | Ratio Set  | Ratio Rest    | Fold Increase        | p_value    | Definition                     | Sub-Ontology                  
+GO:0046209 | 134        | 531        | 0.69       |0.0018        | 3.8e+02              | 2.6e-266   | nitric oxide metabolic process | biological_process            
+GO:0032757 | 116        | 3337       | 0.55       |0.012         | 4.7e+01              | 5e-135     | positive regulation of interleukin-8 production | biological_process            
+GO:0044877 | 83         | 27608      | 0.34       |0.1           | 3.2                  | 7.5e-17    | protein-containing complex binding | molecular_function            
+GO:0030667 | 83         | 5535       | 0.34       |0.019         | 1.8e+01              | 3.6e-66    | secretory granule membrane     | cellular_component            
+GO:0038023 | 277        | 21067      | 5.5        |0.078         | 7.1e+01              | 5.8e-258   | signaling receptor activity    | molecular_function            
+GO:0006954 | 269        | 14487      | 4.6        |0.052         | 8.9e+01              | 2.4e-286   | inflammatory response          | biological_process            
+GO:0071346 | 83         | 3451       | 0.34       |0.012         | 2.8e+01              | 2.9e-82    | cellular response to interferon-gamma | biological_process            
+GO:0071727 | 116        | 53         | 0.55       |0.00018       | 3e+03                | 1.4e-308   | cellular response to triacyl bacterial lipopeptide | biological_process            
+GO:0008152 | 134        | 121665     | 0.69       |0.72          | 0.97                 | 0.78       | metabolic process              | biological_process            
+GO:0070542 | 83         | 1756       | 0.34       |0.0061        | 5.6e+01              | 1.3e-105   | response to fatty acid         | biological_process            
+GO:0032570 | 83         | 2058       | 0.34       |0.0071        | 4.8e+01              | 4.2e-100   | response to progesterone       | biological_process            
+GO:0034134 | 83         | 226        | 0.34       |0.00078       | 4.4e+02              | 8.5e-174   | toll-like receptor 2 signaling pathway | biological_process            
+GO:0009636 | 83         | 3598       | 0.34       |0.013         | 2.7e+01              | 7.7e-81    | response to toxic substance    | biological_process            
+GO:0042995 | 100        | 28524      | 0.44       |0.11          | 4.1                  | 1.8e-25    | cell projection                | cellular_component            
+GO:0061809 | 326        | 213        | 3.3e+02    |0.00073       | 4.5e+05              | 0.0        | NAD+ nucleotidase, cyclic ADP-ribose generating | molecular_function            
+GO:0032613 | 83         | 120        | 0.34       |0.00041       | 8.2e+02              | 3.7e-192   | interleukin-10 production      | biological_process            
+GO:0051964 | 83         | 275        | 0.34       |0.00095       | 3.6e+02              | 1e-167     | negative regulation of synapse assembly | biological_process            
+GO:0071221 | 167        | 114        | 1.0        |0.00039       | 2.7e+03              | 0.0        | cellular response to bacterial lipopeptide | biological_process            
+GO:0048714 | 83         | 1177       | 0.34       |0.0041        | 8.4e+01              | 2.1e-119   | positive regulation of oligodendrocyte differentiation | biological_process            
+GO:0072593 | 134        | 2733       | 0.69       |0.0095        | 7.3e+01              | 4.9e-177   | reactive oxygen species metabolic process | biological_process            
+GO:0045087 | 209        | 14800      | 1.8        |0.054         | 3.3e+01              | 1.2e-181   | innate immune response         | biological_process            
+GO:0007252 | 83         | 601        | 0.34       |0.0021        | 1.6e+02              | 2.9e-142   | I-kappaB phosphorylation       | biological_process            
+GO:0001540 | 134        | 3566       | 0.69       |0.012         | 5.6e+01              | 4.1e-162   | amyloid-beta binding           | molecular_function            
+GO:0051092 | 195        | 7444       | 1.5        |0.026         | 5.6e+01              | 3.5e-217   | positive regulation of NF-kappaB transcription factor activity | biological_process            
+GO:0031663 | 83         | 2262       | 0.34       |0.0078        | 4.3e+01              | 7.7e-97    | lipopolysaccharide-mediated signaling pathway | biological_process            
+GO:0005737 | 108        | 102475     | 0.49       |0.54          | 0.91                 | 0.42       | cytoplasm                      | cellular_component            
+GO:0044297 | 83         | 11011      | 0.34       |0.039         | 8.6                  | 1.6e-43    | cell body                      | cellular_component            
+GO:0050765 | 83         | 844        | 0.34       |0.0029        | 1.2e+02              | 8.7e-131   | negative regulation of phagocytosis | biological_process            
+GO:0050135 | 326        | 213        | 3.3e+02    |0.00073       | 4.5e+05              | 0.0        | NAD(P)+ nucleosidase activity  | molecular_function            
+GO:0005515 | 284        | 236647     | 6.6        |4.4           | 1.5                  | 0.01       | protein binding                | molecular_function            
+GO:0005886 | 326        | 97394      | 3.3e+02    |0.5           | 6.5e+02              | 3.4e-153   | plasma membrane                | cellular_component            
+GO:0009986 | 108        | 20438      | 0.49       |0.076         | 6.5                  | 2.6e-43    | cell surface                   | cellular_component            
+GO:0001530 | 83         | 1126       | 0.34       |0.0039        | 8.8e+01              | 6.4e-121   | lipopolysaccharide binding     | molecular_function            
+GO:0014005 | 83         | 178        | 0.34       |0.00061       | 5.6e+02              | 5.8e-181   | microglia development          | biological_process            
+GO:0005794 | 167        | 23153      | 1.0        |0.086         | 1.2e+01              | 9e-93      | Golgi apparatus                | cellular_component            
+GO:0038124 | 134        | 169        | 0.69       |0.00058       | 1.2e+03              | 6.3e-321   | toll-like receptor TLR6:TLR2 signaling pathway | biological_process            
+GO:0042802 | 167        | 43517      | 1.0        |0.18          | 5.9                  | 1.4e-52    | identical protein binding      | molecular_function            
+GO:0008285 | 83         | 20973      | 0.34       |0.078         | 4.4                  | 3.8e-24    | negative regulation of cell population proliferation | biological_process            
+GO:0001775 | 190        | 20967      | 1.4        |0.078         | 1.8e+01              | 1.1e-126   | cell activation                | biological_process            
+GO:0008150 | 320        | 264680     | 4.6e+01    |1e+01         | 4.5                  | 5.8e-07    | biological_process             | biological_process            
+GO:0032741 | 83         | 176        | 0.34       |0.00061       | 5.6e+02              | 2.7e-181   | positive regulation of interleukin-18 production | biological_process            
+GO:0001666 | 83         | 9115       | 0.34       |0.032         | 1.1e+01              | 1.3e-49    | response to hypoxia            | biological_process            
+GO:0032722 | 105        | 2970       | 0.47       |0.01          | 4.6e+01              | 3.4e-122   | positive regulation of chemokine production | biological_process            
+GO:0006807 | 134        | 98296      | 0.69       |0.51          | 1.4                  | 0.007      | nitrogen compound metabolic process | biological_process            
+GO:0045121 | 167        | 12197      | 1.0        |0.044         | 2.4e+01              | 2.9e-136   | membrane raft                  | cellular_component            
+GO:0010628 | 238        | 42612      | 2.7        |0.17          | 1.6e+01              | 2.4e-123   | positive regulation of gene expression | biological_process            
+GO:1904466 | 83         | 105        | 0.34       |0.00036       | 9.4e+02              | 9.5e-196   | positive regulation of matrix metallopeptidase secretion | biological_process            
+GO:0071726 | 134        | 169        | 0.69       |0.00058       | 1.2e+03              | 6.3e-321   | cellular response to diacyl bacterial lipopeptide | biological_process            
+GO:0044237 | 134        | 111204     | 0.69       |0.62          | 1.1                  | 0.31       | cellular metabolic process     | biological_process            
+GO:0035325 | 112        | 505        | 0.52       |0.0017        | 3e+02                | 4.2e-215   | Toll-like receptor binding     | molecular_function            
+GO:0042834 | 83         | 530        | 0.34       |0.0018        | 1.9e+02              | 1.8e-146   | peptidoglycan binding          | molecular_function            
+GO:0002755 | 167        | 1329       | 1.0        |0.0046        | 2.3e+02              | 1.7e-290   | MyD88-dependent toll-like receptor signaling pathway | biological_process            
+GO:0001875 | 83         | 241        | 0.34       |0.00083       | 4.1e+02              | 8e-172     | lipopolysaccharide immune receptor activity | molecular_function            
+GO:0043312 | 83         | 13674      | 0.34       |0.049         | 6.9                  | 9.5e-37    | neutrophil degranulation       | biological_process            
+GO:0031226 | 138        | 13718      | 0.73       |0.049         | 1.5e+01              | 4e-92      | intrinsic component of plasma membrane | cellular_component            
+GO:0006915 | 83         | 18260      | 0.34       |0.067         | 5.1                  | 4.3e-28    | apoptotic process              | biological_process            
+GO:0032868 | 83         | 5033       | 0.34       |0.018         | 1.9e+01              | 2.2e-69    | response to insulin            | biological_process            
+GO:0032735 | 83         | 2293       | 0.34       |0.0079        | 4.3e+01              | 2.3e-96    | positive regulation of interleukin-12 production | biological_process            
+GO:0034123 | 92         | 864        | 0.39       |0.003         | 1.3e+02              | 2e-148     | positive regulation of toll-like receptor signaling pathway | biological_process            
+GO:0030177 | 83         | 3380       | 0.34       |0.012         | 2.9e+01              | 5.5e-83    | positive regulation of Wnt signaling pathway | biological_process            
+GO:1903974 | 83         | 105        | 0.34       |0.00036       | 9.4e+02              | 9.5e-196   | positive regulation of cellular response to macrophage colony-stimulating factor stimulus | biological_process            
+GO:0007612 | 83         | 3542       | 0.34       |0.012         | 2.8e+01              | 2.2e-81    | learning                       | biological_process            
+GO:0030670 | 167        | 2490       | 1.0        |0.0086        | 1.2e+02              | 3.1e-247   | phagocytic vesicle membrane    | cellular_component            
+GO:2001057 | 134        | 531        | 0.69       |0.0018        | 3.8e+02              | 2.6e-266   | reactive nitrogen species metabolic process | biological_process            
+GO:0051770 | 83         | 929        | 0.34       |0.0032        | 1.1e+02              | 1.6e-127   | positive regulation of nitric-oxide synthase biosynthetic process | biological_process            
+GO:0009987 | 292        | 226318     | 8.3        |3.5           | 2.4                  | 7.9e-08    | cellular process               | biological_process            
+GO:0007165 | 306        | 86717      | 1.5e+01    |0.42          | 3.4e+01              | 7.4e-132   | signal transduction            | biological_process            
+GO:0004888 | 275        | 17269      | 5.3        |0.063         | 8.4e+01              | 1.5e-277   | transmembrane signaling receptor activity | molecular_function            
+GO:0002224 | 167        | 3367       | 1.0        |0.012         | 8.9e+01              | 3.5e-226   | toll-like receptor signaling pathway | biological_process            
+GO:0032289 | 83         | 147        | 0.34       |0.00051       | 6.7e+02              | 1.7e-186   | central nervous system myelin formation | biological_process            
+GO:0071223 | 83         | 711        | 0.34       |0.0024        | 1.4e+02              | 1.3e-136   | cellular response to lipoteichoic acid | biological_process            
+GO:0042496 | 134        | 1          | 0.69       |3.4e-06       | 2e+05                | 0.0        | detection of diacyl bacterial lipopeptide | biological_process            
+GO:0005887 | 234        | 32333      | 2.5        |0.13          | 2e+01                | 5.7e-145   | integral component of plasma membrane | cellular_component            
+GO:0050729 | 105        | 4556       | 0.47       |0.016         | 3e+01                | 1.7e-103   | positive regulation of inflammatory response | biological_process            
+GO:0006691 | 83         | 812        | 0.34       |0.0028        | 1.2e+02              | 4.2e-132   | leukotriene metabolic process  | biological_process            
+GO:0032728 | 83         | 1485       | 0.34       |0.0051        | 6.6e+01              | 2.2e-111   | positive regulation of interferon-beta production | biological_process            
+GO:0038187 | 83         | 715        | 0.34       |0.0025        | 1.4e+02              | 2e-136     | pattern recognition receptor activity | molecular_function            
+GO:0038123 | 116        | 77         | 0.55       |0.00026       | 2.1e+03              | 6.5e-298   | toll-like receptor TLR1:TLR2 signaling pathway | biological_process            
+GO:0050830 | 83         | 2557       | 0.34       |0.0089        | 3.8e+01              | 1.3e-92    | defense response to Gram-positive bacterium | biological_process            
+GO:0032733 | 83         | 1870       | 0.34       |0.0065        | 5.3e+01              | 2e-103     | positive regulation of interleukin-10 production | biological_process            
+GO:1901224 | 104        | 3480       | 0.47       |0.012         | 3.9e+01              | 1.1e-113   | positive regulation of NIK/NF-kappaB signaling | biological_process            
+GO:0032755 | 209        | 4218       | 1.8        |0.015         | 1.2e+02              | 4.3e-292   | positive regulation of interleukin-6 production | biological_process            
+GO:0035354 | 116        | 1          | 0.55       |3.4e-06       | 1.6e+05              | 0.0        | Toll-like receptor 1-Toll-like receptor 2 protein complex | cellular_component            
+GO:0006955 | 291        | 21170      | 8.1        |0.078         | 1e+02                | 3.1e-284   | immune response                | biological_process            
+GO:0045944 | 83         | 37678      | 0.34       |0.15          | 2.3                  | 1.5e-09    | positive regulation of transcription by RNA polymerase II | biological_process            
+GO:0001774 | 167        | 1635       | 1.0        |0.0057        | 1.8e+02              | 2.5e-276   | microglial cell activation     | biological_process            
+GO:0042495 | 116        | 1          | 0.55       |3.4e-06       | 1.6e+05              | 0.0        | detection of triacyl bacterial lipopeptide | biological_process            
+GO:0042497 | 83         | 1          | 0.34       |3.4e-06       | 9.9e+04              | 1.4e-248   | triacyl lipopeptide binding    | molecular_function            
+GO:0032760 | 116        | 4699       | 0.55       |0.016         | 3.3e+01              | 1.8e-118   | positive regulation of tumor necrosis factor production | biological_process            
+GO:0010468 | 242        | 76761      | 2.8        |0.36          | 7.9                  | 7.4e-72    | regulation of gene expression  | biological_process            
+GO:0010604 | 234        | 61819      | 2.5        |0.27          | 9.3                  | 3.8e-84    | positive regulation of macromolecule metabolic process | biological_process            
+GO:0009893 | 234        | 68557      | 2.5        |0.31          | 8.2                  | 7.6e-75    | positive regulation of metabolic process | biological_process            
+GO:0050789 | 312        | 185650     | 2.1e+01    |1.8           | 1.2e+01              | 2.1e-42    | regulation of biological process | biological_process            
+GO:0051240 | 246        | 35327      | 3.0        |0.14          | 2.2e+01              | 5e-152     | positive regulation of multicellular organismal process | biological_process            
+GO:0065007 | 312        | 194981     | 2.1e+01    |2.0           | 1e+01                | 1.9e-36    | biological regulation          | biological_process            
+GO:0048518 | 271        | 116036     | 4.8        |0.66          | 7.3                  | 3.3e-57    | positive regulation of biological process | biological_process            
+GO:0051239 | 255        | 59026      | 3.5        |0.25          | 1.4e+01              | 1.1e-110   | regulation of multicellular organismal process | biological_process            
+GO:0032677 | 128        | 3399       | 0.64       |0.012         | 5.4e+01              | 2.2e-154   | regulation of interleukin-8 production | biological_process            
+GO:0060255 | 242        | 101730     | 2.8        |0.54          | 5.3                  | 1e-46      | regulation of macromolecule metabolic process | biological_process            
+GO:0001817 | 226        | 16302      | 2.2        |0.059         | 3.8e+01              | 5e-199     | regulation of cytokine production | biological_process            
+GO:0001819 | 226        | 11058      | 2.2        |0.04          | 5.7e+01              | 5.6e-236   | positive regulation of cytokine production | biological_process            
+GO:0019222 | 251        | 112564     | 3.3        |0.63          | 5.2                  | 2.8e-44    | regulation of metabolic process | biological_process            
+GO:0003674 | 300        | 231764     | 1.1e+01    |3.9           | 2.8                  | 3.3e-09    | molecular_function             | molecular_function            
+GO:0005488 | 245        | 191565     | 3.0        |1.9           | 1.6                  | 0.00045    | binding                        | molecular_function            
+GO:0005575 | 281        | 257372     | 6.1        |7.7           | 0.8                  | 0.17       | cellular_component             | cellular_component            
+GO:0016020 | 251        | 109230     | 3.3        |0.6           | 5.5                  | 4.2e-47    | membrane                       | cellular_component            
+GO:0012506 | 136        | 14109      | 0.71       |0.051         | 1.4e+01              | 2.9e-88    | vesicle membrane               | cellular_component            
+GO:0030659 | 136        | 13670      | 0.71       |0.049         | 1.4e+01              | 5.4e-90    | cytoplasmic vesicle membrane   | cellular_component            
+GO:0098588 | 136        | 28820      | 0.71       |0.11          | 6.5                  | 1e-50      | bounding membrane of organelle | cellular_component            
+GO:0031090 | 136        | 46008      | 0.71       |0.19          | 3.8                  | 1.1e-28    | organelle membrane             | cellular_component            
+GO:0110165 | 278        | 252119     | 5.7        |6.5           | 0.87                 | 0.37       | cellular anatomical entity     | cellular_component            
+GO:0060089 | 262        | 20124      | 4.0        |0.074         | 5.4e+01              | 1.8e-236   | molecular transducer activity  | molecular_function            
+GO:0034097 | 85         | 12395      | 0.35       |0.044         | 7.9                  | 1.4e-41    | response to cytokine           | biological_process            
+GO:0071310 | 109        | 31197      | 0.5        |0.12          | 4.2                  | 6.1e-28    | cellular response to organic substance | biological_process            
+GO:0042221 | 168        | 57234      | 1.1        |0.24          | 4.3                  | 2.7e-37    | response to chemical           | biological_process            
+GO:0051716 | 164        | 57655      | 1.0        |0.25          | 4.1                  | 2.1e-34    | cellular response to stimulus  | biological_process            
+GO:0070887 | 116        | 38047      | 0.55       |0.15          | 3.7                  | 7.2e-25    | cellular response to chemical stimulus | biological_process            
+GO:0050896 | 257        | 100985     | 3.7        |0.53          | 6.9                  | 3.5e-59    | response to stimulus           | biological_process            
+GO:0071345 | 140        | 11270      | 0.75       |0.04          | 1.9e+01              | 1.2e-105   | cellular response to cytokine stimulus | biological_process            
+GO:0010033 | 161        | 47952      | 0.97       |0.2           | 4.9                  | 1.5e-42    | response to organic substance  | biological_process            
+GO:0034341 | 78         | 3747       | 0.31       |0.013         | 2.4e+01              | 1.7e-72    | response to interferon-gamma   | biological_process            
+GO:0032501 | 87         | 58719      | 0.36       |0.25          | 1.4                  | 0.0057     | multicellular organismal process | biological_process            
+GO:0043170 | 87         | 89913      | 0.36       |0.45          | 0.81                 | 0.094      | macromolecule metabolic process | biological_process            
+GO:0010467 | 87         | 3598       | 0.36       |0.013         | 2.9e+01              | 1.3e-86    | gene expression                | biological_process            
+GO:0001816 | 87         | 2504       | 0.36       |0.0087        | 4.2e+01              | 1e-99      | cytokine production            | biological_process            
+GO:0071704 | 87         | 114515     | 0.36       |0.65          | 0.56                 | 1.7e-06    | organic substance metabolic process | biological_process            
+GO:0070339 | 151        | 97         | 0.86       |0.00033       | 2.6e+03              | 0.0        | response to bacterial lipopeptide | biological_process            
+GO:0071219 | 151        | 2379       | 0.86       |0.0082        | 1e+02                | 6.8e-218   | cellular response to molecule of bacterial origin | biological_process            
+GO:0043207 | 181        | 21713      | 1.2        |0.081         | 1.5e+01              | 4.3e-113   | response to external biotic stimulus | biological_process            
+GO:0009607 | 181        | 22419      | 1.2        |0.083         | 1.5e+01              | 9.4e-111   | response to biotic stimulus    | biological_process            
+GO:0002237 | 151        | 6000       | 0.86       |0.021         | 4.1e+01              | 2e-159     | response to molecule of bacterial origin | biological_process            
+GO:0071216 | 151        | 2807       | 0.86       |0.0097        | 8.8e+01              | 1.8e-207   | cellular response to biotic stimulus | biological_process            
+GO:0032493 | 151        | 116        | 0.86       |0.0004        | 2.2e+03              | 0.0        | response to bacterial lipoprotein | biological_process            
+GO:0071220 | 151        | 97         | 0.86       |0.00033       | 2.6e+03              | 0.0        | cellular response to bacterial lipoprotein | biological_process            
+GO:0009605 | 181        | 32990      | 1.2        |0.13          | 9.7                  | 5.1e-83    | response to external stimulus  | biological_process            
+GO:0051962 | 112        | 5815       | 0.52       |0.02          | 2.6e+01              | 1.5e-102   | positive regulation of nervous system development | biological_process            
+GO:0050767 | 78         | 8731       | 0.31       |0.031         | 1e+01                | 6.7e-46    | regulation of neurogenesis     | biological_process            
+GO:0045597 | 80         | 22142      | 0.32       |0.082         | 3.9                  | 7.9e-21    | positive regulation of cell differentiation | biological_process            
+GO:0014015 | 74         | 2188       | 0.29       |0.0076        | 3.9e+01              | 1.6e-83    | positive regulation of gliogenesis | biological_process            
+GO:0045687 | 74         | 1711       | 0.29       |0.0059        | 4.9e+01              | 4.2e-91    | positive regulation of glial cell differentiation | biological_process            
+GO:0045595 | 80         | 34878      | 0.32       |0.14          | 2.4                  | 4.2e-10    | regulation of cell differentiation | biological_process            
+GO:2000026 | 114        | 29601      | 0.54       |0.11          | 4.7                  | 3.7e-33    | regulation of multicellular organismal development | biological_process            
+GO:0048713 | 74         | 1216       | 0.29       |0.0042        | 7e+01                | 1.3e-101   | regulation of oligodendrocyte differentiation | biological_process            
+GO:0014013 | 74         | 2888       | 0.29       |0.01          | 2.9e+01              | 5.3e-75    | regulation of gliogenesis      | biological_process            
+GO:0051094 | 114        | 32830      | 0.54       |0.13          | 4.2                  | 3.6e-29    | positive regulation of developmental process | biological_process            
+GO:0051960 | 112        | 9970       | 0.52       |0.035         | 1.5e+01              | 7e-78      | regulation of nervous system development | biological_process            
+GO:0050769 | 78         | 5929       | 0.31       |0.021         | 1.5e+01              | 6.9e-58    | positive regulation of neurogenesis | biological_process            
+GO:0050794 | 289        | 176452     | 7.6        |1.5           | 4.9                  | 9.2e-29    | regulation of cellular process | biological_process            
+GO:0050793 | 114        | 53638      | 0.54       |0.23          | 2.4                  | 1.8e-12    | regulation of developmental process | biological_process            
+GO:0048522 | 216        | 104321     | 1.9        |0.56          | 3.5                  | 2.2e-28    | positive regulation of cellular process | biological_process            
+GO:0010720 | 78         | 7393       | 0.31       |0.026         | 1.2e+01              | 5.3e-51    | positive regulation of cell development | biological_process            
+GO:0045685 | 74         | 2271       | 0.29       |0.0079        | 3.7e+01              | 2.2e-82    | regulation of glial cell differentiation | biological_process            
+GO:0060284 | 78         | 11962      | 0.31       |0.043         | 7.3                  | 1.7e-36    | regulation of cell development | biological_process            
+GO:0006793 | 73         | 34845      | 0.29       |0.14          | 2.1                  | 1.4e-07    | phosphorus metabolic process   | biological_process            
+GO:0019538 | 73         | 62831      | 0.29       |0.28          | 1.0                  | 0.74       | protein metabolic process      | biological_process            
+GO:0006468 | 73         | 23908      | 0.29       |0.09          | 3.2                  | 4.2e-15    | protein phosphorylation        | biological_process            
+GO:0043412 | 73         | 53684      | 0.29       |0.23          | 1.3                  | 0.075      | macromolecule modification     | biological_process            
+GO:0016310 | 73         | 24002      | 0.29       |0.09          | 3.2                  | 5.1e-15    | phosphorylation                | biological_process            
+GO:0044260 | 73         | 73903      | 0.29       |0.34          | 0.84                 | 0.23       | cellular macromolecule metabolic process | biological_process            
+GO:0006796 | 73         | 34705      | 0.29       |0.14          | 2.1                  | 1.3e-07    | phosphate-containing compound metabolic process | biological_process            
+GO:0044267 | 73         | 56017      | 0.29       |0.24          | 1.2                  | 0.16       | cellular protein metabolic process | biological_process            
+GO:1901564 | 73         | 76115      | 0.29       |0.35          | 0.81                 | 0.13       | organonitrogen compound metabolic process | biological_process            
+GO:0006464 | 73         | 51702      | 0.29       |0.22          | 1.3                  | 0.036      | cellular protein modification process | biological_process            
+GO:0044238 | 73         | 107004     | 0.29       |0.58          | 0.49                 | 2.8e-08    | primary metabolic process      | biological_process            
+GO:0036211 | 73         | 51533      | 0.29       |0.22          | 1.3                  | 0.035      | protein modification process   | biological_process            
+GO:0033218 | 138        | 6065       | 0.73       |0.021         | 3.4e+01              | 1.9e-138   | amide binding                  | molecular_function            
+GO:0042277 | 138        | 5613       | 0.73       |0.02          | 3.7e+01              | 6.7e-143   | peptide binding                | molecular_function            
+GO:0016787 | 251        | 32702      | 3.3        |0.13          | 2.6e+01              | 7.4e-167   | hydrolase activity             | molecular_function            
+GO:0016798 | 251        | 1560       | 3.3        |0.0054        | 6.1e+02              | 0.0        | hydrolase activity, acting on glycosyl bonds | molecular_function            
+GO:0003824 | 251        | 74520      | 3.3        |0.34          | 9.6                  | 4.1e-83    | catalytic activity             | molecular_function            
+GO:0016799 | 251        | 570        | 3.3        |0.002         | 1.7e+03              | 0.0        | hydrolase activity, hydrolyzing N-glycosyl compounds | molecular_function            
+GO:0032502 | 107        | 89833      | 0.49       |0.45          | 1.1                  | 0.47       | developmental process          | biological_process            
+GO:0061515 | 66         | 1267       | 0.25       |0.0044        | 5.8e+01              | 3.6e-86    | myeloid cell development       | biological_process            
+GO:0048856 | 71         | 58034      | 0.28       |0.25          | 1.1                  | 0.41       | anatomical structure development | biological_process            
+GO:0021782 | 66         | 1124       | 0.25       |0.0039        | 6.5e+01              | 1.9e-89    | glial cell development         | biological_process            
+GO:0048468 | 66         | 13105      | 0.25       |0.047         | 5.4                  | 1.6e-24    | cell development               | biological_process            
+GO:0048869 | 102        | 51445      | 0.45       |0.21          | 2.1                  | 2.7e-09    | cellular developmental process | biological_process            
+GO:0002221 | 136        | 3114       | 0.71       |0.011         | 6.6e+01              | 2.6e-173   | pattern recognition receptor signaling pathway | biological_process            
+GO:0048523 | 112        | 93304      | 0.52       |0.47          | 1.1                  | 0.41       | negative regulation of cellular process | biological_process            
+GO:0048519 | 153        | 100580     | 0.88       |0.53          | 1.7                  | 5.2e-06    | negative regulation of biological process | biological_process            
+GO:0042127 | 63         | 37398      | 0.24       |0.15          | 1.6                  | 0.0012     | regulation of cell population proliferation | biological_process            
+GO:0032661 | 62         | 160        | 0.23       |0.00055       | 4.3e+02              | 1.8e-130   | regulation of interleukin-18 production | biological_process            
+GO:1904951 | 60         | 8869       | 0.22       |0.031         | 7.1                  | 1.1e-28    | positive regulation of establishment of protein localization | biological_process            
+GO:0002793 | 60         | 3550       | 0.22       |0.012         | 1.8e+01              | 2.7e-50    | positive regulation of peptide secretion | biological_process            
+GO:0050708 | 60         | 6535       | 0.22       |0.023         | 9.8                  | 1.1e-35    | regulation of protein secretion | biological_process            
+GO:0032879 | 94         | 61119      | 0.4        |0.27          | 1.5                  | 0.0011     | regulation of localization     | biological_process            
+GO:1903793 | 60         | 12006      | 0.22       |0.043         | 5.2                  | 4.2e-22    | positive regulation of anion transport | biological_process            
+GO:0044070 | 60         | 20268      | 0.22       |0.075         | 3.0                  | 6.9e-12    | regulation of anion transport  | biological_process            
+GO:0051049 | 71         | 38602      | 0.28       |0.15          | 1.8                  | 2.7e-05    | regulation of transport        | biological_process            
+GO:0090087 | 60         | 14621      | 0.22       |0.053         | 4.2                  | 4.8e-18    | regulation of peptide transport | biological_process            
+GO:0051050 | 60         | 22869      | 0.22       |0.085         | 2.6                  | 8.4e-10    | positive regulation of transport | biological_process            
+GO:0051046 | 71         | 14611      | 0.28       |0.053         | 5.2                  | 1.6e-25    | regulation of secretion        | biological_process            
+GO:0032880 | 60         | 20939      | 0.22       |0.078         | 2.9                  | 2.5e-11    | regulation of protein localization | biological_process            
+GO:1903532 | 60         | 6415       | 0.22       |0.023         | 1e+01                | 4e-36      | positive regulation of secretion by cell | biological_process            
+GO:1903530 | 71         | 13271      | 0.28       |0.048         | 5.8                  | 5.9e-28    | regulation of secretion by cell | biological_process            
+GO:0051047 | 60         | 7192       | 0.22       |0.025         | 8.9                  | 1.8e-33    | positive regulation of secretion | biological_process            
+GO:0002791 | 60         | 7273       | 0.22       |0.026         | 8.8                  | 3.3e-33    | regulation of peptide secretion | biological_process            
+GO:1904464 | 60         | 150        | 0.22       |0.00052       | 4.4e+02              | 6.2e-127   | regulation of matrix metallopeptidase secretion | biological_process            
+GO:0070201 | 60         | 14343      | 0.22       |0.052         | 4.3                  | 2e-18      | regulation of establishment of protein localization | biological_process            
+GO:0050714 | 60         | 3892       | 0.22       |0.014         | 1.7e+01              | 4.6e-48    | positive regulation of protein secretion | biological_process            
+GO:0051222 | 60         | 8877       | 0.22       |0.031         | 7.1                  | 1.1e-28    | positive regulation of protein transport | biological_process            
+GO:0043270 | 60         | 16121      | 0.22       |0.059         | 3.8                  | 4e-16      | positive regulation of ion transport | biological_process            
+GO:0043269 | 60         | 29039      | 0.22       |0.11          | 2.0                  | 4.5e-06    | regulation of ion transport    | biological_process            
+GO:0051223 | 60         | 14048      | 0.22       |0.051         | 4.4                  | 7.5e-19    | regulation of protein transport | biological_process            
+GO:0005102 | 160        | 32261      | 0.96       |0.12          | 7.7                  | 7.5e-65    | signaling receptor binding     | molecular_function            
+GO:0051179 | 58         | 77201      | 0.22       |0.36          | 0.6                  | 0.00021    | localization                   | biological_process            
+GO:0006810 | 58         | 65156      | 0.22       |0.29          | 0.75                 | 0.046      | transport                      | biological_process            
+GO:0051234 | 58         | 68621      | 0.22       |0.31          | 0.7                  | 0.013      | establishment of localization  | biological_process            
+GO:0042119 | 72         | 9888       | 0.28       |0.035         | 8.0                  | 1.4e-36    | neutrophil activation          | biological_process            
+GO:0045321 | 96         | 17875      | 0.42       |0.065         | 6.3                  | 1.3e-38    | leukocyte activation           | biological_process            
+GO:0002252 | 71         | 18712      | 0.28       |0.069         | 4.0                  | 1.5e-19    | immune effector process        | biological_process            
+GO:0140352 | 58         | 16741      | 0.22       |0.061         | 3.5                  | 2.8e-14    | export from cell               | biological_process            
+GO:0051649 | 58         | 37409      | 0.22       |0.15          | 1.5                  | 0.013      | establishment of localization in cell | biological_process            
+GO:0043299 | 58         | 9807       | 0.22       |0.035         | 6.2                  | 7.3e-25    | leukocyte degranulation        | biological_process            
+GO:0032940 | 58         | 15881      | 0.22       |0.058         | 3.7                  | 3e-15      | secretion by cell              | biological_process            
+GO:0002263 | 71         | 12202      | 0.28       |0.044         | 6.3                  | 4.1e-30    | cell activation involved in immune response | biological_process            
+GO:0002283 | 58         | 9572       | 0.22       |0.034         | 6.3                  | 2.2e-25    | neutrophil activation involved in immune response | biological_process            
+GO:0002366 | 71         | 12190      | 0.28       |0.044         | 6.3                  | 3.8e-30    | leukocyte activation involved in immune response | biological_process            
+GO:0002275 | 58         | 10116      | 0.22       |0.036         | 6.0                  | 3.3e-24    | myeloid cell activation involved in immune response | biological_process            
+GO:0046903 | 58         | 17079      | 0.22       |0.062         | 3.5                  | 6.5e-14    | secretion                      | biological_process            
+GO:0006887 | 58         | 14488      | 0.22       |0.052         | 4.1                  | 5.6e-17    | exocytosis                     | biological_process            
+GO:0002274 | 78         | 11160      | 0.31       |0.04          | 7.9                  | 1.5e-38    | myeloid leukocyte activation   | biological_process            
+GO:0045055 | 58         | 12886      | 0.22       |0.046         | 4.7                  | 2.9e-19    | regulated exocytosis           | biological_process            
+GO:0016192 | 58         | 29575      | 0.22       |0.11          | 1.9                  | 3.1e-05    | vesicle-mediated transport     | biological_process            
+GO:0036230 | 63         | 9838       | 0.24       |0.035         | 6.8                  | 7.2e-29    | granulocyte activation         | biological_process            
+GO:0002376 | 178        | 42863      | 1.2        |0.17          | 6.9                  | 2.1e-62    | immune system process          | biological_process            
+GO:0009725 | 57         | 14654      | 0.21       |0.053         | 4.0                  | 3.8e-16    | response to hormone            | biological_process            
+GO:0009719 | 85         | 23534      | 0.35       |0.088         | 4.0                  | 3.4e-22    | response to endogenous stimulus | biological_process            
+GO:0043434 | 57         | 7964       | 0.21       |0.028         | 7.5                  | 1.8e-28    | response to peptide hormone    | biological_process            
+GO:1901700 | 92         | 31264      | 0.39       |0.12          | 3.3                  | 3.4e-18    | response to oxygen-containing compound | biological_process            
+GO:0010243 | 85         | 19577      | 0.35       |0.072         | 4.9                  | 1.9e-27    | response to organonitrogen compound | biological_process            
+GO:1901698 | 85         | 21283      | 0.35       |0.079         | 4.5                  | 5e-25      | response to nitrogen compound  | biological_process            
+GO:1901652 | 85         | 10272      | 0.35       |0.037         | 9.6                  | 1.1e-47    | response to peptide            | biological_process            
+GO:0009966 | 127        | 58848      | 0.64       |0.25          | 2.5                  | 1.7e-14    | regulation of signal transduction | biological_process            
+GO:0048584 | 142        | 42977      | 0.77       |0.17          | 4.4                  | 1.7e-35    | positive regulation of response to stimulus | biological_process            
+GO:0009967 | 125        | 31584      | 0.62       |0.12          | 5.1                  | 4.4e-38    | positive regulation of signal transduction | biological_process            
+GO:0010646 | 127        | 67310      | 0.64       |0.3           | 2.1                  | 2.7e-10    | regulation of cell communication | biological_process            
+GO:0010647 | 125        | 35666      | 0.62       |0.14          | 4.4                  | 7.2e-33    | positive regulation of cell communication | biological_process            
+GO:0062207 | 103        | 2026       | 0.46       |0.007         | 6.6e+01              | 2.4e-135   | regulation of pattern recognition receptor signaling pathway | biological_process            
+GO:0062208 | 65         | 1047       | 0.25       |0.0036        | 6.9e+01              | 1.4e-89    | positive regulation of pattern recognition receptor signaling pathway | biological_process            
+GO:0048583 | 163        | 76773      | 0.99       |0.36          | 2.8                  | 1.9e-19    | regulation of response to stimulus | biological_process            
+GO:0023056 | 125        | 35674      | 0.62       |0.14          | 4.4                  | 7.4e-33    | positive regulation of signaling | biological_process            
+GO:0023051 | 127        | 67678      | 0.64       |0.3           | 2.1                  | 3.1e-10    | regulation of signaling        | biological_process            
+GO:0034121 | 103        | 1906       | 0.46       |0.0066        | 7e+01                | 5.7e-138   | regulation of toll-like receptor signaling pathway | biological_process            
+GO:0050877 | 55         | 14313      | 0.2        |0.052         | 3.9                  | 2.2e-15    | nervous system process         | biological_process            
+GO:0050890 | 55         | 6312       | 0.2        |0.022         | 9.1                  | 1.4e-31    | cognition                      | biological_process            
+GO:0003008 | 55         | 26071      | 0.2        |0.098         | 2.1                  | 6.3e-06    | system process                 | biological_process            
+GO:0007610 | 55         | 11400      | 0.2        |0.041         | 5.0                  | 1.4e-19    | behavior                       | biological_process            
+GO:0007611 | 55         | 6941       | 0.2        |0.024         | 8.3                  | 1.4e-29    | learning or memory             | biological_process            
+GO:0030666 | 110        | 4738       | 0.51       |0.017         | 3.1e+01              | 4.3e-109   | endocytic vesicle membrane     | cellular_component            
+GO:0051769 | 53         | 605        | 0.19       |0.0021        | 9.3e+01              | 1.9e-80    | regulation of nitric-oxide synthase biosynthetic process | biological_process            
+GO:0010557 | 53         | 24722      | 0.19       |0.093         | 2.1                  | 6e-06      | positive regulation of macromolecule biosynthetic process | biological_process            
+GO:0009891 | 59         | 28037      | 0.22       |0.11          | 2.1                  | 3.1e-06    | positive regulation of biosynthetic process | biological_process            
+GO:0010556 | 108        | 56092      | 0.49       |0.24          | 2.1                  | 3.9e-09    | regulation of macromolecule biosynthetic process | biological_process            
+GO:0009889 | 108        | 61438      | 0.49       |0.27          | 1.8                  | 6e-07      | regulation of biosynthetic process | biological_process            
+GO:0070391 | 51         | 408        | 0.18       |0.0014        | 1.3e+02              | 8.3e-85    | response to lipoteichoic acid  | biological_process            
+GO:1901701 | 86         | 17493      | 0.36       |0.064         | 5.6                  | 1.5e-31    | cellular response to oxygen-containing compound | biological_process            
+GO:0042494 | 73         | 45         | 0.29       |0.00015       | 1.9e+03              | 6.5e-187   | detection of bacterial lipoprotein | biological_process            
+GO:0051606 | 73         | 6730       | 0.29       |0.024         | 1.2e+01              | 2.1e-48    | detection of stimulus          | biological_process            
+GO:0070340 | 73         | 1          | 0.29       |3.4e-06       | 8.4e+04              | 5.7e-218   | detection of bacterial lipopeptide | biological_process            
+GO:0009595 | 73         | 854        | 0.29       |0.0029        | 9.8e+01              | 1.8e-110   | detection of biotic stimulus   | biological_process            
+GO:0032490 | 73         | 284        | 0.29       |0.00098       | 2.9e+02              | 1.1e-142   | detection of molecule of bacterial origin | biological_process            
+GO:0009593 | 73         | 3919       | 0.29       |0.014         | 2.1e+01              | 2.3e-64    | detection of chemical stimulus | biological_process            
+GO:0071724 | 97         | 71         | 0.42       |0.00024       | 1.7e+03              | 2.8e-245   | response to diacyl bacterial lipopeptide | biological_process            
+GO:0098581 | 73         | 534        | 0.29       |0.0018        | 1.6e+02              | 1.8e-124   | detection of external biotic stimulus | biological_process            
+GO:0016021 | 161        | 56827      | 0.97       |0.24          | 4.0                  | 2.3e-33    | integral component of membrane | cellular_component            
+GO:0031224 | 124        | 41420      | 0.61       |0.17          | 3.7                  | 3.6e-26    | intrinsic component of membrane | cellular_component            
+GO:0032103 | 60         | 9212       | 0.22       |0.033         | 6.9                  | 7.4e-28    | positive regulation of response to external stimulus | biological_process            
+GO:0080134 | 91         | 27746      | 0.39       |0.11          | 3.7                  | 4.8e-21    | regulation of response to stress | biological_process            
+GO:0050727 | 95         | 9370       | 0.41       |0.033         | 1.2e+01              | 2.7e-61    | regulation of inflammatory response | biological_process            
+GO:0031349 | 60         | 5378       | 0.22       |0.019         | 1.2e+01              | 2.8e-40    | positive regulation of defense response | biological_process            
+GO:0032101 | 79         | 19284      | 0.32       |0.071         | 4.5                  | 7.6e-24    | regulation of response to external stimulus | biological_process            
+GO:0031347 | 79         | 12074      | 0.32       |0.043         | 7.4                  | 4.3e-37    | regulation of defense response | biological_process            
+GO:0044281 | 47         | 22620      | 0.17       |0.084         | 2.0                  | 4.7e-05    | small molecule metabolic process | biological_process            
+GO:0006690 | 47         | 2218       | 0.17       |0.0077        | 2.2e+01              | 1e-43      | icosanoid metabolic process    | biological_process            
+GO:0043436 | 47         | 11089      | 0.17       |0.04          | 4.2                  | 9.6e-15    | oxoacid metabolic process      | biological_process            
+GO:0006082 | 47         | 11666      | 0.17       |0.042         | 4.0                  | 5.9e-14    | organic acid metabolic process | biological_process            
+GO:0019752 | 47         | 10843      | 0.17       |0.039         | 4.3                  | 4.3e-15    | carboxylic acid metabolic process | biological_process            
+GO:0032479 | 46         | 2249       | 0.16       |0.0078        | 2.1e+01              | 4e-42      | regulation of type I interferon production | biological_process            
+GO:0032648 | 46         | 938        | 0.16       |0.0032        | 5.1e+01              | 9e-59      | regulation of interferon-beta production | biological_process            
+GO:0032481 | 46         | 3025       | 0.16       |0.011         | 1.6e+01              | 1.4e-36    | positive regulation of type I interferon production | biological_process            
+GO:0006952 | 216        | 23782      | 1.9        |0.089         | 2.2e+01              | 9.9e-150   | defense response               | biological_process            
+GO:0009617 | 56         | 6771       | 0.21       |0.024         | 8.7                  | 4.9e-31    | response to bacterium          | biological_process            
+GO:0006950 | 216        | 58698      | 1.9        |0.25          | 7.7                  | 6.1e-72    | response to stress             | biological_process            
+GO:0044419 | 124        | 26054      | 0.61       |0.098         | 6.2                  | 7e-46      | biological process involved in interspecies interaction between organisms | biological_process            
+GO:0051707 | 124        | 17968      | 0.61       |0.066         | 9.3                  | 3.3e-63    | response to other organism     | biological_process            
+GO:0042742 | 94         | 6626       | 0.4        |0.023         | 1.7e+01              | 2.6e-73    | defense response to bacterium  | biological_process            
+GO:0098542 | 124        | 12894      | 0.61       |0.046         | 1.3e+01              | 2.1e-79    | defense response to other organism | biological_process            
+GO:0032675 | 73         | 3418       | 0.29       |0.012         | 2.4e+01              | 1.8e-68    | regulation of interleukin-6 production | biological_process            
+GO:0071725 | 70         | 41         | 0.27       |0.00014       | 1.9e+03              | 4.8e-180   | response to triacyl bacterial lipopeptide | biological_process            
+GO:0032680 | 42         | 2366       | 0.15       |0.0082        | 1.8e+01              | 4.5e-36    | regulation of tumor necrosis factor production | biological_process            
+GO:1903557 | 42         | 1510       | 0.15       |0.0052        | 2.8e+01              | 8.2e-44    | positive regulation of tumor necrosis factor superfamily cytokine production | biological_process            
+GO:1903555 | 42         | 2419       | 0.15       |0.0084        | 1.8e+01              | 1.1e-35    | regulation of tumor necrosis factor superfamily cytokine production | biological_process            
+GO:0033993 | 37         | 15455      | 0.13       |0.056         | 2.3                  | 1.8e-05    | response to lipid              | biological_process            
+GO:1901654 | 36         | 3672       | 0.12       |0.013         | 9.7                  | 1.7e-22    | response to ketone             | biological_process            
+GO:0014070 | 36         | 17834      | 0.12       |0.065         | 1.9                  | 0.00073    | response to organic cyclic compound | biological_process            
+GO:0048545 | 36         | 4901       | 0.12       |0.017         | 7.2                  | 1.6e-18    | response to steroid hormone    | biological_process            
+GO:0003953 | 215        | 149        | 1.9        |0.00051       | 3.7e+03              | 0.0        | NAD+ nucleosidase activity     | molecular_function            
+GO:0051093 | 32         | 17685      | 0.11       |0.065         | 1.7                  | 0.01       | negative regulation of developmental process | biological_process            
+GO:1905809 | 32         | 262        | 0.11       |0.0009        | 1.2e+02              | 4.2e-53    | negative regulation of synapse organization | biological_process            
+GO:1901889 | 32         | 650        | 0.11       |0.0022        | 4.8e+01              | 3.9e-41    | negative regulation of cell junction assembly | biological_process            
+GO:0050807 | 78         | 4486       | 0.31       |0.016         | 2e+01                | 1e-66      | regulation of synapse organization | biological_process            
+GO:0051128 | 123        | 44129      | 0.6        |0.18          | 3.4                  | 3.9e-23    | regulation of cellular component organization | biological_process            
+GO:0051961 | 32         | 3537       | 0.11       |0.012         | 8.8                  | 4.1e-19    | negative regulation of nervous system development | biological_process            
+GO:0044087 | 120        | 18243      | 0.58       |0.067         | 8.7                  | 1.1e-58    | regulation of cellular component biogenesis | biological_process            
+GO:0051241 | 71         | 22309      | 0.28       |0.083         | 3.3                  | 1.4e-15    | negative regulation of multicellular organismal process | biological_process            
+GO:0051129 | 32         | 13272      | 0.11       |0.048         | 2.3                  | 8.3e-05    | negative regulation of cellular component organization | biological_process            
+GO:1901888 | 78         | 4263       | 0.31       |0.015         | 2.1e+01              | 2.4e-68    | regulation of cell junction assembly | biological_process            
+GO:0051963 | 78         | 1956       | 0.31       |0.0068        | 4.6e+01              | 1.6e-93    | regulation of synapse assembly | biological_process            
+GO:0051090 | 85         | 9289       | 0.35       |0.033         | 1.1e+01              | 4.9e-51    | regulation of DNA-binding transcription factor activity | biological_process            
+GO:2000112 | 85         | 55068      | 0.35       |0.23          | 1.5                  | 0.0018     | regulation of cellular macromolecule biosynthetic process | biological_process            
+GO:1903506 | 85         | 45492      | 0.35       |0.19          | 1.9                  | 1.8e-06    | regulation of nucleic acid-templated transcription | biological_process            
+GO:2001141 | 85         | 45640      | 0.35       |0.19          | 1.9                  | 1.9e-06    | regulation of RNA biosynthetic process | biological_process            
+GO:0051091 | 85         | 8386       | 0.35       |0.03          | 1.2e+01              | 1.8e-54    | positive regulation of DNA-binding transcription factor activity | biological_process            
+GO:0019219 | 85         | 54451      | 0.35       |0.23          | 1.5                  | 0.0014     | regulation of nucleobase-containing compound metabolic process | biological_process            
+GO:0006355 | 85         | 49054      | 0.35       |0.2           | 1.7                  | 3.1e-05    | regulation of transcription, DNA-templated | biological_process            
+GO:0044093 | 85         | 35061      | 0.35       |0.14          | 2.6                  | 5.7e-12    | positive regulation of molecular function | biological_process            
+GO:0080090 | 85         | 93691      | 0.35       |0.47          | 0.74                 | 0.018      | regulation of primary metabolic process | biological_process            
+GO:0051171 | 85         | 90428      | 0.35       |0.45          | 0.78                 | 0.048      | regulation of nitrogen compound metabolic process | biological_process            
+GO:0065009 | 85         | 54917      | 0.35       |0.23          | 1.5                  | 0.0014     | regulation of molecular function | biological_process            
+GO:0031326 | 85         | 59120      | 0.35       |0.25          | 1.4                  | 0.013      | regulation of cellular biosynthetic process | biological_process            
+GO:0051252 | 85         | 49110      | 0.35       |0.2           | 1.7                  | 3.2e-05    | regulation of RNA metabolic process | biological_process            
+GO:0031323 | 85         | 97918      | 0.35       |0.51          | 0.69                 | 0.0034     | regulation of cellular metabolic process | biological_process            
+GO:0007166 | 149        | 46384      | 0.84       |0.19          | 4.4                  | 2.7e-36    | cell surface receptor signaling pathway | biological_process            
+GO:0060627 | 39         | 12777      | 0.14       |0.046         | 2.9                  | 2.3e-08    | regulation of vesicle-mediated transport | biological_process            
+GO:0050764 | 28         | 3428       | 0.094      |0.012         | 7.9                  | 9e-16      | regulation of phagocytosis     | biological_process            
+GO:0051051 | 39         | 10426      | 0.14       |0.037         | 3.6                  | 8.6e-11    | negative regulation of transport | biological_process            
+GO:0097367 | 26         | 31246      | 0.086      |0.12          | 0.72                 | 0.11       | carbohydrate derivative binding | molecular_function            
+GO:0008289 | 92         | 12972      | 0.39       |0.047         | 8.4                  | 2e-46      | lipid binding                  | molecular_function            
+GO:0005622 | 45         | 120947     | 0.16       |0.71          | 0.22                 | 1.2e-27    | intracellular anatomical structure | cellular_component            
+GO:0043229 | 45         | 120704     | 0.16       |0.71          | 0.23                 | 2.1e-27    | intracellular organelle        | cellular_component            
+GO:0043231 | 45         | 111326     | 0.16       |0.62          | 0.26                 | 1.7e-22    | intracellular membrane-bounded organelle | cellular_component            
+GO:0043227 | 45         | 124525     | 0.16       |0.75          | 0.21                 | 8.8e-30    | membrane-bounded organelle     | cellular_component            
+GO:0043226 | 45         | 142793     | 0.16       |0.96          | 0.17                 | 3.4e-41    | organelle                      | cellular_component            
+GO:0009628 | 23         | 18898      | 0.076      |0.069         | 1.1                  | 0.65       | response to abiotic stimulus   | biological_process            
+GO:0036293 | 23         | 3694       | 0.076      |0.013         | 5.9                  | 7.5e-11    | response to decreased oxygen levels | biological_process            
+GO:0070482 | 23         | 4206       | 0.076      |0.015         | 5.2                  | 8.8e-10    | response to oxygen levels      | biological_process            
+GO:0032642 | 23         | 1925       | 0.076      |0.0067        | 1.1e+01              | 1.5e-16    | regulation of chemokine production | biological_process            
+GO:0098857 | 104        | 9985       | 0.47       |0.036         | 1.3e+01              | 1.1e-68    | membrane microdomain           | cellular_component            
+GO:0005539 | 19         | 2964       | 0.062      |0.01          | 6.0                  | 2.2e-09    | glycosaminoglycan binding      | molecular_function            
+GO:0008219 | 15         | 16248      | 0.048      |0.059         | 0.81                 | 0.55       | cell death                     | biological_process            
+GO:0012501 | 15         | 15162      | 0.048      |0.055         | 0.87                 | 0.71       | programmed cell death          | biological_process            
+GO:0032655 | 14         | 1493       | 0.045      |0.0052        | 8.7                  | 2.9e-09    | regulation of interleukin-12 production | biological_process            
+GO:0030111 | 13         | 8073       | 0.041      |0.029         | 1.5                  | 0.18       | regulation of Wnt signaling pathway | biological_process            
+GO:0060759 | 32         | 3982       | 0.11       |0.014         | 7.8                  | 1.1e-17    | regulation of response to cytokine stimulus | biological_process            
+GO:1903972 | 12         | 63         | 0.038      |0.00022       | 1.8e+02              | 8e-23      | regulation of cellular response to macrophage colony-stimulating factor stimulus | biological_process            
+GO:1903971 | 12         | 15         | 0.038      |5.2e-05       | 7.4e+02              | 5.6e-29    | positive regulation of response to macrophage colony-stimulating factor | biological_process            
+GO:0060760 | 32         | 1408       | 0.11       |0.0049        | 2.2e+01              | 6.6e-31    | positive regulation of response to cytokine stimulus | biological_process            
+GO:1903969 | 12         | 63         | 0.038      |0.00022       | 1.8e+02              | 8e-23      | regulation of response to macrophage colony-stimulating factor | biological_process            
+GO:0032288 | 9          | 305        | 0.028      |0.001         | 2.7e+01              | 1.4e-10    | myelin assembly                | biological_process            
+GO:0010927 | 9          | 1087       | 0.028      |0.0037        | 7.5                  | 5.3e-06    | cellular component assembly involved in morphogenesis | biological_process            
+GO:0071840 | 35         | 81255      | 0.12       |0.39          | 0.31                 | 5.1e-14    | cellular component organization or biogenesis | biological_process            
+GO:0016043 | 35         | 80860      | 0.12       |0.38          | 0.31                 | 7.6e-14    | cellular component organization | biological_process            
+GO:0022607 | 35         | 33643      | 0.12       |0.13          | 0.92                 | 0.73       | cellular component assembly    | biological_process            
+GO:0048646 | 9          | 14387      | 0.028      |0.052         | 0.54                 | 0.073      | anatomical structure formation involved in morphogenesis | biological_process            
+GO:0032653 | 8          | 941        | 0.025      |0.0032        | 7.7                  | 1.5e-05    | regulation of interleukin-10 production | biological_process            
+GO:1902531 | 47         | 35604      | 0.17       |0.14          | 1.2                  | 0.24       | regulation of intracellular signal transduction | biological_process            
+GO:1902533 | 47         | 21559      | 0.17       |0.08          | 2.1                  | 1.7e-05    | positive regulation of intracellular signal transduction | biological_process            
+GO:1901222 | 11         | 1337       | 0.035      |0.0046        | 7.5                  | 5.1e-07    | regulation of NIK/NF-kappaB signaling | biological_process            
+GO:0098802 | 56         | 3754       | 0.21       |0.013         | 1.6e+01              | 4.4e-44    | plasma membrane signaling receptor complex | cellular_component            
+GO:0098797 | 56         | 10061      | 0.21       |0.036         | 5.8                  | 8.9e-23    | plasma membrane protein complex | cellular_component            
+GO:0032991 | 56         | 76635      | 0.21       |0.36          | 0.58                 | 9.3e-05    | protein-containing complex     | cellular_component            
+GO:0098796 | 56         | 17372      | 0.21       |0.063         | 3.3                  | 1.5e-12    | membrane protein complex       | cellular_component            
+GO:0043235 | 75         | 11330      | 0.3        |0.041         | 7.3                  | 1.8e-35    | receptor complex               | cellular_component            
+GO:0031325 | 26         | 56034      | 0.086      |0.24          | 0.36                 | 2e-08      | positive regulation of cellular metabolic process | biological_process            
+GO:1903508 | 4          | 18187      | 0.012      |0.067         | 0.19                 | 1.6e-05    | positive regulation of nucleic acid-templated transcription | biological_process            
+GO:0031328 | 10         | 27053      | 0.032      |0.1           | 0.31                 | 1.5e-05    | positive regulation of cellular biosynthetic process | biological_process            
+GO:0045893 | 4          | 29659      | 0.012      |0.11          | 0.11                 | 9.1e-11    | positive regulation of transcription, DNA-templated | biological_process            
+GO:0006357 | 4          | 44611      | 0.012      |0.18          | 0.068                | 2.1e-18    | regulation of transcription by RNA polymerase II | biological_process            
+GO:1902680 | 4          | 18279      | 0.012      |0.067         | 0.18                 | 1.7e-05    | positive regulation of RNA biosynthetic process | biological_process            
+GO:0045935 | 4          | 24761      | 0.012      |0.093         | 0.13                 | 2.3e-08    | positive regulation of nucleobase-containing compound metabolic process | biological_process            
+GO:0051254 | 4          | 20053      | 0.012      |0.074         | 0.17                 | 2.8e-06    | positive regulation of RNA metabolic process | biological_process            
+GO:0051173 | 26         | 51182      | 0.086      |0.21          | 0.4                  | 8.8e-07    | positive regulation of nitrogen compound metabolic process | biological_process            
+GO:0042116 | 39         | 931        | 0.14       |0.0032        | 4.2e+01              | 2.4e-47    | macrophage activation          | biological_process            
+GO:0071723 | 86         | 187        | 0.36       |0.00064       | 5.5e+02              | 3.2e-187   | lipopeptide binding            | molecular_function            
+GO:0008283 | 15         | 11392      | 0.048      |0.041         | 1.2                  | 0.48       | cell population proliferation  | biological_process            
+GO:0035655 | 36         | 374        | 0.12       |0.0013        | 9.6e+01              | 3.8e-56    | interleukin-18-mediated signaling pathway | biological_process            
+GO:0042008 | 36         | 1          | 0.12       |3.4e-06       | 3.6e+04              | 3.2e-106   | interleukin-18 receptor activity | molecular_function            
+GO:0070301 | 15         | 3463       | 0.048      |0.012         | 4.0                  | 1.2e-05    | cellular response to hydrogen peroxide | biological_process            
+GO:0045954 | 15         | 639        | 0.048      |0.0022        | 2.2e+01              | 2.4e-15    | positive regulation of natural killer cell mediated cytotoxicity | biological_process            
+GO:0045092 | 36         | 1          | 0.12       |3.4e-06       | 3.6e+04              | 3.2e-106   | interleukin-18 receptor complex | cellular_component            
+GO:0019221 | 125        | 18272      | 0.62       |0.067         | 9.2                  | 2.3e-63    | cytokine-mediated signaling pathway | biological_process            
+GO:0140375 | 105        | 2150       | 0.47       |0.0074        | 6.4e+01              | 2.4e-136   | immune receptor activity       | molecular_function            
+GO:0004896 | 111        | 1845       | 0.51       |0.0064        | 8.1e+01              | 3.1e-154   | cytokine receptor activity     | molecular_function            
+GO:0010035 | 8          | 12658      | 0.025      |0.045         | 0.55                 | 0.1        | response to inorganic substance | biological_process            
+GO:0006979 | 8          | 10894      | 0.025      |0.039         | 0.64                 | 0.3        | response to oxidative stress   | biological_process            
+GO:0034599 | 8          | 6546       | 0.025      |0.023         | 1.1                  | 0.71       | cellular response to oxidative stress | biological_process            
+GO:0000302 | 8          | 5233       | 0.025      |0.018         | 1.4                  | 0.4        | response to reactive oxygen species | biological_process            
+GO:0034614 | 8          | 3356       | 0.025      |0.012         | 2.1                  | 0.06       | cellular response to reactive oxygen species | biological_process            
+GO:0033554 | 8          | 31484      | 0.025      |0.12          | 0.21                 | 1.9e-08    | cellular response to stress    | biological_process            
+GO:0042542 | 8          | 3721       | 0.025      |0.013         | 1.9                  | 0.076      | response to hydrogen peroxide  | biological_process            
+GO:0062197 | 8          | 6533       | 0.025      |0.023         | 1.1                  | 0.71       | cellular response to chemical stress | biological_process            
+GO:0002705 | 31         | 2330       | 0.1        |0.0081        | 1.3e+01              | 3.1e-23    | positive regulation of leukocyte mediated immunity | biological_process            
+GO:0002708 | 31         | 1862       | 0.1        |0.0064        | 1.6e+01              | 4.9e-26    | positive regulation of lymphocyte mediated immunity | biological_process            
+GO:0031341 | 7          | 2266       | 0.022      |0.0078        | 2.8                  | 0.015      | regulation of cell killing     | biological_process            
+GO:0002715 | 7          | 830        | 0.022      |0.0029        | 7.6                  | 5.3e-05    | regulation of natural killer cell mediated immunity | biological_process            
+GO:0002717 | 7          | 499        | 0.022      |0.0017        | 1.3e+01              | 2.1e-06    | positive regulation of natural killer cell mediated immunity | biological_process            
+GO:0002684 | 100        | 20578      | 0.44       |0.076         | 5.8                  | 9.8e-37    | positive regulation of immune system process | biological_process            
+GO:0002833 | 7          | 3527       | 0.022      |0.012         | 1.8                  | 0.12       | positive regulation of response to biotic stimulus | biological_process            
+GO:0031343 | 7          | 1202       | 0.022      |0.0041        | 5.3                  | 0.00049    | positive regulation of cell killing | biological_process            
+GO:0002706 | 31         | 3115       | 0.1        |0.011         | 9.7                  | 1.1e-19    | regulation of lymphocyte mediated immunity | biological_process            
+GO:0042269 | 7          | 820        | 0.022      |0.0028        | 7.7                  | 4.9e-05    | regulation of natural killer cell mediated cytotoxicity | biological_process            
+GO:0002831 | 7          | 6504       | 0.022      |0.023         | 0.96                 | 1.0        | regulation of response to biotic stimulus | biological_process            
+GO:0002703 | 31         | 4218       | 0.1        |0.015         | 7.1                  | 4.2e-16    | regulation of leukocyte mediated immunity | biological_process            
+GO:0002699 | 31         | 4737       | 0.1        |0.017         | 6.3                  | 9e-15      | positive regulation of immune effector process | biological_process            
+GO:0002682 | 102        | 30653      | 0.45       |0.12          | 3.9                  | 2.6e-24    | regulation of immune system process | biological_process            
+GO:0001912 | 7          | 910        | 0.022      |0.0031        | 7.0                  | 9.3e-05    | positive regulation of leukocyte mediated cytotoxicity | biological_process            
+GO:0001910 | 7          | 1544       | 0.022      |0.0053        | 4.1                  | 0.002      | regulation of leukocyte mediated cytotoxicity | biological_process            
+GO:0002697 | 31         | 8592       | 0.1        |0.03          | 3.4                  | 1.9e-08    | regulation of immune effector process | biological_process            
+GO:0050776 | 51         | 17809      | 0.18       |0.065         | 2.8                  | 1e-09      | regulation of immune response  | biological_process            
+GO:0045088 | 7          | 5021       | 0.022      |0.018         | 1.2                  | 0.52       | regulation of innate immune response | biological_process            
+GO:0050778 | 31         | 12294      | 0.1        |0.044         | 2.4                  | 4.1e-05    | positive regulation of immune response | biological_process            
+GO:0045089 | 7          | 3736       | 0.022      |0.013         | 1.7                  | 0.21       | positive regulation of innate immune response | biological_process            
+GO:0032729 | 47         | 2961       | 0.17       |0.01          | 1.6e+01              | 3.5e-38    | positive regulation of interferon-gamma production | biological_process            
+GO:0005576 | 74         | 39538      | 0.29       |0.16          | 1.9                  | 1.1e-05    | extracellular region           | cellular_component            
+GO:0002020 | 26         | 4481       | 0.086      |0.016         | 5.5                  | 1.9e-11    | protease binding               | molecular_function            
+GO:2000391 | 26         | 164        | 0.086      |0.00056       | 1.5e+02              | 4.5e-46    | positive regulation of neutrophil extravasation | biological_process            
+GO:2000556 | 47         | 197        | 0.17       |0.00068       | 2.5e+02              | 3.2e-90    | positive regulation of T-helper 1 cell cytokine production | biological_process            
+GO:0004909 | 42         | 1          | 0.15       |3.4e-06       | 4.3e+04              | 3.5e-124   | interleukin-1, type I, activating receptor activity | molecular_function            
+GO:0019966 | 51         | 149        | 0.18       |0.00051       | 3.6e+02              | 6.9e-105   | interleukin-1 binding          | molecular_function            
+GO:0004908 | 121        | 15         | 0.59       |5.2e-05       | 1.1e+04              | 0.0        | interleukin-1 receptor activity | molecular_function            
+GO:0070555 | 26         | 3443       | 0.086      |0.012         | 7.2                  | 5.9e-14    | response to interleukin-1      | biological_process            
+GO:0009897 | 48         | 10051      | 0.17       |0.036         | 4.8                  | 5.5e-17    | external side of plasma membrane | cellular_component            
+GO:0005161 | 26         | 1014       | 0.086      |0.0035        | 2.5e+01              | 1.3e-26    | platelet-derived growth factor receptor binding | molecular_function            
+GO:2000661 | 26         | 1          | 0.086      |3.4e-06       | 2.5e+04              | 2e-76      | positive regulation of interleukin-1-mediated signaling pathway | biological_process            
+GO:0070498 | 68         | 3962       | 0.26       |0.014         | 1.9e+01              | 1.4e-57    | interleukin-1-mediated signaling pathway | biological_process            
+GO:1902622 | 24         | 1264       | 0.079      |0.0044        | 1.8e+01              | 1.1e-21    | regulation of neutrophil migration | biological_process            
+GO:1902624 | 24         | 912        | 0.079      |0.0031        | 2.5e+01              | 6.6e-25    | positive regulation of neutrophil migration | biological_process            
+GO:0030335 | 24         | 17620      | 0.079      |0.064         | 1.2                  | 0.35       | positive regulation of cell migration | biological_process            
+GO:0040017 | 24         | 17776      | 0.079      |0.065         | 1.2                  | 0.35       | positive regulation of locomotion | biological_process            
+GO:0002685 | 24         | 4806       | 0.079      |0.017         | 4.7                  | 2.2e-09    | regulation of leukocyte migration | biological_process            
+GO:2000147 | 24         | 17502      | 0.079      |0.064         | 1.2                  | 0.3        | positive regulation of cell motility | biological_process            
+GO:0051272 | 24         | 17703      | 0.079      |0.065         | 1.2                  | 0.35       | positive regulation of cellular component movement | biological_process            
+GO:0002691 | 24         | 778        | 0.079      |0.0027        | 3e+01                | 1.8e-26    | regulation of cellular extravasation | biological_process            
+GO:0002693 | 24         | 469        | 0.079      |0.0016        | 4.9e+01              | 1.6e-31    | positive regulation of cellular extravasation | biological_process            
+GO:2000389 | 24         | 197        | 0.079      |0.00068       | 1.2e+02              | 4.5e-40    | regulation of neutrophil extravasation | biological_process            
+GO:0030334 | 24         | 26236      | 0.079      |0.099         | 0.8                  | 0.33       | regulation of cell migration   | biological_process            
+GO:0051270 | 24         | 27211      | 0.079      |0.1           | 0.77                 | 0.25       | regulation of cellular component movement | biological_process            
+GO:0040012 | 24         | 27023      | 0.079      |0.1           | 0.77                 | 0.25       | regulation of locomotion       | biological_process            
+GO:0002687 | 24         | 3307       | 0.079      |0.011         | 6.9                  | 1.3e-12    | positive regulation of leukocyte migration | biological_process            
+GO:2000145 | 24         | 26715      | 0.079      |0.1           | 0.78                 | 0.29       | regulation of cell motility    | biological_process            
+GO:2000659 | 21         | 161        | 0.069      |0.00055       | 1.2e+02              | 8.5e-36    | regulation of interleukin-1-mediated signaling pathway | biological_process            
+GO:0001959 | 21         | 3967       | 0.069      |0.014         | 5.0                  | 8.4e-09    | regulation of cytokine-mediated signaling pathway | biological_process            
+GO:0001961 | 21         | 1356       | 0.069      |0.0047        | 1.5e+01              | 2.1e-17    | positive regulation of cytokine-mediated signaling pathway | biological_process            
+GO:0032649 | 35         | 2360       | 0.12       |0.0082        | 1.5e+01              | 1.2e-27    | regulation of interferon-gamma production | biological_process            
+GO:0019899 | 18         | 39733      | 0.058      |0.16          | 0.37                 | 3.4e-06    | enzyme binding                 | molecular_function            
+GO:0002819 | 45         | 3754       | 0.16       |0.013         | 1.2e+01              | 1.7e-31    | regulation of adaptive immune response | biological_process            
+GO:0002827 | 25         | 534        | 0.083      |0.0018        | 4.5e+01              | 7.5e-32    | positive regulation of T-helper 1 type immune response | biological_process            
+GO:0002821 | 25         | 2228       | 0.083      |0.0077        | 1.1e+01              | 2.8e-17    | positive regulation of adaptive immune response | biological_process            
+GO:0002724 | 25         | 744        | 0.083      |0.0026        | 3.2e+01              | 2e-28      | regulation of T cell cytokine production | biological_process            
+GO:0002726 | 25         | 675        | 0.083      |0.0023        | 3.6e+01              | 2e-29      | positive regulation of T cell cytokine production | biological_process            
+GO:0002718 | 25         | 2309       | 0.083      |0.008         | 1e+01                | 6.3e-17    | regulation of cytokine production involved in immune response | biological_process            
+GO:2000554 | 25         | 68         | 0.083      |0.00023       | 3.5e+02              | 2e-52      | regulation of T-helper 1 cell cytokine production | biological_process            
+GO:0002720 | 25         | 1447       | 0.083      |0.005         | 1.7e+01              | 1.4e-21    | positive regulation of cytokine production involved in immune response | biological_process            
+GO:0002709 | 25         | 1827       | 0.083      |0.0063        | 1.3e+01              | 3e-19      | regulation of T cell mediated immunity | biological_process            
+GO:0002825 | 45         | 575        | 0.16       |0.002         | 8.1e+01              | 3.3e-66    | regulation of T-helper 1 type immune response | biological_process            
+GO:0002711 | 25         | 1191       | 0.083      |0.0041        | 2e+01                | 1.4e-23    | positive regulation of T cell mediated immunity | biological_process            
+GO:0002822 | 45         | 3382       | 0.16       |0.012         | 1.4e+01              | 2.2e-33    | regulation of adaptive immune response based on somatic recombination of immune receptors built from immunoglobulin superfamily domains | biological_process            
+GO:0002700 | 25         | 3516       | 0.083      |0.012         | 6.8                  | 6.6e-13    | regulation of production of molecular mediator of immune response | biological_process            
+GO:0002702 | 25         | 2122       | 0.083      |0.0073        | 1.1e+01              | 9.3e-18    | positive regulation of production of molecular mediator of immune response | biological_process            
+GO:0002824 | 25         | 1840       | 0.083      |0.0064        | 1.3e+01              | 3.6e-19    | positive regulation of adaptive immune response based on somatic recombination of immune receptors built from immunoglobulin superfamily domains | biological_process            
+GO:0019838 | 9          | 3561       | 0.028      |0.012         | 2.3                  | 0.021      | growth factor binding          | molecular_function            
+GO:0019955 | 45         | 3368       | 0.16       |0.012         | 1.4e+01              | 1.9e-33    | cytokine binding               | molecular_function            
+GO:0098552 | 6          | 3218       | 0.019      |0.011         | 1.7                  | 0.18       | side of membrane               | cellular_component            
+GO:0070851 | 13         | 3040       | 0.041      |0.011         | 3.9                  | 5.3e-05    | growth factor receptor binding | molecular_function            
+GO:0002113 | 23         | 1          | 0.076      |3.4e-06       | 2.2e+04              | 1.6e-67    | interleukin-33 binding         | molecular_function            
+GO:0005829 | 23         | 110656     | 0.076      |0.61          | 0.12                 | 3.4e-38    | cytosol                        | cellular_component            
+GO:0002826 | 23         | 179        | 0.076      |0.00062       | 1.2e+02              | 6e-39      | negative regulation of T-helper 1 type immune response | biological_process            
+GO:0005925 | 23         | 13812      | 0.076      |0.05          | 1.5                  | 0.066      | focal adhesion                 | cellular_component            
+GO:0043032 | 74         | 1136       | 0.29       |0.0039        | 7.5e+01              | 1e-103     | positive regulation of macrophage activation | biological_process            
+GO:0038172 | 49         | 44         | 0.18       |0.00015       | 1.2e+03              | 4.5e-120   | interleukin-33-mediated signaling pathway | biological_process            
+GO:0002114 | 49         | 1          | 0.18       |3.4e-06       | 5.1e+04              | 3.3e-145   | interleukin-33 receptor activity | molecular_function            
+GO:0032689 | 23         | 1929       | 0.076      |0.0067        | 1.1e+01              | 1.5e-16    | negative regulation of interferon-gamma production | biological_process            
+GO:0032754 | 49         | 386        | 0.18       |0.0013        | 1.3e+02              | 8.7e-82    | positive regulation of interleukin-5 production | biological_process            
+GO:0002823 | 21         | 1073       | 0.069      |0.0037        | 1.9e+01              | 2.1e-19    | negative regulation of adaptive immune response based on somatic recombination of immune receptors built from immunoglobulin superfamily domains | biological_process            
+GO:0048585 | 59         | 33541      | 0.22       |0.13          | 1.7                  | 0.0005     | negative regulation of response to stimulus | biological_process            
+GO:0050777 | 21         | 2961       | 0.069      |0.01          | 6.7                  | 5e-11      | negative regulation of immune response | biological_process            
+GO:0002820 | 21         | 1176       | 0.069      |0.0041        | 1.7e+01              | 1.3e-18    | negative regulation of adaptive immune response | biological_process            
+GO:0002683 | 21         | 7792       | 0.069      |0.028         | 2.5                  | 0.00039    | negative regulation of immune system process | biological_process            
+GO:0070161 | 20         | 15603      | 0.065      |0.057         | 1.1                  | 0.54       | anchoring junction             | cellular_component            
+GO:0030055 | 20         | 11286      | 0.065      |0.04          | 1.6                  | 0.044      | cell-substrate junction        | cellular_component            
+GO:0030054 | 42         | 28482      | 0.15       |0.11          | 1.4                  | 0.076      | cell junction                  | cellular_component            
+GO:0002696 | 62         | 9074       | 0.23       |0.032         | 7.3                  | 6.7e-30    | positive regulation of leukocyte activation | biological_process            
+GO:0043030 | 60         | 1783       | 0.22       |0.0062        | 3.6e+01              | 2.5e-67    | regulation of macrophage activation | biological_process            
+GO:0050867 | 62         | 9474       | 0.23       |0.034         | 7.0                  | 6.7e-29    | positive regulation of cell activation | biological_process            
+GO:0002694 | 62         | 13031      | 0.23       |0.047         | 5.0                  | 8.9e-22    | regulation of leukocyte activation | biological_process            
+GO:0050865 | 62         | 14057      | 0.23       |0.051         | 4.6                  | 3.7e-20    | regulation of cell activation  | biological_process            
+GO:0032674 | 29         | 362        | 0.097      |0.0012        | 7.8e+01              | 3.2e-43    | regulation of interleukin-5 production | biological_process            
+GO:0009892 | 40         | 57141      | 0.14       |0.24          | 0.57                 | 0.00048    | negative regulation of metabolic process | biological_process            
+GO:0001818 | 19         | 6353       | 0.062      |0.022         | 2.8                  | 0.00014    | negative regulation of cytokine production | biological_process            
+GO:0010629 | 19         | 42337      | 0.062      |0.17          | 0.36                 | 9e-07      | negative regulation of gene expression | biological_process            
+GO:0010605 | 19         | 52320      | 0.062      |0.22          | 0.28                 | 1.9e-10    | negative regulation of macromolecule metabolic process | biological_process            
+GO:0120163 | 22         | 1726       | 0.072      |0.006         | 1.2e+01              | 1.8e-16    | negative regulation of cold-induced thermogenesis | biological_process            
+GO:0030101 | 22         | 1053       | 0.072      |0.0036        | 2e+01                | 7.6e-21    | natural killer cell activation | biological_process            
+GO:0042007 | 22         | 9          | 0.072      |3.1e-05       | 2.3e+03              | 1.2e-58    | interleukin-18 binding         | molecular_function            
+GO:0045063 | 22         | 264        | 0.072      |0.00091       | 7.9e+01              | 2e-33      | T-helper 1 cell differentiation | biological_process            
+GO:0120161 | 22         | 4497       | 0.072      |0.016         | 4.6                  | 1.5e-08    | regulation of cold-induced thermogenesis | biological_process            
+GO:0065008 | 22         | 67641      | 0.072      |0.3           | 0.24                 | 2.8e-15    | regulation of biological quality | biological_process            
+GO:0046649 | 19         | 7611       | 0.062      |0.027         | 2.3                  | 0.0014     | lymphocyte activation          | biological_process            
+GO:0002293 | 14         | 400        | 0.045      |0.0014        | 3.2e+01              | 1e-16      | alpha-beta T cell differentiation involved in immune response | biological_process            
+GO:0030154 | 37         | 41101      | 0.13       |0.16          | 0.78                 | 0.15       | cell differentiation           | biological_process            
+GO:0046631 | 14         | 965        | 0.045      |0.0033        | 1.3e+01              | 1.1e-11    | alpha-beta T cell activation   | biological_process            
+GO:0035710 | 14         | 576        | 0.045      |0.002         | 2.3e+01              | 1.3e-14    | CD4-positive, alpha-beta T cell activation | biological_process            
+GO:0030098 | 14         | 4241       | 0.045      |0.015         | 3.0                  | 0.00039    | lymphocyte differentiation     | biological_process            
+GO:0030217 | 14         | 3584       | 0.045      |0.012         | 3.6                  | 7.2e-05    | T cell differentiation         | biological_process            
+GO:0002292 | 14         | 467        | 0.045      |0.0016        | 2.8e+01              | 8e-16      | T cell differentiation involved in immune response | biological_process            
+GO:0043367 | 14         | 467        | 0.045      |0.0016        | 2.8e+01              | 8e-16      | CD4-positive, alpha-beta T cell differentiation | biological_process            
+GO:0002287 | 14         | 400        | 0.045      |0.0014        | 3.2e+01              | 1e-16      | alpha-beta T cell activation involved in immune response | biological_process            
+GO:0002286 | 14         | 1557       | 0.045      |0.0054        | 8.3                  | 4.8e-09    | T cell activation involved in immune response | biological_process            
+GO:0002294 | 14         | 388        | 0.045      |0.0013        | 3.3e+01              | 6.8e-17    | CD4-positive, alpha-beta T cell differentiation involved in immune response | biological_process            
+GO:0002285 | 14         | 2213       | 0.045      |0.0077        | 5.8                  | 3.4e-07    | lymphocyte activation involved in immune response | biological_process            
+GO:1903131 | 14         | 5271       | 0.045      |0.018         | 2.4                  | 0.003      | mononuclear cell differentiation | biological_process            
+GO:0002521 | 14         | 6885       | 0.045      |0.024         | 1.8                  | 0.041      | leukocyte differentiation      | biological_process            
+GO:0042110 | 14         | 5978       | 0.045      |0.021         | 2.1                  | 0.0097     | T cell activation              | biological_process            
+GO:0042093 | 14         | 543        | 0.045      |0.0019        | 2.4e+01              | 5.9e-15    | T-helper cell differentiation  | biological_process            
+GO:0046632 | 14         | 780        | 0.045      |0.0027        | 1.7e+01              | 7e-13      | alpha-beta T cell differentiation | biological_process            
+GO:0034130 | 34         | 1          | 0.12       |3.4e-06       | 3.4e+04              | 3e-100     | toll-like receptor 1 signaling pathway | biological_process            
+GO:0035663 | 85         | 43         | 0.35       |0.00015       | 2.4e+03              | 2.5e-222   | Toll-like receptor 2 binding   | molecular_function            
+GO:0034137 | 34         | 309        | 0.12       |0.0011        | 1.1e+02              | 6.3e-55    | positive regulation of toll-like receptor 2 signaling pathway | biological_process            
+GO:0034135 | 48         | 279        | 0.17       |0.00096       | 1.8e+02              | 5.6e-86    | regulation of toll-like receptor 2 signaling pathway | biological_process            
+GO:0006968 | 17         | 1661       | 0.055      |0.0057        | 9.6                  | 1.5e-11    | cellular defense response      | biological_process            
+GO:0045582 | 17         | 2478       | 0.055      |0.0086        | 6.4                  | 5.8e-09    | positive regulation of T cell differentiation | biological_process            
+GO:0045621 | 3          | 2560       | 0.0093     |0.0089        | 1.0                  | 0.77       | positive regulation of lymphocyte differentiation | biological_process            
+GO:0030155 | 3          | 18901      | 0.0093     |0.069         | 0.13                 | 1.4e-06    | regulation of cell adhesion    | biological_process            
+GO:0050870 | 3          | 5361       | 0.0093     |0.019         | 0.49                 | 0.3        | positive regulation of T cell activation | biological_process            
+GO:1903039 | 3          | 6113       | 0.0093     |0.021         | 0.43                 | 0.17       | positive regulation of leukocyte cell-cell adhesion | biological_process            
+GO:0022409 | 3          | 7345       | 0.0093     |0.026         | 0.36                 | 0.074      | positive regulation of cell-cell adhesion | biological_process            
+GO:0050863 | 3          | 7628       | 0.0093     |0.027         | 0.34                 | 0.054      | regulation of T cell activation | biological_process            
+GO:0022407 | 3          | 11142      | 0.0093     |0.04          | 0.23                 | 0.0023     | regulation of cell-cell adhesion | biological_process            
+GO:1903706 | 3          | 8777       | 0.0093     |0.031         | 0.3                  | 0.022      | regulation of hemopoiesis      | biological_process            
+GO:1903037 | 3          | 8144       | 0.0093     |0.029         | 0.32                 | 0.041      | regulation of leukocyte cell-cell adhesion | biological_process            
+GO:1902105 | 3          | 6720       | 0.0093     |0.024         | 0.39                 | 0.098      | regulation of leukocyte differentiation | biological_process            
+GO:0051251 | 3          | 7814       | 0.0093     |0.028         | 0.34                 | 0.056      | positive regulation of lymphocyte activation | biological_process            
+GO:1902107 | 3          | 4234       | 0.0093     |0.015         | 0.63                 | 0.64       | positive regulation of leukocyte differentiation | biological_process            
+GO:1903708 | 3          | 4234       | 0.0093     |0.015         | 0.63                 | 0.64       | positive regulation of hemopoiesis | biological_process            
+GO:0045619 | 3          | 4107       | 0.0093     |0.014         | 0.65                 | 0.64       | regulation of lymphocyte differentiation | biological_process            
+GO:0045580 | 3          | 3536       | 0.0093     |0.012         | 0.75                 | 1.0        | regulation of T cell differentiation | biological_process            
+GO:0045785 | 3          | 12085      | 0.0093     |0.043         | 0.21                 | 0.0012     | positive regulation of cell adhesion | biological_process            
+GO:0051249 | 3          | 10980      | 0.0093     |0.039         | 0.24                 | 0.0032     | regulation of lymphocyte activation | biological_process            
+GO:0004910 | 11         | 15         | 0.035      |5.2e-05       | 6.8e+02              | 2.3e-26    | interleukin-1, type II, blocking receptor activity | molecular_function            
+GO:0007417 | 11         | 3480       | 0.035      |0.012         | 2.9                  | 0.0023     | central nervous system development | biological_process            
+GO:0098978 | 62         | 11103      | 0.23       |0.04          | 5.9                  | 2.7e-25    | glutamatergic synapse          | cellular_component            
+GO:1905606 | 62         | 915        | 0.23       |0.0032        | 7.4e+01              | 1.2e-87    | regulation of presynapse assembly | biological_process            
+GO:0048731 | 6          | 11896      | 0.019      |0.043         | 0.44                 | 0.035      | system development             | biological_process            
+GO:0045202 | 23         | 16705      | 0.076      |0.061         | 1.2                  | 0.34       | synapse                        | cellular_component            
+GO:0099174 | 47         | 619        | 0.17       |0.0021        | 7.9e+01              | 1.5e-68    | regulation of presynapse organization | biological_process            
+GO:0099545 | 52         | 128        | 0.19       |0.00044       | 4.3e+02              | 3.2e-110   | trans-synaptic signaling by trans-synaptic complex | biological_process            
+GO:0065003 | 27         | 19420      | 0.09       |0.072         | 1.3                  | 0.27       | protein-containing complex assembly | biological_process            
+GO:0005149 | 27         | 425        | 0.09       |0.0015        | 6.2e+01              | 1e-37      | interleukin-1 receptor binding | molecular_function            
+GO:0099151 | 27         | 172        | 0.09       |0.00059       | 1.5e+02              | 1.1e-47    | regulation of postsynaptic density assembly | biological_process            
+GO:0051965 | 52         | 1446       | 0.19       |0.005         | 3.8e+01              | 1e-59      | positive regulation of synapse assembly | biological_process            
+GO:0032736 | 27         | 581        | 0.09       |0.002         | 4.5e+01              | 3.2e-34    | positive regulation of interleukin-13 production | biological_process            
+GO:0099560 | 27         | 435        | 0.09       |0.0015        | 6e+01                | 1.8e-37    | synaptic membrane adhesion     | biological_process            
+GO:0044089 | 81         | 9664       | 0.33       |0.034         | 9.6                  | 9.7e-46    | positive regulation of cellular component biogenesis | biological_process            
+GO:1901890 | 39         | 2003       | 0.14       |0.0069        | 2e+01                | 5.2e-35    | positive regulation of cell junction assembly | biological_process            
+GO:0051130 | 81         | 23346      | 0.33       |0.087         | 3.8                  | 4.9e-20    | positive regulation of cellular component organization | biological_process            
+GO:0032656 | 19         | 388        | 0.062      |0.0013        | 4.6e+01              | 7.3e-25    | regulation of interleukin-13 production | biological_process            
+GO:0022610 | 20         | 12938      | 0.065      |0.047         | 1.4                  | 0.14       | biological adhesion            | biological_process            
+GO:0098609 | 20         | 9646       | 0.065      |0.034         | 1.9                  | 0.0083     | cell-cell adhesion             | biological_process            
+GO:0098742 | 20         | 3468       | 0.065      |0.012         | 5.4                  | 4.7e-09    | cell-cell adhesion via plasma-membrane adhesion molecules | biological_process            
+GO:0007155 | 20         | 17873      | 0.065      |0.065         | 1.0                  | 1.0        | cell adhesion                  | biological_process            
+GO:0099537 | 27         | 5750       | 0.09       |0.02          | 4.5                  | 7.7e-10    | trans-synaptic signaling       | biological_process            
+GO:0023052 | 27         | 11601      | 0.09       |0.042         | 2.2                  | 0.00052    | signaling                      | biological_process            
+GO:0007154 | 27         | 15711      | 0.09       |0.057         | 1.6                  | 0.027      | cell communication             | biological_process            
+GO:0099536 | 27         | 5786       | 0.09       |0.02          | 4.4                  | 8.7e-10    | synaptic signaling             | biological_process            
+GO:0007267 | 27         | 13686      | 0.09       |0.049         | 1.8                  | 0.0055     | cell-cell signaling            | biological_process            
+GO:0043933 | 12         | 20917      | 0.038      |0.077         | 0.49                 | 0.01       | protein-containing complex subunit organization | biological_process            
+GO:0005126 | 11         | 4605       | 0.035      |0.016         | 2.2                  | 0.022      | cytokine receptor binding      | molecular_function            
+GO:0033043 | 6          | 21286      | 0.019      |0.079         | 0.24                 | 1.6e-05    | regulation of organelle organization | biological_process            
+GO:0099150 | 6          | 75         | 0.019      |0.00026       | 7.2e+01              | 5.8e-10    | regulation of postsynaptic specialization assembly | biological_process            
+GO:1902115 | 6          | 3569       | 0.019      |0.012         | 1.5                  | 0.31       | regulation of organelle assembly | biological_process            
+GO:0099175 | 31         | 1969       | 0.1        |0.0068        | 1.5e+01              | 2.5e-25    | regulation of postsynapse organization | biological_process            
+GO:1904889 | 6          | 123        | 0.019      |0.00042       | 4.4e+01              | 9.7e-09    | regulation of excitatory synapse assembly | biological_process            
+GO:1905874 | 6          | 66         | 0.019      |0.00023       | 8.2e+01              | 2.8e-10    | regulation of postsynaptic density organization | biological_process            
+GO:0010975 | 26         | 8444       | 0.086      |0.03          | 2.9                  | 4.9e-06    | regulation of neuron projection development | biological_process            
+GO:0030425 | 26         | 13753      | 0.086      |0.05          | 1.7                  | 0.012      | dendrite                       | cellular_component            
+GO:0030182 | 26         | 7016       | 0.086      |0.025         | 3.5                  | 1.7e-07    | neuron differentiation         | biological_process            
+GO:0045211 | 26         | 4196       | 0.086      |0.015         | 5.9                  | 4.6e-12    | postsynaptic membrane          | cellular_component            
+GO:0097105 | 26         | 475        | 0.086      |0.0016        | 5.3e+01              | 9.1e-35    | presynaptic membrane assembly  | biological_process            
+GO:0045920 | 26         | 1083       | 0.086      |0.0037        | 2.3e+01              | 6.7e-26    | negative regulation of exocytosis | biological_process            
+GO:0030424 | 26         | 10476      | 0.086      |0.037         | 2.3                  | 0.00025    | axon                           | cellular_component            
+GO:0031344 | 26         | 12318      | 0.086      |0.044         | 2.0                  | 0.0022     | regulation of cell projection organization | biological_process            
+GO:0050775 | 26         | 732        | 0.086      |0.0025        | 3.4e+01              | 4.2e-30    | positive regulation of dendrite morphogenesis | biological_process            
+GO:0007157 | 26         | 1217       | 0.086      |0.0042        | 2.1e+01              | 1.2e-24    | heterophilic cell-cell adhesion via plasma membrane cell adhesion molecules | biological_process            
+GO:0120035 | 26         | 12023      | 0.086      |0.043         | 2.0                  | 0.0019     | regulation of plasma membrane bounded cell projection organization | biological_process            
+GO:0043005 | 18         | 21415      | 0.058      |0.079         | 0.73                 | 0.24       | neuron projection              | cellular_component            
+GO:0120025 | 18         | 25731      | 0.058      |0.097         | 0.6                  | 0.032      | plasma membrane bounded cell projection | cellular_component            
+GO:0098590 | 17         | 22652      | 0.055      |0.084         | 0.65                 | 0.097      | plasma membrane region         | cellular_component            
+GO:0097060 | 17         | 4278       | 0.055      |0.015         | 3.7                  | 1e-05      | synaptic membrane              | cellular_component            
+GO:0097090 | 16         | 264        | 0.051      |0.00091       | 5.7e+01              | 1.5e-22    | presynaptic membrane organization | biological_process            
+GO:0071709 | 16         | 1013       | 0.051      |0.0035        | 1.5e+01              | 1.1e-13    | membrane assembly              | biological_process            
+GO:0061024 | 16         | 15313      | 0.051      |0.056         | 0.93                 | 0.9        | membrane organization          | biological_process            
+GO:0051048 | 12         | 4363       | 0.038      |0.015         | 2.5                  | 0.0044     | negative regulation of secretion | biological_process            
+GO:0017157 | 12         | 4900       | 0.038      |0.017         | 2.2                  | 0.014      | regulation of exocytosis       | biological_process            
+GO:1903531 | 12         | 3792       | 0.038      |0.013         | 2.9                  | 0.0014     | negative regulation of secretion by cell | biological_process            
+GO:0050773 | 5          | 2028       | 0.016      |0.007         | 2.2                  | 0.081      | regulation of dendrite development | biological_process            
+GO:0010770 | 5          | 2250       | 0.016      |0.0078        | 2.0                  | 0.11       | positive regulation of cell morphogenesis involved in differentiation | biological_process            
+GO:0031346 | 5          | 6448       | 0.016      |0.023         | 0.69                 | 0.57       | positive regulation of cell projection organization | biological_process            
+GO:0022603 | 5          | 22776      | 0.016      |0.085         | 0.18                 | 8.2e-07    | regulation of anatomical structure morphogenesis | biological_process            
+GO:0010769 | 5          | 2467       | 0.016      |0.0086        | 1.8                  | 0.21       | regulation of cell morphogenesis involved in differentiation | biological_process            
+GO:0022604 | 5          | 6733       | 0.016      |0.024         | 0.66                 | 0.46       | regulation of cell morphogenesis | biological_process            
+GO:0048814 | 5          | 1434       | 0.016      |0.005         | 3.1                  | 0.024      | regulation of dendrite morphogenesis | biological_process            
+GO:0046982 | 52         | 8826       | 0.19       |0.031         | 6.0                  | 3.1e-22    | protein heterodimerization activity | molecular_function            
+GO:1900227 | 52         | 397        | 0.19       |0.0014        | 1.4e+02              | 1.8e-87    | positive regulation of NLRP3 inflammasome complex assembly | biological_process            
+GO:1900017 | 52         | 950        | 0.19       |0.0033        | 5.8e+01              | 8.3e-69    | positive regulation of cytokine production involved in inflammatory response | biological_process            
+GO:0034136 | 52         | 335        | 0.19       |0.0012        | 1.6e+02              | 5.1e-91    | negative regulation of toll-like receptor 2 signaling pathway | biological_process            
+GO:0043123 | 52         | 6967       | 0.19       |0.025         | 7.7                  | 8.6e-27    | positive regulation of I-kappaB kinase/NF-kappaB signaling | biological_process            
+GO:0034150 | 52         | 1          | 0.19       |3.4e-06       | 5.5e+04              | 3e-154     | toll-like receptor 6 signaling pathway | biological_process            
+GO:0035355 | 52         | 1          | 0.19       |3.4e-06       | 5.5e+04              | 3e-154     | Toll-like receptor 2-Toll-like receptor 6 protein complex | cellular_component            
+GO:0035666 | 52         | 1429       | 0.19       |0.0049        | 3.8e+01              | 5.5e-60    | TRIF-dependent toll-like receptor signaling pathway | biological_process            
+GO:1904646 | 52         | 2472       | 0.19       |0.0086        | 2.2e+01              | 3.3e-48    | cellular response to amyloid-beta | biological_process            
+GO:0140052 | 52         | 616        | 0.19       |0.0021        | 8.9e+01              | 4e-78      | cellular response to oxidised low-density lipoprotein particle stimulus | biological_process            
+GO:0043507 | 52         | 2531       | 0.19       |0.0088        | 2.2e+01              | 1.1e-47    | positive regulation of JUN kinase activity | biological_process            
+GO:0007250 | 52         | 576        | 0.19       |0.002         | 9.5e+01              | 1.5e-79    | activation of NF-kappaB-inducing kinase activity | biological_process            
+GO:0032717 | 52         | 736        | 0.19       |0.0025        | 7.5e+01              | 2.6e-74    | negative regulation of interleukin-8 production | biological_process            
+GO:1903223 | 52         | 185        | 0.19       |0.00064       | 3e+02                | 4.3e-103   | positive regulation of oxidative stress-induced neuron death | biological_process            
+GO:0032611 | 52         | 373        | 0.19       |0.0013        | 1.5e+02              | 9.1e-89    | interleukin-1 beta production  | biological_process            
+GO:0045429 | 52         | 2599       | 0.19       |0.009         | 2.1e+01              | 3.9e-47    | positive regulation of nitric oxide biosynthetic process | biological_process            
+GO:1903428 | 52         | 2166       | 0.19       |0.0075        | 2.5e+01              | 5e-51      | positive regulation of reactive oxygen species biosynthetic process | biological_process            
+GO:0046983 | 45         | 15047      | 0.16       |0.055         | 2.9                  | 3.1e-09    | protein dimerization activity  | molecular_function            
+GO:0031334 | 43         | 5109       | 0.15       |0.018         | 8.5                  | 3.4e-24    | positive regulation of protein-containing complex assembly | biological_process            
+GO:1900225 | 43         | 475        | 0.15       |0.0016        | 9.3e+01              | 7.3e-66    | regulation of NLRP3 inflammasome complex assembly | biological_process            
+GO:0043254 | 43         | 7720       | 0.15       |0.027         | 5.6                  | 1.3e-17    | regulation of protein-containing complex assembly | biological_process            
+GO:1900015 | 41         | 1021       | 0.14       |0.0035        | 4.1e+01              | 5.1e-49    | regulation of cytokine production involved in inflammatory response | biological_process            
+GO:0034122 | 39         | 1136       | 0.14       |0.0039        | 3.5e+01              | 4e-44      | negative regulation of toll-like receptor signaling pathway | biological_process            
+GO:0023057 | 39         | 28910      | 0.14       |0.11          | 1.2                  | 0.23       | negative regulation of signaling | biological_process            
+GO:0010648 | 39         | 28850      | 0.14       |0.11          | 1.2                  | 0.23       | negative regulation of cell communication | biological_process            
+GO:0009968 | 39         | 27192      | 0.14       |0.1           | 1.3                  | 0.13       | negative regulation of signal transduction | biological_process            
+GO:0043122 | 37         | 6165       | 0.13       |0.022         | 5.9                  | 2.9e-16    | regulation of I-kappaB kinase/NF-kappaB signaling | biological_process            
+GO:0002756 | 32         | 1331       | 0.11       |0.0046        | 2.4e+01              | 1.2e-31    | MyD88-independent toll-like receptor signaling pathway | biological_process            
+GO:1901653 | 29         | 6513       | 0.097      |0.023         | 4.3                  | 5.8e-10    | cellular response to peptide   | biological_process            
+GO:0071417 | 29         | 10752      | 0.097      |0.038         | 2.5                  | 2.1e-05    | cellular response to organonitrogen compound | biological_process            
+GO:0071495 | 29         | 17307      | 0.097      |0.063         | 1.5                  | 0.034      | cellular response to endogenous stimulus | biological_process            
+GO:1901699 | 29         | 11771      | 0.097      |0.042         | 2.3                  | 0.0001     | cellular response to nitrogen compound | biological_process            
+GO:1904645 | 29         | 2081       | 0.097      |0.0072        | 1.4e+01              | 2.4e-22    | response to amyloid-beta       | biological_process            
+GO:0055094 | 24         | 597        | 0.079      |0.0021        | 3.9e+01              | 4.1e-29    | response to lipoprotein particle | biological_process            
+GO:0071402 | 24         | 646        | 0.079      |0.0022        | 3.6e+01              | 2.5e-28    | cellular response to lipoprotein particle stimulus | biological_process            
+GO:0043506 | 23         | 1738       | 0.076      |0.006         | 1.3e+01              | 1.7e-17    | regulation of JUN kinase activity | biological_process            
+GO:0051247 | 23         | 33588      | 0.076      |0.13          | 0.58                 | 0.0091     | positive regulation of protein metabolic process | biological_process            
+GO:0032270 | 23         | 32480      | 0.076      |0.13          | 0.6                  | 0.017      | positive regulation of cellular protein metabolic process | biological_process            
+GO:0031401 | 23         | 24007      | 0.076      |0.09          | 0.84                 | 0.48       | positive regulation of protein modification process | biological_process            
+GO:0032268 | 23         | 50575      | 0.076      |0.21          | 0.36                 | 7.1e-08    | regulation of cellular protein metabolic process | biological_process            
+GO:0043408 | 23         | 13279      | 0.076      |0.048         | 1.6                  | 0.045      | regulation of MAPK cascade     | biological_process            
+GO:0043549 | 23         | 19362      | 0.076      |0.071         | 1.1                  | 0.74       | regulation of kinase activity  | biological_process            
+GO:0019220 | 23         | 36532      | 0.076      |0.14          | 0.53                 | 0.0019     | regulation of phosphate metabolic process | biological_process            
+GO:0045859 | 23         | 17483      | 0.076      |0.064         | 1.2                  | 0.41       | regulation of protein kinase activity | biological_process            
+GO:0043406 | 23         | 5468       | 0.076      |0.019         | 4.0                  | 1e-07      | positive regulation of MAP kinase activity | biological_process            
+GO:0031399 | 23         | 37063      | 0.076      |0.15          | 0.52                 | 0.0012     | regulation of protein modification process | biological_process            
+GO:0042327 | 23         | 22700      | 0.076      |0.085         | 0.89                 | 0.68       | positive regulation of phosphorylation | biological_process            
+GO:0051338 | 23         | 20755      | 0.076      |0.077         | 0.99                 | 1.0        | regulation of transferase activity | biological_process            
+GO:0042325 | 23         | 33691      | 0.076      |0.13          | 0.58                 | 0.0092     | regulation of phosphorylation  | biological_process            
+GO:0051347 | 23         | 14095      | 0.076      |0.051         | 1.5                  | 0.071      | positive regulation of transferase activity | biological_process            
+GO:0010562 | 23         | 23639      | 0.076      |0.088         | 0.86                 | 0.54       | positive regulation of phosphorus metabolic process | biological_process            
+GO:0043405 | 23         | 6557       | 0.076      |0.023         | 3.3                  | 2.2e-06    | regulation of MAP kinase activity | biological_process            
+GO:0033674 | 23         | 14860      | 0.076      |0.054         | 1.4                  | 0.13       | positive regulation of kinase activity | biological_process            
+GO:0051246 | 23         | 53282      | 0.076      |0.22          | 0.34                 | 6.9e-09    | regulation of protein metabolic process | biological_process            
+GO:0043410 | 23         | 12518      | 0.076      |0.045         | 1.7                  | 0.02       | positive regulation of MAPK cascade | biological_process            
+GO:0071902 | 23         | 7639       | 0.076      |0.027         | 2.8                  | 2.5e-05    | positive regulation of protein serine/threonine kinase activity | biological_process            
+GO:0051174 | 23         | 36532      | 0.076      |0.14          | 0.53                 | 0.0019     | regulation of phosphorus metabolic process | biological_process            
+GO:0043085 | 23         | 28139      | 0.076      |0.11          | 0.71                 | 0.11       | positive regulation of catalytic activity | biological_process            
+GO:0045937 | 23         | 23639      | 0.076      |0.088         | 0.86                 | 0.54       | positive regulation of phosphate metabolic process | biological_process            
+GO:0001932 | 23         | 30909      | 0.076      |0.12          | 0.64                 | 0.038      | regulation of protein phosphorylation | biological_process            
+GO:0001934 | 23         | 24569      | 0.076      |0.092         | 0.82                 | 0.43       | positive regulation of protein phosphorylation | biological_process            
+GO:0045860 | 23         | 12989      | 0.076      |0.047         | 1.6                  | 0.031      | positive regulation of protein kinase activity | biological_process            
+GO:0050790 | 23         | 45443      | 0.076      |0.19          | 0.41                 | 4e-06      | regulation of catalytic activity | biological_process            
+GO:0071900 | 23         | 10455      | 0.076      |0.037         | 2.0                  | 0.0025     | regulation of protein serine/threonine kinase activity | biological_process            
+GO:0032147 | 22         | 8276       | 0.072      |0.029         | 2.5                  | 0.00029    | activation of protein kinase activity | biological_process            
+GO:1903209 | 13         | 402        | 0.041      |0.0014        | 3e+01                | 3.4e-15    | positive regulation of oxidative stress-induced cell death | biological_process            
+GO:1900407 | 13         | 2425       | 0.041      |0.0084        | 4.9                  | 5.2e-06    | regulation of cellular response to oxidative stress | biological_process            
+GO:1901214 | 13         | 9053       | 0.041      |0.032         | 1.3                  | 0.34       | regulation of neuron death     | biological_process            
+GO:0010941 | 13         | 40064      | 0.041      |0.16          | 0.26                 | 6.8e-09    | regulation of cell death       | biological_process            
+GO:1903201 | 13         | 2044       | 0.041      |0.0071        | 5.9                  | 8.4e-07    | regulation of oxidative stress-induced cell death | biological_process            
+GO:1902882 | 13         | 2377       | 0.041      |0.0082        | 5.0                  | 4.2e-06    | regulation of response to oxidative stress | biological_process            
+GO:0010942 | 13         | 12395      | 0.041      |0.044         | 0.93                 | 1.0        | positive regulation of cell death | biological_process            
+GO:1901216 | 13         | 3402       | 0.041      |0.012         | 3.5                  | 0.00016    | positive regulation of neuron death | biological_process            
+GO:0080135 | 13         | 15837      | 0.041      |0.058         | 0.72                 | 0.27       | regulation of cellular response to stress | biological_process            
+GO:1903203 | 13         | 677        | 0.041      |0.0023        | 1.8e+01              | 2.1e-12    | regulation of oxidative stress-induced neuron death | biological_process            
+GO:0032612 | 12         | 174        | 0.038      |0.0006        | 6.4e+01              | 6.8e-18    | interleukin-1 production       | biological_process            
+GO:1903426 | 7          | 3053       | 0.022      |0.011         | 2.1                  | 0.091      | regulation of reactive oxygen species biosynthetic process | biological_process            
+GO:0045428 | 7          | 2312       | 0.022      |0.008         | 2.7                  | 0.017      | regulation of nitric oxide biosynthetic process | biological_process            
+GO:1904407 | 7          | 1611       | 0.022      |0.0056        | 3.9                  | 0.0026     | positive regulation of nitric oxide metabolic process | biological_process            
+GO:2000379 | 7          | 3635       | 0.022      |0.013         | 1.7                  | 0.13       | positive regulation of reactive oxygen species metabolic process | biological_process            
+GO:2000377 | 7          | 5981       | 0.022      |0.021         | 1.0                  | 0.84       | regulation of reactive oxygen species metabolic process | biological_process            
+GO:0080164 | 7          | 2243       | 0.022      |0.0078        | 2.8                  | 0.014      | regulation of nitric oxide metabolic process | biological_process            

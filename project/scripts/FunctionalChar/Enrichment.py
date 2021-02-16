@@ -143,6 +143,7 @@ print(len(terms_rest_raw))
 print(len([term for term in terms_set_raw if children.get(term) is None]))
 print()
 from scipy.stats import fisher_exact
+
 data = []
 for term in terms_set:
     ratio_set = (terms_set[term] + 1) / (proteins_set - terms_set[term] + 1)
@@ -152,102 +153,40 @@ for term in terms_set:
                            [terms_rest.get(term, 1), proteins_rest - terms_rest.get(term, 0) + 1]], 'two-sided')
     data.append((term, terms_set[term] + 1, terms_rest.get(term, 1), ratio_set, ratio_rest, fold_increase,
                  p_value[1], graph[term]["def"], graph[term]["namespace"]))
-
-# Retrieving the go terms that are enriched
-enriched_terms = {}
-e_t = []
-for line in list(filter(lambda k: k[5] > 1.0, data)):
-    enriched_terms.setdefault(line[0], 0)
-    enriched_terms[line[0]] += line[1]
-f = open('data/function/enriched_terms.txt', 'w+')
-f.write('Term ID | No. Occurrence\n')
-for k in enriched_terms:
-    f.write("{} : {}\n".format(k, enriched_terms[k]))
+    # if fold increase > 1
+    if fold_increase > 1:
+        f.write('{:<10} | {:<10} | {:<10} | {:<10.2} | {:<15.2} | {:<20.2} | {:<10.2} | {:<60} | {:<30}\n'.format(term, terms_set[term] + 1, terms_rest.get(term, 1), ratio_set, ratio_rest, fold_increase,
+                                                                                                                  p_value[1], graph[term]["def"], graph[term]["namespace"]))
 f.close()
-enriched_terms
-from wordcloud import WordCloud
-import matplotlib.pyplot as plt
-wc = WordCloud(background_color="white",width=1000,height=1000, max_words=1000,relative_scaling=0.5,normalize_plurals=False).generate_from_frequencies(enriched_terms)
-plt.imshow(wc)
-
-'''
-Take into consideration the hierarchical structure of GO ontology and report most significantly enriched branches (high level terms)
-'''
-
-# load all GO terms associated with our proteins
+columns = ['Term', '#Term Set', '#Term Rest', 'Ratio Set', 'Ratio Rest', 'Fold Increase', 'p_value', 'Definition', 'Sub-Ontology']
+f = open('data/function/enriched_terms.txt', 'w+')
+for namespace in ['molecular_function', 'biological_process', 'cellular_component']:
+    f.write('Sub-Ontology: {}\n'.format(namespace))
+    f.write('{:<10} | {:<10} | {:<10} | {:<10} | {:<15} | {:<20} | {:<10} | {:<70} | {:<30}\n'.format(*columns))
+    data_sub = list(filter(lambda x: x[8] == namespace, data))
+    for ele in sorted(data_sub, key=lambda x: x[5], reverse=True):
+        f.write('{:<10} | {:<10} | {:<10} | {:<10.2} | {:<15.2} | {:<20.2} | {:<10.2} | {:<70} | {:<30}\n'.format(*ele))
+    f.write('----'*50+'\n')
+print('----'*40)
 GO_Terms = []
 with open('data/Family Sequences/go_annotations_count.txt') as f:
     for line in f:
         GO_Terms.append(line.strip().split()[0])
-GO_term_anc = {}
-for GO_term in GO_Terms:
-    for term in children:
-        if GO_term in children[term]:
-            GO_term_anc[GO_term] = term
-            print(term)
-ancestors['GO:0005737']
-children['GO:0005737']
-
-for root in roots:
-    print(graph[root]["namespace"])
-from goatools.base import get_godag
-from goatools.gosubdag.gosubdag import GoSubDag
-from goatools.godag.go_tasks import get_go2parents
-godag = get_godag('data/function/go-basic.obo', optional_attrs='relationship')
-def prt_flds(gosubdag):
-    """Print the available printing fields"""
-    print('Print fields:')
-    for fld in sorted(gosubdag.prt_attr['flds']):
-        print('    {F}'.format(F=fld))
+GO_Terms_Parent = []
+for term in GO_Terms:
+    if term in children.keys():
+        GO_Terms_Parent.append(term)
 f = open('data/function/enriched_branches.txt', 'w+')
-for goid in GO_Terms:
-# Create a subset of the GO DAG which contains:
-#   * The selected GO term and
-#   * All the GO terms above it
-    gosubdag = GoSubDag(goid, godag, relationships= True,  prt = False)
-    f.write('{}\n'.format(goid))
-# Get additional information for chosen GO
-    ntgo = gosubdag.go2nt[goid]
-
-# Choose fields and custom printing format
-# prt_flds(gosubdag)  # Uncomment to see the available print fields
-    prtfmt = '{NS} {GO} D{depth:02} {GO_name}'
-# Print detailed information for GO
-    print(prtfmt.format(**ntgo._asdict()))
-    goterm = godag[goid]
-    print('Parents up "is_a": required relationship')
-    for p_term in goterm.parents:
-        print(prtfmt.format(**gosubdag.go2nt[p_term.item_id]._asdict()))
-        f.write('{}\n'.format(prtfmt.format(**gosubdag.go2nt[p_term.item_id]._asdict())))
-    '''if 'part_of' in goterm.relationship:
-        print('\nParents up "part_of" optional relationship:')
-        for p_go in goterm.relationship['part_of']:
-            print(prtfmt.format(**gosubdag.go2nt[p_go.item_id]._asdict()))
-
-    if 'regulates' in goterm.relationship:
-        print('\nParents up "regulates" optional relationship:')
-        for p_go in goterm.relationship['regulates']:
-            print(prtfmt.format(**gosubdag.go2nt[p_go.item_id]._asdict()))
-
-    # godag must be loaded with: optional_attrs='relationship'
-    # gosubdag must be loaded with: relationships=True
-    print('\nAncestors up all loaded relationships:')
-    for p_go in gosubdag.rcntobj.go2ancestors[goid]:
-        if prtfmt.format(**gosubdag.go2nt[p_go]._asdict()).split()[2] == 'D00':
-            print(prtfmt.format(**gosubdag.go2nt[p_go]._asdict()))'''
+for namespace in ['molecular_function', 'biological_process', 'cellular_component']:
+    f.write('Sub-Ontology: {}\n'.format(namespace))
+    f.write('{:<10} | {:<10} | {:<10} | {:<10} | {:<15} | {:<20} | {:<10} | {:<70} | {:<30}\n'.format(*columns))
+    data_sub = list(filter(lambda x: x[8] == namespace, data))
+    data_sub2 = list(filter(lambda x: x[0] in GO_Terms_Parent, data_sub))
+    for ele in sorted(data_sub2, key=lambda x: x[5], reverse=True):
+        f.write('{:<10} | {:<10} | {:<10} | {:<10.2} | {:<15.2} | {:<20.2} | {:<10.2} | {:<70} | {:<30}\n'.format(*ele))
+    f.write('----' * 50 + '\n')
 f.close()
-from goatools.gosubdag.plot.gosubdag_plot import GoSubDagPlot
-GoSubDagPlot(gosubdag).plt_dag('data/function/reg_synapse_org.png', engine='graphviz')
-'''
-
-
-
-
-
-go2parents = get_go2parents(gosubdag.go2obj, gosubdag.relationships)
-for goid_parent in go2parents[goid]:
-    print(prtfmt.format(**gosubdag.go2nt[goid_parent]._asdict()))
-    '''
-gosubdag.rcntobj.go2ancestors[goid]
-
-prtfmt.format(**gosubdag.go2nt[p_go]._asdict()).split()
+for da in data:
+    if da[0] in GO_Terms_Parent:
+        print(da)
+data
