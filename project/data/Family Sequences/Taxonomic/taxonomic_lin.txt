@@ -1,159 +1,54 @@
-P60029
-Taxonomy_id: 		NCBI Taxonomy:9598
-Taxonomy: 		['Eukaryota', 'Metazoa', 'Chordata', 'Craniata', 'Vertebrata', 'Euteleostomi', 'Mammalia', 'Eutheria', 'Euarchontoglires', 'Primates', 'Haplorrhini', 'Catarrhini', 'Hominidae', 'Pan']
-Q9NZN1
-Taxonomy_id: 		NCBI Taxonomy:9606
-Taxonomy: 		['Eukaryota', 'Metazoa', 'Chordata', 'Craniata', 'Vertebrata', 'Euteleostomi', 'Mammalia', 'Eutheria', 'Euarchontoglires', 'Primates', 'Haplorrhini', 'Catarrhini', 'Hominidae', 'Homo']
-Q7YQL9
-Taxonomy_id: 		NCBI Taxonomy:9600
-Taxonomy: 		['Eukaryota', 'Metazoa', 'Chordata', 'Craniata', 'Vertebrata', 'Euteleostomi', 'Mammalia', 'Eutheria', 'Euarchontoglires', 'Primates', 'Haplorrhini', 'Catarrhini', 'Hominidae', 'Pongo']
-P59824
-Taxonomy_id: 		NCBI Taxonomy:10116
-Taxonomy: 		['Eukaryota', 'Metazoa', 'Chordata', 'Craniata', 'Vertebrata', 'Euteleostomi', 'Mammalia', 'Eutheria', 'Euarchontoglires', 'Glires', 'Rodentia', 'Myomorpha', 'Muroidea', 'Muridae', 'Murinae', 'Rattus']
-P59823
-Taxonomy_id: 		NCBI Taxonomy:10090
-Taxonomy: 		['Eukaryota', 'Metazoa', 'Chordata', 'Craniata', 'Vertebrata', 'Euteleostomi', 'Mammalia', 'Eutheria', 'Euarchontoglires', 'Glires', 'Rodentia', 'Myomorpha', 'Muroidea', 'Muridae', 'Murinae', 'Mus']
-P59822
-Taxonomy_id: 		NCBI Taxonomy:9544
-Taxonomy: 		['Eukaryota', 'Metazoa', 'Chordata', 'Craniata', 'Vertebrata', 'Euteleostomi', 'Mammalia', 'Eutheria', 'Euarchontoglires', 'Primates', 'Haplorrhini', 'Catarrhini', 'Cercopithecidae', 'Cercopithecinae', 'Macaca']
-Q9NPH3
-Taxonomy_id: 		NCBI Taxonomy:9606
-Taxonomy: 		['Eukaryota', 'Metazoa', 'Chordata', 'Craniata', 'Vertebrata', 'Euteleostomi', 'Mammalia', 'Eutheria', 'Euarchontoglires', 'Primates', 'Haplorrhini', 'Catarrhini', 'Hominidae', 'Homo']
-Q63621
-Taxonomy_id: 		NCBI Taxonomy:10116
-Taxonomy: 		['Eukaryota', 'Metazoa', 'Chordata', 'Craniata', 'Vertebrata', 'Euteleostomi', 'Mammalia', 'Eutheria', 'Euarchontoglires', 'Glires', 'Rodentia', 'Myomorpha', 'Muroidea', 'Muridae', 'Murinae', 'Rattus']
-Q61730
-Taxonomy_id: 		NCBI Taxonomy:10090
-Taxonomy: 		['Eukaryota', 'Metazoa', 'Chordata', 'Craniata', 'Vertebrata', 'Euteleostomi', 'Mammalia', 'Eutheria', 'Euarchontoglires', 'Glires', 'Rodentia', 'Myomorpha', 'Muroidea', 'Muridae', 'Murinae', 'Mus']
-B6ZK77
-Taxonomy_id: 		NCBI Taxonomy:7955
-Taxonomy: 		['Eukaryota', 'Metazoa', 'Chordata', 'Craniata', 'Vertebrata', 'Euteleostomi', 'Actinopterygii', 'Neopterygii', 'Teleostei', 'Ostariophysi', 'Cypriniformes', 'Danionidae', 'Danioninae', 'Danio']
-Q9ERS7
-Taxonomy_id: 		NCBI Taxonomy:10090
-Taxonomy: 		['Eukaryota', 'Metazoa', 'Chordata', 'Craniata', 'Vertebrata', 'Euteleostomi', 'Mammalia', 'Eutheria', 'Euarchontoglires', 'Glires', 'Rodentia', 'Myomorpha', 'Muroidea', 'Muridae', 'Murinae', 'Mus']
-Q62929
-Taxonomy_id: 		NCBI Taxonomy:10116
-Taxonomy: 		['Eukaryota', 'Metazoa', 'Chordata', 'Craniata', 'Vertebrata', 'Euteleostomi', 'Mammalia', 'Eutheria', 'Euarchontoglires', 'Glires', 'Rodentia', 'Myomorpha', 'Muroidea', 'Muridae', 'Murinae', 'Rattus']
-Q02955
-Taxonomy_id: 		NCBI Taxonomy:10116
-Taxonomy: 		['Eukaryota', 'Metazoa', 'Chordata', 'Craniata', 'Vertebrata', 'Euteleostomi', 'Mammalia', 'Eutheria', 'Euarchontoglires', 'Glires', 'Rodentia', 'Myomorpha', 'Muroidea', 'Muridae', 'Murinae', 'Rattus']
-P13504
-Taxonomy_id: 		NCBI Taxonomy:10090
-Taxonomy: 		['Eukaryota', 'Metazoa', 'Chordata', 'Craniata', 'Vertebrata', 'Euteleostomi', 'Mammalia', 'Eutheria', 'Euarchontoglires', 'Glires', 'Rodentia', 'Myomorpha', 'Muroidea', 'Muridae', 'Murinae', 'Mus']
-Q62611
-Taxonomy_id: 		NCBI Taxonomy:10116
-Taxonomy: 		['Eukaryota', 'Metazoa', 'Chordata', 'Craniata', 'Vertebrata', 'Euteleostomi', 'Mammalia', 'Eutheria', 'Euarchontoglires', 'Glires', 'Rodentia', 'Myomorpha', 'Muroidea', 'Muridae', 'Murinae', 'Rattus']
-P14719
-Taxonomy_id: 		NCBI Taxonomy:10090
-Taxonomy: 		['Eukaryota', 'Metazoa', 'Chordata', 'Craniata', 'Vertebrata', 'Euteleostomi', 'Mammalia', 'Eutheria', 'Euarchontoglires', 'Glires', 'Rodentia', 'Myomorpha', 'Muroidea', 'Muridae', 'Murinae', 'Mus']
-B2LT65
-Taxonomy_id: 		NCBI Taxonomy:9940
-Taxonomy: 		['Eukaryota', 'Metazoa', 'Chordata', 'Craniata', 'Vertebrata', 'Euteleostomi', 'Mammalia', 'Eutheria', 'Laurasiatheria', 'Artiodactyla', 'Ruminantia', 'Pecora', 'Bovidae', 'Caprinae', 'Ovis']
-Q0GC71
-Taxonomy_id: 		NCBI Taxonomy:9925
-Taxonomy: 		['Eukaryota', 'Metazoa', 'Chordata', 'Craniata', 'Vertebrata', 'Euteleostomi', 'Mammalia', 'Eutheria', 'Laurasiatheria', 'Artiodactyla', 'Ruminantia', 'Pecora', 'Bovidae', 'Caprinae', 'Capra']
-Q9NP60
-Taxonomy_id: 		NCBI Taxonomy:9606
-Taxonomy: 		['Eukaryota', 'Metazoa', 'Chordata', 'Craniata', 'Vertebrata', 'Euteleostomi', 'Mammalia', 'Eutheria', 'Euarchontoglires', 'Primates', 'Haplorrhini', 'Catarrhini', 'Hominidae', 'Homo']
-B2LT62
-Taxonomy_id: 		NCBI Taxonomy:72542
-Taxonomy: 		['Eukaryota', 'Metazoa', 'Chordata', 'Craniata', 'Vertebrata', 'Euteleostomi', 'Mammalia', 'Eutheria', 'Laurasiatheria', 'Artiodactyla', 'Ruminantia', 'Pecora', 'Bovidae', 'Caprinae', 'Capra']
-B5T267
-Taxonomy_id: 		NCBI Taxonomy:9915
-Taxonomy: 		['Eukaryota', 'Metazoa', 'Chordata', 'Craniata', 'Vertebrata', 'Euteleostomi', 'Mammalia', 'Eutheria', 'Laurasiatheria', 'Artiodactyla', 'Ruminantia', 'Pecora', 'Bovidae', 'Bovinae', 'Bos']
-Q9ERS6
-Taxonomy_id: 		NCBI Taxonomy:10090
-Taxonomy: 		['Eukaryota', 'Metazoa', 'Chordata', 'Craniata', 'Vertebrata', 'Euteleostomi', 'Mammalia', 'Eutheria', 'Euarchontoglires', 'Glires', 'Rodentia', 'Myomorpha', 'Muroidea', 'Muridae', 'Murinae', 'Mus']
-B2LT61
-Taxonomy_id: 		NCBI Taxonomy:9901
-Taxonomy: 		['Eukaryota', 'Metazoa', 'Chordata', 'Craniata', 'Vertebrata', 'Euteleostomi', 'Mammalia', 'Eutheria', 'Laurasiatheria', 'Artiodactyla', 'Ruminantia', 'Pecora', 'Bovidae', 'Bovinae', 'Bison']
-Q95LA9
-Taxonomy_id: 		NCBI Taxonomy:9913
-Taxonomy: 		['Eukaryota', 'Metazoa', 'Chordata', 'Craniata', 'Vertebrata', 'Euteleostomi', 'Mammalia', 'Eutheria', 'Laurasiatheria', 'Artiodactyla', 'Ruminantia', 'Pecora', 'Bovidae', 'Bovinae', 'Bos']
-Q2PZH4
-Taxonomy_id: 		NCBI Taxonomy:89462
-Taxonomy: 		['Eukaryota', 'Metazoa', 'Chordata', 'Craniata', 'Vertebrata', 'Euteleostomi', 'Mammalia', 'Eutheria', 'Laurasiatheria', 'Artiodactyla', 'Ruminantia', 'Pecora', 'Bovidae', 'Bovinae', 'Bubalus']
-Q2V897
-Taxonomy_id: 		NCBI Taxonomy:9917
-Taxonomy: 		['Eukaryota', 'Metazoa', 'Chordata', 'Craniata', 'Vertebrata', 'Euteleostomi', 'Mammalia', 'Eutheria', 'Laurasiatheria', 'Artiodactyla', 'Ruminantia', 'Pecora', 'Bovidae', 'Bovinae', 'Boselaphus']
-B2LT64
-Taxonomy_id: 		NCBI Taxonomy:9894
-Taxonomy: 		['Eukaryota', 'Metazoa', 'Chordata', 'Craniata', 'Vertebrata', 'Euteleostomi', 'Mammalia', 'Eutheria', 'Laurasiatheria', 'Artiodactyla', 'Ruminantia', 'Pecora', 'Giraffidae', 'Giraffa']
-Q9Y2C9
-Taxonomy_id: 		NCBI Taxonomy:9606
-Taxonomy: 		['Eukaryota', 'Metazoa', 'Chordata', 'Craniata', 'Vertebrata', 'Euteleostomi', 'Mammalia', 'Eutheria', 'Euarchontoglires', 'Primates', 'Haplorrhini', 'Catarrhini', 'Hominidae', 'Homo']
-B6ZK76
-Taxonomy_id: 		NCBI Taxonomy:7955
-Taxonomy: 		['Eukaryota', 'Metazoa', 'Chordata', 'Craniata', 'Vertebrata', 'Euteleostomi', 'Actinopterygii', 'Neopterygii', 'Teleostei', 'Ostariophysi', 'Cypriniformes', 'Danionidae', 'Danioninae', 'Danio']
-Q9HB29
-Taxonomy_id: 		NCBI Taxonomy:9606
-Taxonomy: 		['Eukaryota', 'Metazoa', 'Chordata', 'Craniata', 'Vertebrata', 'Euteleostomi', 'Mammalia', 'Eutheria', 'Euarchontoglires', 'Primates', 'Haplorrhini', 'Catarrhini', 'Hominidae', 'Homo']
-Q0ZUL9
-Taxonomy_id: 		NCBI Taxonomy:9361
-Taxonomy: 		['Eukaryota', 'Metazoa', 'Chordata', 'Craniata', 'Vertebrata', 'Euteleostomi', 'Mammalia', 'Eutheria', 'Xenarthra', 'Cingulata', 'Dasypodidae', 'Dasypus']
-P14778
-Taxonomy_id: 		NCBI Taxonomy:9606
-Taxonomy: 		['Eukaryota', 'Metazoa', 'Chordata', 'Craniata', 'Vertebrata', 'Euteleostomi', 'Mammalia', 'Eutheria', 'Euarchontoglires', 'Primates', 'Haplorrhini', 'Catarrhini', 'Hominidae', 'Homo']
-Q01638
-Taxonomy_id: 		NCBI Taxonomy:9606
-Taxonomy: 		['Eukaryota', 'Metazoa', 'Chordata', 'Craniata', 'Vertebrata', 'Euteleostomi', 'Mammalia', 'Eutheria', 'Euarchontoglires', 'Primates', 'Haplorrhini', 'Catarrhini', 'Hominidae', 'Homo']
-Q9Z2B1
-Taxonomy_id: 		NCBI Taxonomy:10090
-Taxonomy: 		['Eukaryota', 'Metazoa', 'Chordata', 'Craniata', 'Vertebrata', 'Euteleostomi', 'Mammalia', 'Eutheria', 'Euarchontoglires', 'Glires', 'Rodentia', 'Myomorpha', 'Muroidea', 'Muridae', 'Murinae', 'Mus']
-O95256
-Taxonomy_id: 		NCBI Taxonomy:9606
-Taxonomy: 		['Eukaryota', 'Metazoa', 'Chordata', 'Craniata', 'Vertebrata', 'Euteleostomi', 'Mammalia', 'Eutheria', 'Euarchontoglires', 'Primates', 'Haplorrhini', 'Catarrhini', 'Hominidae', 'Homo']
-Q61098
-Taxonomy_id: 		NCBI Taxonomy:10090
-Taxonomy: 		['Eukaryota', 'Metazoa', 'Chordata', 'Craniata', 'Vertebrata', 'Euteleostomi', 'Mammalia', 'Eutheria', 'Euarchontoglires', 'Glires', 'Rodentia', 'Myomorpha', 'Muroidea', 'Muridae', 'Murinae', 'Mus']
-Q13478
-Taxonomy_id: 		NCBI Taxonomy:9606
-Taxonomy: 		['Eukaryota', 'Metazoa', 'Chordata', 'Craniata', 'Vertebrata', 'Euteleostomi', 'Mammalia', 'Eutheria', 'Euarchontoglires', 'Primates', 'Haplorrhini', 'Catarrhini', 'Hominidae', 'Homo']
-Q9EPQ1
-Taxonomy_id: 		NCBI Taxonomy:10090
-Taxonomy: 		['Eukaryota', 'Metazoa', 'Chordata', 'Craniata', 'Vertebrata', 'Euteleostomi', 'Mammalia', 'Eutheria', 'Euarchontoglires', 'Glires', 'Rodentia', 'Myomorpha', 'Muroidea', 'Muridae', 'Murinae', 'Mus']
-Q15399
-Taxonomy_id: 		NCBI Taxonomy:9606
-Taxonomy: 		['Eukaryota', 'Metazoa', 'Chordata', 'Craniata', 'Vertebrata', 'Euteleostomi', 'Mammalia', 'Eutheria', 'Euarchontoglires', 'Primates', 'Haplorrhini', 'Catarrhini', 'Hominidae', 'Homo']
-Q9VUN0
-Taxonomy_id: 		NCBI Taxonomy:7227
-Taxonomy: 		['Eukaryota', 'Metazoa', 'Ecdysozoa', 'Arthropoda', 'Hexapoda', 'Insecta', 'Pterygota', 'Neoptera', 'Holometabola', 'Diptera', 'Brachycera', 'Muscomorpha', 'Ephydroidea', 'Drosophilidae', 'Drosophila', 'Sophophora']
-Q689D1
-Taxonomy_id: 		NCBI Taxonomy:9615
-Taxonomy: 		['Eukaryota', 'Metazoa', 'Chordata', 'Craniata', 'Vertebrata', 'Euteleostomi', 'Mammalia', 'Eutheria', 'Laurasiatheria', 'Carnivora', 'Caniformia', 'Canidae', 'Canis']
-Q704V6
-Taxonomy_id: 		NCBI Taxonomy:9913
-Taxonomy: 		['Eukaryota', 'Metazoa', 'Chordata', 'Craniata', 'Vertebrata', 'Euteleostomi', 'Mammalia', 'Eutheria', 'Laurasiatheria', 'Artiodactyla', 'Ruminantia', 'Pecora', 'Bovidae', 'Bovinae', 'Bos']
-Q6T752
-Taxonomy_id: 		NCBI Taxonomy:9796
-Taxonomy: 		['Eukaryota', 'Metazoa', 'Chordata', 'Craniata', 'Vertebrata', 'Euteleostomi', 'Mammalia', 'Eutheria', 'Laurasiatheria', 'Perissodactyla', 'Equidae', 'Equus']
-Q9EPW9
-Taxonomy_id: 		NCBI Taxonomy:10090
-Taxonomy: 		['Eukaryota', 'Metazoa', 'Chordata', 'Craniata', 'Vertebrata', 'Euteleostomi', 'Mammalia', 'Eutheria', 'Euarchontoglires', 'Glires', 'Rodentia', 'Myomorpha', 'Muroidea', 'Muridae', 'Murinae', 'Mus']
-O60603
-Taxonomy_id: 		NCBI Taxonomy:9606
-Taxonomy: 		['Eukaryota', 'Metazoa', 'Chordata', 'Craniata', 'Vertebrata', 'Euteleostomi', 'Mammalia', 'Eutheria', 'Euarchontoglires', 'Primates', 'Haplorrhini', 'Catarrhini', 'Hominidae', 'Homo']
-B3Y615
-Taxonomy_id: 		NCBI Taxonomy:9595
-Taxonomy: 		['Eukaryota', 'Metazoa', 'Chordata', 'Craniata', 'Vertebrata', 'Euteleostomi', 'Mammalia', 'Eutheria', 'Euarchontoglires', 'Primates', 'Haplorrhini', 'Catarrhini', 'Hominidae', 'Gorilla']
-B3Y613
-Taxonomy_id: 		NCBI Taxonomy:9598
-Taxonomy: 		['Eukaryota', 'Metazoa', 'Chordata', 'Craniata', 'Vertebrata', 'Euteleostomi', 'Mammalia', 'Eutheria', 'Euarchontoglires', 'Primates', 'Haplorrhini', 'Catarrhini', 'Hominidae', 'Pan']
-B3Y614
-Taxonomy_id: 		NCBI Taxonomy:9597
-Taxonomy: 		['Eukaryota', 'Metazoa', 'Chordata', 'Craniata', 'Vertebrata', 'Euteleostomi', 'Mammalia', 'Eutheria', 'Euarchontoglires', 'Primates', 'Haplorrhini', 'Catarrhini', 'Hominidae', 'Pan']
-Q95M53
-Taxonomy_id: 		NCBI Taxonomy:9541
-Taxonomy: 		['Eukaryota', 'Metazoa', 'Chordata', 'Craniata', 'Vertebrata', 'Euteleostomi', 'Mammalia', 'Eutheria', 'Euarchontoglires', 'Primates', 'Haplorrhini', 'Catarrhini', 'Cercopithecidae', 'Cercopithecinae', 'Macaca']
-B3Y618
-Taxonomy_id: 		NCBI Taxonomy:9544
-Taxonomy: 		['Eukaryota', 'Metazoa', 'Chordata', 'Craniata', 'Vertebrata', 'Euteleostomi', 'Mammalia', 'Eutheria', 'Euarchontoglires', 'Primates', 'Haplorrhini', 'Catarrhini', 'Cercopithecidae', 'Cercopithecinae', 'Macaca']
-Q9QUN7
-Taxonomy_id: 		NCBI Taxonomy:10090
-Taxonomy: 		['Eukaryota', 'Metazoa', 'Chordata', 'Craniata', 'Vertebrata', 'Euteleostomi', 'Mammalia', 'Eutheria', 'Euarchontoglires', 'Glires', 'Rodentia', 'Myomorpha', 'Muroidea', 'Muridae', 'Murinae', 'Mus']
-Q9R1F8
-Taxonomy_id: 		NCBI Taxonomy:10029
-Taxonomy: 		['Eukaryota', 'Metazoa', 'Chordata', 'Craniata', 'Vertebrata', 'Euteleostomi', 'Mammalia', 'Eutheria', 'Euarchontoglires', 'Glires', 'Rodentia', 'Myomorpha', 'Muroidea', 'Cricetidae', 'Cricetinae', 'Cricetulus']
-Q9DGB6
-Taxonomy_id: 		NCBI Taxonomy:9031
-Taxonomy: 		['Eukaryota', 'Metazoa', 'Chordata', 'Craniata', 'Vertebrata', 'Euteleostomi', 'Archelosauria', 'Archosauria', 'Dinosauria', 'Saurischia', 'Theropoda', 'Coelurosauria', 'Aves', 'Neognathae', 'Galloanserae', 'Galliformes', 'Phasianidae', 'Phasianinae', 'Gallus']
+Record_ID | Taxonomy | Taxonomy Lineage
+P60029 | 9598 | ['Eukaryota', 'Metazoa', 'Chordata', 'Craniata', 'Vertebrata', 'Euteleostomi', 'Mammalia', 'Eutheria', 'Euarchontoglires', 'Primates', 'Haplorrhini', 'Catarrhini', 'Hominidae', 'Pan']
+Q9NZN1 | 9606 | ['Eukaryota', 'Metazoa', 'Chordata', 'Craniata', 'Vertebrata', 'Euteleostomi', 'Mammalia', 'Eutheria', 'Euarchontoglires', 'Primates', 'Haplorrhini', 'Catarrhini', 'Hominidae', 'Homo']
+Q7YQL9 | 9600 | ['Eukaryota', 'Metazoa', 'Chordata', 'Craniata', 'Vertebrata', 'Euteleostomi', 'Mammalia', 'Eutheria', 'Euarchontoglires', 'Primates', 'Haplorrhini', 'Catarrhini', 'Hominidae', 'Pongo']
+P59824 | 10116 | ['Eukaryota', 'Metazoa', 'Chordata', 'Craniata', 'Vertebrata', 'Euteleostomi', 'Mammalia', 'Eutheria', 'Euarchontoglires', 'Glires', 'Rodentia', 'Myomorpha', 'Muroidea', 'Muridae', 'Murinae', 'Rattus']
+P59823 | 10090 | ['Eukaryota', 'Metazoa', 'Chordata', 'Craniata', 'Vertebrata', 'Euteleostomi', 'Mammalia', 'Eutheria', 'Euarchontoglires', 'Glires', 'Rodentia', 'Myomorpha', 'Muroidea', 'Muridae', 'Murinae', 'Mus']
+P59822 | 9544 | ['Eukaryota', 'Metazoa', 'Chordata', 'Craniata', 'Vertebrata', 'Euteleostomi', 'Mammalia', 'Eutheria', 'Euarchontoglires', 'Primates', 'Haplorrhini', 'Catarrhini', 'Cercopithecidae', 'Cercopithecinae', 'Macaca']
+Q9NPH3 | 9606 | ['Eukaryota', 'Metazoa', 'Chordata', 'Craniata', 'Vertebrata', 'Euteleostomi', 'Mammalia', 'Eutheria', 'Euarchontoglires', 'Primates', 'Haplorrhini', 'Catarrhini', 'Hominidae', 'Homo']
+Q63621 | 10116 | ['Eukaryota', 'Metazoa', 'Chordata', 'Craniata', 'Vertebrata', 'Euteleostomi', 'Mammalia', 'Eutheria', 'Euarchontoglires', 'Glires', 'Rodentia', 'Myomorpha', 'Muroidea', 'Muridae', 'Murinae', 'Rattus']
+Q61730 | 10090 | ['Eukaryota', 'Metazoa', 'Chordata', 'Craniata', 'Vertebrata', 'Euteleostomi', 'Mammalia', 'Eutheria', 'Euarchontoglires', 'Glires', 'Rodentia', 'Myomorpha', 'Muroidea', 'Muridae', 'Murinae', 'Mus']
+B6ZK77 | 7955 | ['Eukaryota', 'Metazoa', 'Chordata', 'Craniata', 'Vertebrata', 'Euteleostomi', 'Actinopterygii', 'Neopterygii', 'Teleostei', 'Ostariophysi', 'Cypriniformes', 'Danionidae', 'Danioninae', 'Danio']
+Q9ERS7 | 10090 | ['Eukaryota', 'Metazoa', 'Chordata', 'Craniata', 'Vertebrata', 'Euteleostomi', 'Mammalia', 'Eutheria', 'Euarchontoglires', 'Glires', 'Rodentia', 'Myomorpha', 'Muroidea', 'Muridae', 'Murinae', 'Mus']
+Q62929 | 10116 | ['Eukaryota', 'Metazoa', 'Chordata', 'Craniata', 'Vertebrata', 'Euteleostomi', 'Mammalia', 'Eutheria', 'Euarchontoglires', 'Glires', 'Rodentia', 'Myomorpha', 'Muroidea', 'Muridae', 'Murinae', 'Rattus']
+Q02955 | 10116 | ['Eukaryota', 'Metazoa', 'Chordata', 'Craniata', 'Vertebrata', 'Euteleostomi', 'Mammalia', 'Eutheria', 'Euarchontoglires', 'Glires', 'Rodentia', 'Myomorpha', 'Muroidea', 'Muridae', 'Murinae', 'Rattus']
+P13504 | 10090 | ['Eukaryota', 'Metazoa', 'Chordata', 'Craniata', 'Vertebrata', 'Euteleostomi', 'Mammalia', 'Eutheria', 'Euarchontoglires', 'Glires', 'Rodentia', 'Myomorpha', 'Muroidea', 'Muridae', 'Murinae', 'Mus']
+Q62611 | 10116 | ['Eukaryota', 'Metazoa', 'Chordata', 'Craniata', 'Vertebrata', 'Euteleostomi', 'Mammalia', 'Eutheria', 'Euarchontoglires', 'Glires', 'Rodentia', 'Myomorpha', 'Muroidea', 'Muridae', 'Murinae', 'Rattus']
+P14719 | 10090 | ['Eukaryota', 'Metazoa', 'Chordata', 'Craniata', 'Vertebrata', 'Euteleostomi', 'Mammalia', 'Eutheria', 'Euarchontoglires', 'Glires', 'Rodentia', 'Myomorpha', 'Muroidea', 'Muridae', 'Murinae', 'Mus']
+B2LT65 | 9940 | ['Eukaryota', 'Metazoa', 'Chordata', 'Craniata', 'Vertebrata', 'Euteleostomi', 'Mammalia', 'Eutheria', 'Laurasiatheria', 'Artiodactyla', 'Ruminantia', 'Pecora', 'Bovidae', 'Caprinae', 'Ovis']
+Q0GC71 | 9925 | ['Eukaryota', 'Metazoa', 'Chordata', 'Craniata', 'Vertebrata', 'Euteleostomi', 'Mammalia', 'Eutheria', 'Laurasiatheria', 'Artiodactyla', 'Ruminantia', 'Pecora', 'Bovidae', 'Caprinae', 'Capra']
+Q9NP60 | 9606 | ['Eukaryota', 'Metazoa', 'Chordata', 'Craniata', 'Vertebrata', 'Euteleostomi', 'Mammalia', 'Eutheria', 'Euarchontoglires', 'Primates', 'Haplorrhini', 'Catarrhini', 'Hominidae', 'Homo']
+B2LT62 | 72542 | ['Eukaryota', 'Metazoa', 'Chordata', 'Craniata', 'Vertebrata', 'Euteleostomi', 'Mammalia', 'Eutheria', 'Laurasiatheria', 'Artiodactyla', 'Ruminantia', 'Pecora', 'Bovidae', 'Caprinae', 'Capra']
+B5T267 | 9915 | ['Eukaryota', 'Metazoa', 'Chordata', 'Craniata', 'Vertebrata', 'Euteleostomi', 'Mammalia', 'Eutheria', 'Laurasiatheria', 'Artiodactyla', 'Ruminantia', 'Pecora', 'Bovidae', 'Bovinae', 'Bos']
+Q9ERS6 | 10090 | ['Eukaryota', 'Metazoa', 'Chordata', 'Craniata', 'Vertebrata', 'Euteleostomi', 'Mammalia', 'Eutheria', 'Euarchontoglires', 'Glires', 'Rodentia', 'Myomorpha', 'Muroidea', 'Muridae', 'Murinae', 'Mus']
+B2LT61 | 9901 | ['Eukaryota', 'Metazoa', 'Chordata', 'Craniata', 'Vertebrata', 'Euteleostomi', 'Mammalia', 'Eutheria', 'Laurasiatheria', 'Artiodactyla', 'Ruminantia', 'Pecora', 'Bovidae', 'Bovinae', 'Bison']
+Q95LA9 | 9913 | ['Eukaryota', 'Metazoa', 'Chordata', 'Craniata', 'Vertebrata', 'Euteleostomi', 'Mammalia', 'Eutheria', 'Laurasiatheria', 'Artiodactyla', 'Ruminantia', 'Pecora', 'Bovidae', 'Bovinae', 'Bos']
+Q2PZH4 | 89462 | ['Eukaryota', 'Metazoa', 'Chordata', 'Craniata', 'Vertebrata', 'Euteleostomi', 'Mammalia', 'Eutheria', 'Laurasiatheria', 'Artiodactyla', 'Ruminantia', 'Pecora', 'Bovidae', 'Bovinae', 'Bubalus']
+Q2V897 | 9917 | ['Eukaryota', 'Metazoa', 'Chordata', 'Craniata', 'Vertebrata', 'Euteleostomi', 'Mammalia', 'Eutheria', 'Laurasiatheria', 'Artiodactyla', 'Ruminantia', 'Pecora', 'Bovidae', 'Bovinae', 'Boselaphus']
+B2LT64 | 9894 | ['Eukaryota', 'Metazoa', 'Chordata', 'Craniata', 'Vertebrata', 'Euteleostomi', 'Mammalia', 'Eutheria', 'Laurasiatheria', 'Artiodactyla', 'Ruminantia', 'Pecora', 'Giraffidae', 'Giraffa']
+Q9Y2C9 | 9606 | ['Eukaryota', 'Metazoa', 'Chordata', 'Craniata', 'Vertebrata', 'Euteleostomi', 'Mammalia', 'Eutheria', 'Euarchontoglires', 'Primates', 'Haplorrhini', 'Catarrhini', 'Hominidae', 'Homo']
+B6ZK76 | 7955 | ['Eukaryota', 'Metazoa', 'Chordata', 'Craniata', 'Vertebrata', 'Euteleostomi', 'Actinopterygii', 'Neopterygii', 'Teleostei', 'Ostariophysi', 'Cypriniformes', 'Danionidae', 'Danioninae', 'Danio']
+Q9HB29 | 9606 | ['Eukaryota', 'Metazoa', 'Chordata', 'Craniata', 'Vertebrata', 'Euteleostomi', 'Mammalia', 'Eutheria', 'Euarchontoglires', 'Primates', 'Haplorrhini', 'Catarrhini', 'Hominidae', 'Homo']
+Q0ZUL9 | 9361 | ['Eukaryota', 'Metazoa', 'Chordata', 'Craniata', 'Vertebrata', 'Euteleostomi', 'Mammalia', 'Eutheria', 'Xenarthra', 'Cingulata', 'Dasypodidae', 'Dasypus']
+P14778 | 9606 | ['Eukaryota', 'Metazoa', 'Chordata', 'Craniata', 'Vertebrata', 'Euteleostomi', 'Mammalia', 'Eutheria', 'Euarchontoglires', 'Primates', 'Haplorrhini', 'Catarrhini', 'Hominidae', 'Homo']
+Q01638 | 9606 | ['Eukaryota', 'Metazoa', 'Chordata', 'Craniata', 'Vertebrata', 'Euteleostomi', 'Mammalia', 'Eutheria', 'Euarchontoglires', 'Primates', 'Haplorrhini', 'Catarrhini', 'Hominidae', 'Homo']
+Q9Z2B1 | 10090 | ['Eukaryota', 'Metazoa', 'Chordata', 'Craniata', 'Vertebrata', 'Euteleostomi', 'Mammalia', 'Eutheria', 'Euarchontoglires', 'Glires', 'Rodentia', 'Myomorpha', 'Muroidea', 'Muridae', 'Murinae', 'Mus']
+O95256 | 9606 | ['Eukaryota', 'Metazoa', 'Chordata', 'Craniata', 'Vertebrata', 'Euteleostomi', 'Mammalia', 'Eutheria', 'Euarchontoglires', 'Primates', 'Haplorrhini', 'Catarrhini', 'Hominidae', 'Homo']
+Q61098 | 10090 | ['Eukaryota', 'Metazoa', 'Chordata', 'Craniata', 'Vertebrata', 'Euteleostomi', 'Mammalia', 'Eutheria', 'Euarchontoglires', 'Glires', 'Rodentia', 'Myomorpha', 'Muroidea', 'Muridae', 'Murinae', 'Mus']
+Q13478 | 9606 | ['Eukaryota', 'Metazoa', 'Chordata', 'Craniata', 'Vertebrata', 'Euteleostomi', 'Mammalia', 'Eutheria', 'Euarchontoglires', 'Primates', 'Haplorrhini', 'Catarrhini', 'Hominidae', 'Homo']
+Q9EPQ1 | 10090 | ['Eukaryota', 'Metazoa', 'Chordata', 'Craniata', 'Vertebrata', 'Euteleostomi', 'Mammalia', 'Eutheria', 'Euarchontoglires', 'Glires', 'Rodentia', 'Myomorpha', 'Muroidea', 'Muridae', 'Murinae', 'Mus']
+Q15399 | 9606 | ['Eukaryota', 'Metazoa', 'Chordata', 'Craniata', 'Vertebrata', 'Euteleostomi', 'Mammalia', 'Eutheria', 'Euarchontoglires', 'Primates', 'Haplorrhini', 'Catarrhini', 'Hominidae', 'Homo']
+Q9VUN0 | 7227 | ['Eukaryota', 'Metazoa', 'Ecdysozoa', 'Arthropoda', 'Hexapoda', 'Insecta', 'Pterygota', 'Neoptera', 'Holometabola', 'Diptera', 'Brachycera', 'Muscomorpha', 'Ephydroidea', 'Drosophilidae', 'Drosophila', 'Sophophora']
+Q689D1 | 9615 | ['Eukaryota', 'Metazoa', 'Chordata', 'Craniata', 'Vertebrata', 'Euteleostomi', 'Mammalia', 'Eutheria', 'Laurasiatheria', 'Carnivora', 'Caniformia', 'Canidae', 'Canis']
+Q704V6 | 9913 | ['Eukaryota', 'Metazoa', 'Chordata', 'Craniata', 'Vertebrata', 'Euteleostomi', 'Mammalia', 'Eutheria', 'Laurasiatheria', 'Artiodactyla', 'Ruminantia', 'Pecora', 'Bovidae', 'Bovinae', 'Bos']
+Q6T752 | 9796 | ['Eukaryota', 'Metazoa', 'Chordata', 'Craniata', 'Vertebrata', 'Euteleostomi', 'Mammalia', 'Eutheria', 'Laurasiatheria', 'Perissodactyla', 'Equidae', 'Equus']
+Q9EPW9 | 10090 | ['Eukaryota', 'Metazoa', 'Chordata', 'Craniata', 'Vertebrata', 'Euteleostomi', 'Mammalia', 'Eutheria', 'Euarchontoglires', 'Glires', 'Rodentia', 'Myomorpha', 'Muroidea', 'Muridae', 'Murinae', 'Mus']
+O60603 | 9606 | ['Eukaryota', 'Metazoa', 'Chordata', 'Craniata', 'Vertebrata', 'Euteleostomi', 'Mammalia', 'Eutheria', 'Euarchontoglires', 'Primates', 'Haplorrhini', 'Catarrhini', 'Hominidae', 'Homo']
+B3Y615 | 9595 | ['Eukaryota', 'Metazoa', 'Chordata', 'Craniata', 'Vertebrata', 'Euteleostomi', 'Mammalia', 'Eutheria', 'Euarchontoglires', 'Primates', 'Haplorrhini', 'Catarrhini', 'Hominidae', 'Gorilla']
+B3Y613 | 9598 | ['Eukaryota', 'Metazoa', 'Chordata', 'Craniata', 'Vertebrata', 'Euteleostomi', 'Mammalia', 'Eutheria', 'Euarchontoglires', 'Primates', 'Haplorrhini', 'Catarrhini', 'Hominidae', 'Pan']
+B3Y614 | 9597 | ['Eukaryota', 'Metazoa', 'Chordata', 'Craniata', 'Vertebrata', 'Euteleostomi', 'Mammalia', 'Eutheria', 'Euarchontoglires', 'Primates', 'Haplorrhini', 'Catarrhini', 'Hominidae', 'Pan']
+Q95M53 | 9541 | ['Eukaryota', 'Metazoa', 'Chordata', 'Craniata', 'Vertebrata', 'Euteleostomi', 'Mammalia', 'Eutheria', 'Euarchontoglires', 'Primates', 'Haplorrhini', 'Catarrhini', 'Cercopithecidae', 'Cercopithecinae', 'Macaca']
+B3Y618 | 9544 | ['Eukaryota', 'Metazoa', 'Chordata', 'Craniata', 'Vertebrata', 'Euteleostomi', 'Mammalia', 'Eutheria', 'Euarchontoglires', 'Primates', 'Haplorrhini', 'Catarrhini', 'Cercopithecidae', 'Cercopithecinae', 'Macaca']
+Q9QUN7 | 10090 | ['Eukaryota', 'Metazoa', 'Chordata', 'Craniata', 'Vertebrata', 'Euteleostomi', 'Mammalia', 'Eutheria', 'Euarchontoglires', 'Glires', 'Rodentia', 'Myomorpha', 'Muroidea', 'Muridae', 'Murinae', 'Mus']
+Q9R1F8 | 10029 | ['Eukaryota', 'Metazoa', 'Chordata', 'Craniata', 'Vertebrata', 'Euteleostomi', 'Mammalia', 'Eutheria', 'Euarchontoglires', 'Glires', 'Rodentia', 'Myomorpha', 'Muroidea', 'Cricetidae', 'Cricetinae', 'Cricetulus']
+Q9DGB6 | 9031 | ['Eukaryota', 'Metazoa', 'Chordata', 'Craniata', 'Vertebrata', 'Euteleostomi', 'Archelosauria', 'Archosauria', 'Dinosauria', 'Saurischia', 'Theropoda', 'Coelurosauria', 'Aves', 'Neognathae', 'Galloanserae', 'Galliformes', 'Phasianidae', 'Phasianinae', 'Gallus']
