@@ -18,9 +18,9 @@ def getSeq(ID):
 
 def downloadSequences(pp_map):
     version = "v"+input("sequences version: ")
-    if os.path.isfile("../data/psiblast/"+version+"/sequences.csv"):
+    if os.path.isfile("../../data/psiblast/"+version+"/sequences.csv"):
         print("Already downloaded sequences")
-        df = pd.read_csv("../data/psiblast/"+version+"/sequences.csv")
+        df = pd.read_csv("../../data/psiblast/"+version+"/sequences.csv")
         return df
     else:
         # here we download all the sequences from the matches
@@ -33,13 +33,13 @@ def downloadSequences(pp_map):
         bar.finish()
         df = pd.DataFrame(data=seqs, columns=[
             'ID', 'Sequence', 'Start', 'Stop'])
-        df.to_csv("../data/psiblast/"+version+"/sequences.csv", index=False)
+        df.to_csv("../../data/psiblast/"+version+"/sequences.csv", index=False)
         return df
 
 
 def build_map():
     version = "v"+input("psi blast version: ")
-    df = pd.read_csv("../data/psiblast/"+version +
+    df = pd.read_csv("../../data/psiblast/"+version +
                      "/psiblast.csv", delimiter="\t")
 
     pp_map = {}  # here we store the predicted positives and the positions where we found a hit

@@ -1,11 +1,11 @@
 import pandas as pd
-import parse_hmm as hmm
-import parse_psiblast as psiblast
 import requests as r
 from Bio import SeqIO
 from io import StringIO
 import os.path
-from q8 import statistics
+import math
+import parse_hmm as hmm
+import parse_psiblast as psiblast
 
 # total number of residues in SwissProt
 total_residues_swissprot = 200000000
@@ -32,7 +32,45 @@ def downloadAllSeqs(data):
     print("downloaded", len(data), "sequences")
     df = pd.DataFrame(data=seqs, columns=[
         'ID', 'Sequence'])
-    df.to_csv("../data/sequences.csv", index=False)
+    df.to_csv("../../data/model/sequences.csv", index=False)
+
+
+def statistics(CM):
+    TP = CM[0][0]
+    FP = CM[0][1]
+    FN = CM[1][0]
+    TN = CM[1][1]
+    P = TP+FN
+    N = FP+TN
+    print("\n---------------\nStatistics")
+
+    # sensitivity
+    sensitivity = TP/P
+    # print("\tsensitivity", sensitivity)
+
+    # specificity
+    specificity = TN/N
+    # print("\tspecificity", specificity)
+
+    # precision
+    precision = TP/(TP+FP)
+    # print("\tprecision", precision)
+
+    # accuracy
+    accuracy = (TP+TN)/(P+N)
+    # print("\taccuracy", accuracy)
+
+    # balanced accuracy
+    balanced_accuracy = (sensitivity+specificity)/2
+    print("\tbalanced accuracy", balanced_accuracy)
+
+    # f1 score
+    f1 = 2*TP/(2*TP+FP+FN)
+    print("\tf1", f1)
+
+    # mcc
+    mcc = (TP*TN-FP*FN) / math.sqrt((TP+FP)*(TP+FN)*(TN+FP)*(TN+FN))
+    print("\tMCC", mcc)
 
 # 9.
 # Evaluate the ability of matching domain position considering your ground truth, i.e. residues overlapping (and non overlapping) with Pfam domains.
@@ -42,14 +80,14 @@ def intersect(pp_map, model_seqs):
     print("\n---------------")
     print("intersect\n")
     # ground truth
-    gt = pd.read_csv("../data/ground_truth.csv")
+    gt = pd.read_csv("../../data/model/ground_truth.csv")
     # extract only the positives
     positives = gt.loc[gt['Annotated'] == True, ]
     # download all the sequences for the positives
-    if not os.path.isfile("../data/sequences.csv"):
+    if not os.path.isfile("../../data/model/sequences.csv"):
         downloadAllSeqs(positives)
     # load sequences
-    gt_seqs = pd.read_csv("../data/sequences.csv")
+    gt_seqs = pd.read_csv("../../data/model/sequences.csv")
 
     # ? the correct solution is to create two separated maps
     # ? one for the sequences of the model

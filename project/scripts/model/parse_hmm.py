@@ -7,11 +7,11 @@ from progress.bar import ChargingBar
 
 if __name__ == "__main__":
     version = "v"+input("hmm version: ")
-    hmm_search = pd.read_csv("../data/hmm/"+version +
+    hmm_search = pd.read_csv("../../data/hmm/"+version +
                              "/hmm_search.tsv", delimiter="\t")
 
-    if os.path.isfile("../data/hmm/"+version+"/mapping.csv"):
-        converted = pd.read_csv("../data/hmm/"+version+"/mapping.csv")
+    if os.path.isfile("../../data/hmm/"+version+"/mapping.csv"):
+        converted = pd.read_csv("../../data/hmm/"+version+"/mapping.csv")
         data = []
 
         for i in range(len(hmm_search)):
@@ -27,12 +27,12 @@ if __name__ == "__main__":
         df = pd.DataFrame(data=data, columns=[
             'Target Accession', 'Start Ali.', 'End Ali.', 'Start Env.', 'End Env.'])
 
-        df.to_csv("../data/hmm/"+version+"/hmm_hits.csv", index=False)
+        df.to_csv("../../data/hmm/"+version+"/hmm_hits.csv", index=False)
         print("hmm hits saved")
-    elif os.path.isfile("../data/hmm/"+version+"/mapping.tsv"):
+    elif os.path.isfile("../../data/hmm/"+version+"/mapping.tsv"):
 
         df_mapping = pd.read_csv(
-            "../data/hmm/"+version+"/mapping.tsv", delimiter="\t")
+            "../../data/hmm/"+version+"/mapping.tsv", delimiter="\t")
 
         data = []
 
@@ -55,13 +55,13 @@ if __name__ == "__main__":
         df = pd.DataFrame(data=data, columns=[
             'Target Accession', 'Start Ali.', 'End Ali.', 'Start Env.', 'End Env.'])
 
-        df.to_csv("../data/hmm/"+version+"/hmm_hits.csv", index=False)
+        df.to_csv("../../data/hmm/"+version+"/hmm_hits.csv", index=False)
         print("hmm hits saved")
     else:
         print("File mapping not found. Printing IDs that need to be mapped:")
         ids_to_map = hmm_search['Target Accession']
         print(ids_to_map)
-        ids_to_map.to_csv("../data/hmm/"+version +
+        ids_to_map.to_csv("../../data/hmm/"+version +
                           "/to_map.csv", header=False, index=False)
 
 
@@ -77,9 +77,9 @@ def getSeq(ID):
 
 def downloadSequences(pp_map):
     version = "v"+input("sequences version: ")
-    if os.path.isfile("../data/hmm/"+version+"/sequences.csv"):
+    if os.path.isfile("../../data/hmm/"+version+"/sequences.csv"):
         print("Already downloaded sequences")
-        df = pd.read_csv("../data/hmm/"+version+"/sequences.csv")
+        df = pd.read_csv("../../data/hmm/"+version+"/sequences.csv")
         return df
     else:
         # here we download all the sequences from the matches
@@ -92,13 +92,13 @@ def downloadSequences(pp_map):
         bar.finish()
         df = pd.DataFrame(data=seqs, columns=[
             'ID', 'Sequence', 'Start', 'Stop'])
-        df.to_csv("../data/hmm/"+version+"/sequences.csv", index=False)
+        df.to_csv("../../data/hmm/"+version+"/sequences.csv", index=False)
         return df
 
 
 def build_map():
     version = "v"+input("hmm version: ")
-    hmm_model_hits = pd.read_csv("../data/hmm/"+version+"/hmm_hits.csv")
+    hmm_model_hits = pd.read_csv("../../data/hmm/"+version+"/hmm_hits.csv")
     pp_map = {}
     for i in range(len(hmm_model_hits)):
         x = hmm_model_hits.iloc[i]

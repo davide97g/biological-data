@@ -6,7 +6,7 @@ import math
 if __name__ == "__main__":
     # load GROUND TRUTH data
 
-    df_gt = pd.read_csv("../data/ground_truth.csv")
+    df_gt = pd.read_csv("../../data/model/ground_truth.csv")
 
     # positives
     positives = df_gt.loc[df_gt['Annotated'] == True, ]
@@ -45,19 +45,19 @@ def statistics(CM):
 
     # sensitivity
     sensitivity = TP/P
-    print("\tsensitivity", sensitivity)
+    # print("\tsensitivity", sensitivity)
 
     # specificity
     specificity = TN/N
-    print("\tspecificity", specificity)
+    # print("\tspecificity", specificity)
 
     # precision
     precision = TP/(TP+FP)
-    print("\tprecision", precision)
+    # print("\tprecision", precision)
 
     # accuracy
     accuracy = (TP+TN)/(P+N)
-    print("\taccuracy", accuracy)
+    # print("\taccuracy", accuracy)
 
     # balanced accuracy
     balanced_accuracy = (sensitivity+specificity)/2
