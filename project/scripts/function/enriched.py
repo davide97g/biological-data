@@ -83,30 +83,48 @@ for term in list(filter(lambda k: k[5] > 1.0, sorted(data, key=lambda x: x[5], r
     enriched_terms.setdefault(term[0], 0)
     enriched_terms[term[0]] += term[1]
 
-# ? enriched branches
+# GO_Terms = []
+# with open('../../data/function/go_annotations_count.txt') as f:
+#     for line in f:
+#         GO_Terms.append(line.strip().split()[0])
 
-GO_Terms = []
-with open('../../data/function/go_annotations_count.txt') as f:
-    for line in f:
-        GO_Terms.append(line.strip().split()[0])
+# GO_Terms_Parent = []
+# for term in GO_Terms:
+#     if term in children.keys():
+#         GO_Terms_Parent.append(term)
 
-GO_Terms_Parent = []
-for term in GO_Terms:
-    if term in children.keys():
-        GO_Terms_Parent.append(term)
-
-f = open('../../data/function/enriched_branches.txt', 'w+')
-for namespace in ['molecular_function', 'biological_process', 'cellular_component']:
-    f.write('Sub-Ontology: {}\n'.format(namespace))
-    f.write('{:<10} | {:<10} | {:<10} | {:<10} | {:<15} | {:<20} | {:<10} | {:<70} | {:<30}\n'.format(*columns))
-    data_sub = list(filter(lambda x: x[8] == namespace, data))
-    data_sub2 = list(filter(lambda x: x[0] in GO_Terms_Parent, data_sub))
-    for ele in sorted(data_sub2, key=lambda x: x[5], reverse=True):
-        f.write(
-            '{:<10} | {:<10} | {:<10} | {:<10.2} | {:<15.2} | {:<20.2} | {:<10.2} | {:<70} | {:<30}\n'.format(*ele))
-    f.write('----' * 50 + '\n')
-f.close()
-print("enriched_branches.txt created")
+# f = open('../../data/function/enriched_branches.txt', 'w+')
+# for namespace in ['molecular_function', 'biological_process', 'cellular_component']:
+#     f.write('Sub-Ontology: {}\n'.format(namespace))
+#     f.write('{:<10} | {:<10} | {:<10} | {:<10} | {:<15} | {:<20} | {:<10} | {:<70} | {:<30}\n'.format(*columns))
+#     data_sub = list(filter(lambda x: x[8] == namespace, data))
+#     data_sub2 = list(filter(lambda x: x[0] in GO_Terms_Parent, data_sub))
+#     for ele in sorted(data_sub2, key=lambda x: x[5], reverse=True):
+#         f.write(
+#             '{:<10} | {:<10} | {:<10} | {:<10.2} | {:<15.2} | {:<20.2} | {:<10.2} | {:<70} | {:<30}\n'.format(*ele))
+#     f.write('----' * 50 + '\n')
+# f.close()
+# print("enriched_branches.txt created")
 
 # ? World Cloud
 create_word_cloud(enriched_terms)
+
+# ? Enriched branches
+
+
+def get_enriched_branches(d=1):
+    print(f"Extracting enriched branches at depth={d}")
+    depth_nodes = [node for node in depth if depth[node] == d]
+    enriched_branches = []
+    for term in enriched_terms:
+        if term in depth_nodes:
+            enriched_branches.append(term)
+    print(f"Found {len(enriched_branches)} branches")
+    return enriched_branches
+
+
+# extract two different depths
+enriched_depth_1 = get_enriched_branches(1)
+enriched_depth_2 = get_enriched_branches(2)
+print(enriched_depth_1)
+print(enriched_depth_2)
