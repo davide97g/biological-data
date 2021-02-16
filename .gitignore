@@ -15,3 +15,7 @@ project/data/structure/**/
 project/data/mapping/**
 
 project/scripts/taxonomy/*.tab
+
+project (delivery)
+
+/biological data project.zip
