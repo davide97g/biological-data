@@ -1,9 +1,13 @@
+import numpy as np
+import seaborn as sns
+from matplotlib import pyplot as plt
+from pandas import DataFrame
 import os
 import pandas as pd
 from progress.bar import ChargingBar
 
 
-tm_align = False
+tm_align = False  # change to perform all-vs-all pairwise structural alignment
 
 path = "../../data/structure/"
 
@@ -34,7 +38,7 @@ if tm_align:
     bar.finish()
 
 
-def extract(data: []):
+def extract(data):
     data = [d for d in data if d != "\n"]
     data = data[:3]
     first_row = data[0].split(",")
@@ -70,22 +74,31 @@ for pdb_i in pdb_ids:
         results[pdb_i][pdb_j] = {'psi': psi,
                                  'rmsd': rmsd, 'tm_score': tm_score}
 
-print("Flattening...\n")
-results_flat_psi = [["TM-Align | PSI"]]
-results_flat_rmsd = [["TM-Align | RMSD"]]
-results_flat_tm_score = [["TM-Align | TM-SCORE"]]
+# results_flat_psi = [["TM-Align | PSI"]]
+# results_flat_rmsd = [["TM-Align | RMSD"]]
+# results_flat_tm_score = [["TM-Align | TM-SCORE"]]
 
+results_flat_psi = []
+results_flat_rmsd = []
+results_flat_tm_score = []
+columns = []
 
 # save the ids in the first row
 for pdb_i in results:
-    results_flat_psi[0].append(pdb_i)
-    results_flat_rmsd[0].append(pdb_i)
-    results_flat_tm_score[0].append(pdb_i)
+    # results_flat_psi[0].append(pdb_i)
+    # results_flat_rmsd[0].append(pdb_i)
+    # results_flat_tm_score[0].append(pdb_i)
+    columns.append(pdb_i)
 
+ids = []
 for pdb_i in results:
-    array_psi_i = [pdb_i]
-    array_rmsd_i = [pdb_i]
-    array_tm_score_i = [pdb_i]
+    ids.append(pdb_i)
+    # array_psi_i = [pdb_i]
+    # array_rmsd_i = [pdb_i]
+    # array_tm_score_i = [pdb_i]
+    array_psi_i = []
+    array_rmsd_i = []
+    array_tm_score_i = []
     for pdb_j in results:
         array_psi_i.append(results[pdb_i][pdb_j]['psi'])
         array_rmsd_i.append(results[pdb_i][pdb_j]['rmsd'])
@@ -109,13 +122,32 @@ for row in results_flat_rmsd:
 
 # save files
 
-df_psi = pd.DataFrame(data=results_flat_psi, columns=results_flat_psi[0])
-df_psi.to_csv("../../data/structure/psi.csv", index=False, header=False)
+df_psi = pd.DataFrame(data=results_flat_psi, columns=columns, index=ids)
+df_psi.to_csv("../../data/structure/results/psi.csv", index=False)
 
-df_rmsd = pd.DataFrame(data=results_flat_rmsd, columns=results_flat_rmsd[0])
-df_rmsd.to_csv("../../data/structure/rmsd.csv", index=False, header=False)
+df_rmsd = pd.DataFrame(data=results_flat_rmsd, columns=columns, index=ids)
+df_rmsd.to_csv("../../data/structure/results/rmsd.csv", index=False)
 
 df_tm_score = pd.DataFrame(data=results_flat_tm_score,
-                           columns=results_flat_tm_score[0])
-df_tm_score.to_csv("../../data/structure/tm_score.csv",
-                   index=False, header=False)
+                           columns=columns, index=ids)
+df_tm_score.to_csv("../../data/structure/results/tm_score.csv",
+                   index=False)
+
+# create heatmaps
+
+sns.heatmap(df_psi, annot=False)
+plt.savefig("../../data/structure/heatmaps/heatmap_psi.png")
+
+plt.show()
+
+
+sns.heatmap(df_rmsd, annot=False)
+plt.savefig("../../data/structure/heatmaps/heatmap_rmsd.png")
+
+plt.show()
+
+
+sns.heatmap(df_tm_score, annot=False)
+plt.savefig("../../data/structure/heatmaps/heatmap_tm_score.png")
+
+plt.show()
