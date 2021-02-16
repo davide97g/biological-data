@@ -9,17 +9,23 @@ prot_list = list(df['GO ID'])
 taxonomic_lin = {}
 result_handle = open(
     '../../data/datasets/family sequences/family_sequences.xml', 'r')
-
-# parse the XML file
 for record in SeqIO.parse(result_handle, 'uniprot-xml'):
+    '''    
+    seq_record
+    record.annotations['taxonomy']'''
     keys = ['Taxonomy_id', 'Taxonomy']
     for rec in record.dbxrefs:
         if rec[:4] == 'NCBI':
             tax_id = rec
     values = [tax_id, record.annotations['taxonomy']]
-    taxonomic_lin.setdefault(record.id, [])
-    taxonomic_lin[record.id].append(dict(zip(keys, values)))
+    taxonomic_lin[record.id] = dict(zip(keys, values))
 
-# print(taxonomic_lin.keys())
-print(taxonomic_lin.get('P60029'))
-# print(taxonomic_lin.get('P60029')[0].get("Taxonomy"))
+f = open('../../data/taxonomy/taxonomic_lineage.txt', 'w+')
+f.write('Record_ID | Taxonomy | Taxonomy Lineage\n')
+
+for k in taxonomic_lin:
+    f.write("{} | {} | {}\n".format(k, taxonomic_lin[k]['Taxonomy_id'].split(
+        ':')[1], taxonomic_lin[k]['Taxonomy']))
+f.close()
+
+print("taxonomic_lineage.txt created")

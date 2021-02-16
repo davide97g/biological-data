@@ -13,3 +13,5 @@ __pycache__
 project/data/structure/**/
 
 project/data/mapping/**
+
+project/scripts/taxonomy/*.tab

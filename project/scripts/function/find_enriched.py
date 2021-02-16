@@ -7,13 +7,14 @@ from plot import create_word_cloud
 from scipy.stats import fisher_exact
 import gzip
 import copy
+import pandas as pd
 
 graph = parse_obo("../../data/function/go.obo")
 ancestors, depth, roots = get_ancestors(graph)
 children = get_children(ancestors)
-with open('../../data/Family Sequences/ids.txt') as f:
-    for line in f:
-        rec_id = line.strip().split()
+
+df = pd.read_csv("../../data/datasets/family sequences/family_sequences.csv")
+prot_list = list(df['GO ID'])
 
 terms_set_raw = {}  # { term : count }  no ancestors
 terms_rest_raw = {}  # { term : count }  no ancestors
@@ -30,7 +31,7 @@ with gzip.open("../../data/function/goa_human.gaf.gz") as f:
             for term in annotations:
                 terms.update(ancestors.get(term, set()))
 
-                if acc in rec_id:
+                if acc in prot_list:
                     proteins_set += 1
                     for term in terms:                     # terms -> all annotations with ancestors
                         terms_set.setdefault(term, 0)
@@ -69,7 +70,7 @@ for term in terms_set:
 print(f"Enriched terms: {len(data)}")
 enriched_terms = {}
 
-for term in list(filter(lambda k: k[5] > 1.0, sorted(data, key=lambda x: x[5], reverse=True)))[:300]:
+for term in list(filter(lambda k: k[5] > 1.0, sorted(data, key=lambda x: x[5], reverse=True))):
     enriched_terms.setdefault(term[0], 0)
     enriched_terms[term[0]] += term[1]
 
