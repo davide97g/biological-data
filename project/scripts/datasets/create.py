@@ -1,6 +1,11 @@
+import json
+from Bio.SeqRecord import SeqRecord
+from Bio import SeqIO
 import pandas as pd
 from os import path
 
+# Family structures
+print("Family structures")
 model_df = pd.read_csv("../../data/hmm/v2/sequences.csv")
 predictions = list(model_df['ID'])
 
@@ -89,3 +94,22 @@ df = pd.DataFrame(data=pdb_cut_positions, columns=[
 df.to_csv("../../data/structure/pdb_cut_positions.csv", index=False)
 df.to_csv("../../data/datasets/family structures/family_structures.csv", index=False)
 print("pdb_cut_positions.csv created")
+
+# Family sequences
+
+print("\nFamily sequences")
+result_handle = open(
+    '../../data/datasets/family sequences/family_sequences.xml', 'r')
+ids = []
+for record in SeqIO.parse(result_handle, 'uniprot-xml'):
+    seq_record = SeqRecord(seq=record.seq, id=record.id,
+                           name=record.name, description=record.description,
+                           annotations=record.annotations,
+                           dbxrefs=record.dbxrefs)
+    ids.append(seq_record.id)
+
+
+df = pd.DataFrame(data=ids, columns=[
+    'GO ID'])
+df.to_csv("../../data/datasets/family sequences/family_sequences.csv", index=False)
+print("family_sequences.csv created")

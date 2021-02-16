@@ -29,14 +29,12 @@ for id in go_annotations:
         go_id_num.setdefault(go_id, 0)
         go_id_num[go_id] += 1
 
-# todo: convert to csv
 f = open('../../data/function/go_annotations.txt', 'w+')
 for k in go_annotations.keys():
     f.write("{} : {}\n".format(k, go_annotations[k]))
 f.close()
-# todo: convert to csv
+
 f = open('../../data/function/go_annotations_count.txt', 'w+')
 for k in go_id_num.keys():
     f.write("{} : {}\n".format(k, go_id_num[k]))
 f.close()
-# todo: save to csv the ids
