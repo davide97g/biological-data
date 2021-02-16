@@ -20,15 +20,6 @@ for record in SeqIO.parse(result_handle, 'uniprot-xml'):
     taxonomic_lin.setdefault(record.id, [])
     taxonomic_lin[record.id].append(dict(zip(keys, values)))
 
-f = open('../../data/taxonomy/taxonomic_lin.txt', 'w+')
-for k in taxonomic_lin.keys():
-    f.write("{}\n".format(k, taxonomic_lin[k]))
-    for key in taxonomic_lin[k][0].keys():
-        f.write('{}: \t\t{}\n'. format(key, taxonomic_lin[k][0][key]))
-f.close()
-
-for rec in record.dbxrefs:
-    if rec[:4] == 'NCBI':
-        tax_id = rec
-taxonomic_lin[k][0]['Taxonomy_id']
-key
+# print(taxonomic_lin.keys())
+print(taxonomic_lin.get('P60029'))
+# print(taxonomic_lin.get('P60029')[0].get("Taxonomy"))
