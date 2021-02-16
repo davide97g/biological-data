@@ -1,0 +1,441 @@
+GO:0005737
+CC GO:0110165 D01 cellular anatomical entity
+GO:0005886
+CC GO:0016020 D02 membrane
+GO:0007165
+BP GO:0050794 D03 regulation of cellular process
+BP GO:0009987 D01 cellular process
+GO:0010975
+BP GO:0120035 D06 regulation of plasma membrane bounded cell projection organization
+GO:0016021
+CC GO:0031224 D02 intrinsic component of membrane
+GO:0030424
+CC GO:0043005 D04 neuron projection
+GO:0030425
+CC GO:0043005 D04 neuron projection
+GO:0045920
+BP GO:1903531 D07 negative regulation of secretion by cell
+BP GO:0017157 D07 regulation of exocytosis
+GO:0050135
+MF GO:0016799 D04 hydrolase activity, hydrolyzing N-glycosyl compounds
+GO:0051965
+BP GO:0051962 D06 positive regulation of nervous system development
+BP GO:1901890 D06 positive regulation of cell junction assembly
+BP GO:0051963 D06 regulation of synapse assembly
+GO:0061809
+MF GO:0003953 D05 NAD+ nucleosidase activity
+GO:0098978
+CC GO:0045202 D03 synapse
+GO:0099175
+BP GO:0050807 D05 regulation of synapse organization
+GO:0099545
+BP GO:0099537 D05 trans-synaptic signaling
+GO:1905606
+BP GO:0051963 D06 regulation of synapse assembly
+BP GO:0099174 D06 regulation of presynapse organization
+GO:0005102
+MF GO:0005515 D02 protein binding
+GO:0007157
+BP GO:0098742 D04 cell-cell adhesion via plasma-membrane adhesion molecules
+GO:0009986
+CC GO:0110165 D01 cellular anatomical entity
+GO:0030182
+BP GO:0030154 D03 cell differentiation
+GO:0045211
+CC GO:0097060 D04 synaptic membrane
+GO:0050775
+BP GO:0048814 D09 regulation of dendrite morphogenesis
+BP GO:0050769 D07 positive regulation of neurogenesis
+BP GO:0031346 D06 positive regulation of cell projection organization
+BP GO:0010770 D07 positive regulation of cell morphogenesis involved in differentiation
+GO:0071345
+BP GO:0034097 D04 response to cytokine
+BP GO:0071310 D04 cellular response to organic substance
+GO:0097105
+BP GO:0097090 D05 presynaptic membrane organization
+BP GO:0071709 D05 membrane assembly
+GO:0099061
+CC GO:0099060 D07 integral component of postsynaptic specialization membrane
+CC GO:0099146 D07 intrinsic component of postsynaptic density membrane
+GO:0004908
+MF GO:0004896 D04 cytokine receptor activity
+GO:0005149
+MF GO:0005126 D04 cytokine receptor binding
+MF GO:0070851 D04 growth factor receptor binding
+GO:0005576
+CC GO:0110165 D01 cellular anatomical entity
+GO:0006954
+BP GO:0006952 D03 defense response
+GO:0051092
+BP GO:0051091 D11 positive regulation of DNA-binding transcription factor activity
+GO:0002114
+MF GO:0004896 D04 cytokine receptor activity
+GO:0005887
+CC GO:0031226 D03 intrinsic component of plasma membrane
+CC GO:0016021 D03 integral component of membrane
+GO:0006955
+BP GO:0050896 D01 response to stimulus
+BP GO:0002376 D01 immune system process
+GO:0016020
+CC GO:0110165 D01 cellular anatomical entity
+GO:0019221
+BP GO:0007166 D05 cell surface receptor signaling pathway
+GO:0032623
+BP GO:0001816 D05 cytokine production
+GO:0032633
+BP GO:0001816 D05 cytokine production
+GO:0032736
+BP GO:0001819 D07 positive regulation of cytokine production
+BP GO:0032656 D07 regulation of interleukin-13 production
+GO:0032754
+BP GO:0032674 D07 regulation of interleukin-5 production
+BP GO:0001819 D07 positive regulation of cytokine production
+GO:0032755
+BP GO:0001819 D07 positive regulation of cytokine production
+BP GO:0032675 D07 regulation of interleukin-6 production
+GO:0038172
+BP GO:0019221 D06 cytokine-mediated signaling pathway
+GO:0045087
+BP GO:0006955 D02 immune response
+BP GO:0098542 D05 defense response to other organism
+GO:0065003
+BP GO:0022607 D04 cellular component assembly
+BP GO:0043933 D04 protein-containing complex subunit organization
+GO:0070498
+BP GO:0019221 D06 cytokine-mediated signaling pathway
+GO:0099151
+BP GO:1905874 D07 regulation of postsynaptic density organization
+BP GO:0099150 D07 regulation of postsynaptic specialization assembly
+BP GO:1904889 D07 regulation of excitatory synapse assembly
+GO:0099560
+BP GO:0098742 D04 cell-cell adhesion via plasma-membrane adhesion molecules
+GO:0019966
+MF GO:0019955 D03 cytokine binding
+MF GO:0019838 D03 growth factor binding
+GO:0030674
+MF GO:0060090 D01 molecular adaptor activity
+GO:0032991
+CC GO:0005575 D00 cellular_component
+GO:1900006
+BP GO:0051094 D04 positive regulation of developmental process
+BP GO:0010976 D08 positive regulation of neuron projection development
+BP GO:0050773 D08 regulation of dendrite development
+GO:1990782
+MF GO:0019901 D05 protein kinase binding
+GO:0016322
+BP GO:0042551 D05 neuron maturation
+GO:0043025
+CC GO:0044297 D02 cell body
+GO:0043679
+CC GO:0044306 D02 neuron projection terminus
+CC GO:0098793 D02 presynapse
+GO:0050808
+BP GO:0034330 D04 cell junction organization
+GO:0004896
+MF GO:0140375 D03 immune receptor activity
+MF GO:0004888 D03 transmembrane signaling receptor activity
+GO:0004909
+MF GO:0004908 D05 interleukin-1 receptor activity
+GO:0045582
+BP GO:0045621 D08 positive regulation of lymphocyte differentiation
+BP GO:0050870 D08 positive regulation of T cell activation
+BP GO:0045580 D08 regulation of T cell differentiation
+GO:0050727
+BP GO:0032101 D04 regulation of response to external stimulus
+BP GO:0031347 D05 regulation of defense response
+GO:0002020
+MF GO:0019899 D03 enzyme binding
+GO:0005161
+MF GO:0070851 D04 growth factor receptor binding
+GO:0005615
+CC GO:0110165 D01 cellular anatomical entity
+GO:0005634
+CC GO:0043231 D04 intracellular membrane-bounded organelle
+GO:0009314
+BP GO:0009628 D02 response to abiotic stimulus
+GO:0009897
+CC GO:0098552 D02 side of membrane
+GO:0010286
+BP GO:0009408 D04 response to heat
+GO:0014069
+CC GO:0099572 D03 postsynaptic specialization
+GO:0030728
+BP GO:0048609 D02 multicellular organismal reproductive process
+GO:0032729
+BP GO:0032649 D07 regulation of interferon-gamma production
+BP GO:0001819 D07 positive regulation of cytokine production
+GO:0035255
+MF GO:0035254 D04 glutamate receptor binding
+GO:0070555
+BP GO:0034097 D04 response to cytokine
+GO:0070849
+BP GO:0070848 D04 response to growth factor
+BP GO:0009719 D02 response to endogenous stimulus
+GO:0071333
+BP GO:0001678 D07 cellular glucose homeostasis
+BP GO:0071331 D07 cellular response to hexose stimulus
+BP GO:0009749 D07 response to glucose
+GO:0071559
+BP GO:0070848 D04 response to growth factor
+BP GO:0009719 D02 response to endogenous stimulus
+GO:0071731
+BP GO:1901698 D03 response to nitrogen compound
+BP GO:0000302 D04 response to reactive oxygen species
+BP GO:0010035 D03 response to inorganic substance
+GO:1990834
+BP GO:0042221 D02 response to chemical
+GO:2000391
+BP GO:2000389 D09 regulation of neutrophil extravasation
+BP GO:0002693 D09 positive regulation of cellular extravasation
+BP GO:1902624 D09 positive regulation of neutrophil migration
+GO:2000556
+BP GO:0002726 D09 positive regulation of T cell cytokine production
+BP GO:0002827 D08 positive regulation of T-helper 1 type immune response
+BP GO:2000554 D09 regulation of T-helper 1 cell cytokine production
+GO:2000661
+BP GO:2000659 D07 regulation of interleukin-1-mediated signaling pathway
+BP GO:0001961 D07 positive regulation of cytokine-mediated signaling pathway
+GO:2001224
+BP GO:2001222 D07 regulation of neuron migration
+BP GO:0030335 D07 positive regulation of cell migration
+GO:0002113
+MF GO:0019955 D03 cytokine binding
+GO:0002826
+BP GO:0002823 D07 negative regulation of adaptive immune response based on somatic recombination of immune receptors built from immunoglobulin superfamily domains
+BP GO:0002825 D07 regulation of T-helper 1 type immune response
+GO:0008285
+BP GO:0042127 D04 regulation of cell population proliferation
+BP GO:0048523 D04 negative regulation of cellular process
+GO:0031012
+CC GO:0030312 D02 external encapsulating structure
+GO:0032689
+BP GO:0032649 D07 regulation of interferon-gamma production
+BP GO:0001818 D07 negative regulation of cytokine production
+GO:0043032
+BP GO:0043030 D06 regulation of macrophage activation
+BP GO:0002696 D06 positive regulation of leukocyte activation
+GO:0043124
+BP GO:0043122 D07 regulation of I-kappaB kinase/NF-kappaB signaling
+BP GO:1902532 D07 negative regulation of intracellular signal transduction
+GO:0050729
+BP GO:0032103 D05 positive regulation of response to external stimulus
+BP GO:0031349 D06 positive regulation of defense response
+BP GO:0050727 D06 regulation of inflammatory response
+GO:1901653
+BP GO:1901701 D04 cellular response to oxygen-containing compound
+BP GO:0071417 D05 cellular response to organonitrogen compound
+BP GO:1901652 D05 response to peptide
+GO:0005829
+CC GO:0110165 D01 cellular anatomical entity
+GO:0005925
+CC GO:0030055 D04 cell-substrate junction
+GO:0032722
+BP GO:0032642 D07 regulation of chemokine production
+BP GO:0001819 D07 positive regulation of cytokine production
+GO:0002755
+BP GO:0002224 D06 toll-like receptor signaling pathway
+GO:0004888
+MF GO:0038023 D02 signaling receptor activity
+GO:0005794
+CC GO:0043231 D04 intracellular membrane-bounded organelle
+GO:0030670
+CC GO:0030666 D06 endocytic vesicle membrane
+GO:0034134
+BP GO:0002224 D06 toll-like receptor signaling pathway
+GO:0045121
+CC GO:0098857 D03 membrane microdomain
+GO:0071726
+BP GO:0071724 D07 response to diacyl bacterial lipopeptide
+BP GO:0071221 D07 cellular response to bacterial lipopeptide
+GO:0071727
+BP GO:0071725 D07 response to triacyl bacterial lipopeptide
+BP GO:0071221 D07 cellular response to bacterial lipopeptide
+GO:0004910
+MF GO:0004908 D05 interleukin-1 receptor activity
+GO:0007417
+BP GO:0048731 D03 system development
+GO:0001540
+MF GO:0042277 D03 peptide binding
+GO:0001774
+BP GO:0042116 D05 macrophage activation
+GO:0001775
+BP GO:0009987 D01 cellular process
+GO:0002224
+BP GO:0002221 D05 pattern recognition receptor signaling pathway
+GO:0007250
+BP GO:0032147 D11 activation of protein kinase activity
+GO:0010628
+BP GO:0010468 D05 regulation of gene expression
+BP GO:0010604 D05 positive regulation of macromolecule metabolic process
+GO:0032611
+BP GO:0032612 D06 interleukin-1 production
+GO:0032717
+BP GO:0001818 D07 negative regulation of cytokine production
+BP GO:0032677 D07 regulation of interleukin-8 production
+GO:0034136
+BP GO:0034135 D08 regulation of toll-like receptor 2 signaling pathway
+BP GO:0034122 D08 negative regulation of toll-like receptor signaling pathway
+GO:0034150
+BP GO:0002224 D06 toll-like receptor signaling pathway
+GO:0035355
+CC GO:0098802 D04 plasma membrane signaling receptor complex
+GO:0035663
+MF GO:0035325 D04 Toll-like receptor binding
+GO:0035666
+BP GO:0002756 D07 MyD88-independent toll-like receptor signaling pathway
+GO:0038023
+MF GO:0060089 D01 molecular transducer activity
+GO:0038124
+BP GO:0002224 D06 toll-like receptor signaling pathway
+GO:0042496
+BP GO:0071724 D07 response to diacyl bacterial lipopeptide
+BP GO:0070340 D07 detection of bacterial lipopeptide
+GO:0042742
+BP GO:0009617 D05 response to bacterium
+BP GO:0098542 D05 defense response to other organism
+GO:0042802
+MF GO:0005515 D02 protein binding
+GO:0043123
+BP GO:0043122 D07 regulation of I-kappaB kinase/NF-kappaB signaling
+BP GO:1902533 D07 positive regulation of intracellular signal transduction
+GO:0043235
+CC GO:0032991 D01 protein-containing complex
+GO:0043507
+BP GO:0043406 D12 positive regulation of MAP kinase activity
+BP GO:0043506 D12 regulation of JUN kinase activity
+GO:0045429
+BP GO:0031328 D06 positive regulation of cellular biosynthetic process
+BP GO:0045428 D07 regulation of nitric oxide biosynthetic process
+BP GO:1903428 D07 positive regulation of reactive oxygen species biosynthetic process
+BP GO:1904407 D07 positive regulation of nitric oxide metabolic process
+GO:0046209
+BP GO:0072593 D03 reactive oxygen species metabolic process
+BP GO:2001057 D03 reactive nitrogen species metabolic process
+GO:0046982
+MF GO:0046983 D03 protein dimerization activity
+GO:0071221
+BP GO:0070339 D06 response to bacterial lipopeptide
+BP GO:0071220 D06 cellular response to bacterial lipoprotein
+GO:0071723
+MF GO:0042277 D03 peptide binding
+MF GO:0008289 D02 lipid binding
+GO:0140052
+BP GO:0071402 D03 cellular response to lipoprotein particle stimulus
+BP GO:0055094 D05 response to lipoprotein particle
+GO:1900017
+BP GO:1900015 D07 regulation of cytokine production involved in inflammatory response
+BP GO:0001819 D07 positive regulation of cytokine production
+GO:1900227
+BP GO:1900225 D06 regulation of NLRP3 inflammasome complex assembly
+BP GO:0031334 D06 positive regulation of protein-containing complex assembly
+GO:1903223
+BP GO:1903209 D08 positive regulation of oxidative stress-induced cell death
+BP GO:1901216 D06 positive regulation of neuron death
+BP GO:1903203 D08 regulation of oxidative stress-induced neuron death
+GO:1903428
+BP GO:1903426 D06 regulation of reactive oxygen species biosynthetic process
+BP GO:2000379 D06 positive regulation of reactive oxygen species metabolic process
+BP GO:0009891 D05 positive regulation of biosynthetic process
+GO:1904646
+BP GO:1904645 D06 response to amyloid-beta
+BP GO:1901653 D06 cellular response to peptide
+GO:0006968
+BP GO:0006952 D03 defense response
+GO:0007166
+BP GO:0007165 D04 signal transduction
+GO:0008283
+BP GO:0009987 D01 cellular process
+GO:0032609
+BP GO:0001816 D05 cytokine production
+GO:0032635
+BP GO:0001816 D05 cytokine production
+GO:0035655
+BP GO:0019221 D06 cytokine-mediated signaling pathway
+GO:0035744
+BP GO:0035743 D08 CD4-positive, alpha-beta T cell cytokine production
+GO:0042008
+MF GO:0004896 D04 cytokine receptor activity
+GO:0042119
+BP GO:0036230 D05 granulocyte activation
+GO:0045092
+CC GO:0098802 D04 plasma membrane signaling receptor complex
+GO:0045954
+BP GO:0042269 D08 regulation of natural killer cell mediated cytotoxicity
+BP GO:0001912 D07 positive regulation of leukocyte mediated cytotoxicity
+BP GO:0002717 D08 positive regulation of natural killer cell mediated immunity
+GO:0070301
+BP GO:0034614 D06 cellular response to reactive oxygen species
+BP GO:0042542 D05 response to hydrogen peroxide
+GO:0071351
+BP GO:0070673 D05 response to interleukin-18
+BP GO:0071345 D05 cellular response to cytokine stimulus
+GO:0030101
+BP GO:0046649 D04 lymphocyte activation
+GO:0042007
+MF GO:0019955 D03 cytokine binding
+GO:0045063
+BP GO:0042093 D11 T-helper cell differentiation
+GO:0120163
+BP GO:0009892 D04 negative regulation of metabolic process
+BP GO:0051241 D04 negative regulation of multicellular organismal process
+BP GO:0120161 D04 regulation of cold-induced thermogenesis
+GO:1901224
+BP GO:1901222 D07 regulation of NIK/NF-kappaB signaling
+BP GO:1902533 D07 positive regulation of intracellular signal transduction
+GO:0006952
+BP GO:0006950 D02 response to stress
+GO:0032493
+BP GO:0002237 D04 response to molecule of bacterial origin
+GO:0032757
+BP GO:0001819 D07 positive regulation of cytokine production
+BP GO:0032677 D07 regulation of interleukin-8 production
+GO:0032760
+BP GO:1903557 D08 positive regulation of tumor necrosis factor superfamily cytokine production
+BP GO:0032680 D08 regulation of tumor necrosis factor production
+GO:0034130
+BP GO:0002224 D06 toll-like receptor signaling pathway
+GO:0034137
+BP GO:0034135 D08 regulation of toll-like receptor 2 signaling pathway
+BP GO:0034123 D08 positive regulation of toll-like receptor signaling pathway
+GO:0035354
+CC GO:0098802 D04 plasma membrane signaling receptor complex
+GO:0042116
+BP GO:0002274 D04 myeloid leukocyte activation
+GO:0042495
+BP GO:0070340 D07 detection of bacterial lipopeptide
+BP GO:0071725 D07 response to triacyl bacterial lipopeptide
+GO:0042497
+MF GO:0071723 D04 lipopeptide binding
+GO:0045335
+CC GO:0030139 D07 endocytic vesicle
+GO:0038123
+BP GO:0002224 D06 toll-like receptor signaling pathway
+GO:0003401
+BP GO:0060560 D03 developmental growth involved in morphogenesis
+GO:0005030
+MF GO:0038023 D02 signaling receptor activity
+GO:0007411
+BP GO:0097485 D03 neuron projection guidance
+GO:0008201
+MF GO:1901681 D02 sulfur compound binding
+MF GO:0005539 D03 glycosaminoglycan binding
+GO:0048495
+MF GO:0005102 D03 signaling receptor binding
+GO:0060026
+BP GO:0002009 D04 morphogenesis of an epithelium
+GO:0070983
+BP GO:0097485 D03 neuron projection guidance
+GO:0032720
+BP GO:1903556 D08 negative regulation of tumor necrosis factor superfamily cytokine production
+BP GO:0032680 D08 regulation of tumor necrosis factor production
+GO:0032735
+BP GO:0032655 D07 regulation of interleukin-12 production
+BP GO:0001819 D07 positive regulation of cytokine production
+GO:0042498
+MF GO:0071723 D04 lipopeptide binding
+GO:0001530
+MF GO:0097367 D02 carbohydrate derivative binding
+MF GO:0008289 D02 lipid binding
+GO:0001666
+BP GO:0036293 D04 response to decreased oxygen levels
+BP GO:0006950 D02 response to stress

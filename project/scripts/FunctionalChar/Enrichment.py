@@ -159,8 +159,95 @@ e_t = []
 for line in list(filter(lambda k: k[5] > 1.0, data)):
     enriched_terms.setdefault(line[0], 0)
     enriched_terms[line[0]] += line[1]
+f = open('data/function/enriched_terms.txt', 'w+')
+f.write('Term ID | No. Occurrence\n')
+for k in enriched_terms:
+    f.write("{} : {}\n".format(k, enriched_terms[k]))
+f.close()
 enriched_terms
 from wordcloud import WordCloud
 import matplotlib.pyplot as plt
 wc = WordCloud(background_color="white",width=1000,height=1000, max_words=1000,relative_scaling=0.5,normalize_plurals=False).generate_from_frequencies(enriched_terms)
 plt.imshow(wc)
+
+'''
+Take into consideration the hierarchical structure of GO ontology and report most significantly enriched branches (high level terms)
+'''
+
+# load all GO terms associated with our proteins
+GO_Terms = []
+with open('data/Family Sequences/go_annotations_count.txt') as f:
+    for line in f:
+        GO_Terms.append(line.strip().split()[0])
+GO_term_anc = {}
+for GO_term in GO_Terms:
+    for term in children:
+        if GO_term in children[term]:
+            GO_term_anc[GO_term] = term
+            print(term)
+ancestors['GO:0005737']
+children['GO:0005737']
+
+for root in roots:
+    print(graph[root]["namespace"])
+from goatools.base import get_godag
+from goatools.gosubdag.gosubdag import GoSubDag
+from goatools.godag.go_tasks import get_go2parents
+godag = get_godag('data/function/go-basic.obo', optional_attrs='relationship')
+def prt_flds(gosubdag):
+    """Print the available printing fields"""
+    print('Print fields:')
+    for fld in sorted(gosubdag.prt_attr['flds']):
+        print('    {F}'.format(F=fld))
+f = open('data/function/enriched_branches.txt', 'w+')
+for goid in GO_Terms:
+# Create a subset of the GO DAG which contains:
+#   * The selected GO term and
+#   * All the GO terms above it
+    gosubdag = GoSubDag(goid, godag, relationships= True,  prt = False)
+    f.write('{}\n'.format(goid))
+# Get additional information for chosen GO
+    ntgo = gosubdag.go2nt[goid]
+
+# Choose fields and custom printing format
+# prt_flds(gosubdag)  # Uncomment to see the available print fields
+    prtfmt = '{NS} {GO} D{depth:02} {GO_name}'
+# Print detailed information for GO
+    print(prtfmt.format(**ntgo._asdict()))
+    goterm = godag[goid]
+    print('Parents up "is_a": required relationship')
+    for p_term in goterm.parents:
+        print(prtfmt.format(**gosubdag.go2nt[p_term.item_id]._asdict()))
+        f.write('{}\n'.format(prtfmt.format(**gosubdag.go2nt[p_term.item_id]._asdict())))
+    '''if 'part_of' in goterm.relationship:
+        print('\nParents up "part_of" optional relationship:')
+        for p_go in goterm.relationship['part_of']:
+            print(prtfmt.format(**gosubdag.go2nt[p_go.item_id]._asdict()))
+
+    if 'regulates' in goterm.relationship:
+        print('\nParents up "regulates" optional relationship:')
+        for p_go in goterm.relationship['regulates']:
+            print(prtfmt.format(**gosubdag.go2nt[p_go.item_id]._asdict()))
+
+    # godag must be loaded with: optional_attrs='relationship'
+    # gosubdag must be loaded with: relationships=True
+    print('\nAncestors up all loaded relationships:')
+    for p_go in gosubdag.rcntobj.go2ancestors[goid]:
+        if prtfmt.format(**gosubdag.go2nt[p_go]._asdict()).split()[2] == 'D00':
+            print(prtfmt.format(**gosubdag.go2nt[p_go]._asdict()))'''
+f.close()
+from goatools.gosubdag.plot.gosubdag_plot import GoSubDagPlot
+GoSubDagPlot(gosubdag).plt_dag('data/function/reg_synapse_org.png', engine='graphviz')
+'''
+
+
+
+
+
+go2parents = get_go2parents(gosubdag.go2obj, gosubdag.relationships)
+for goid_parent in go2parents[goid]:
+    print(prtfmt.format(**gosubdag.go2nt[goid_parent]._asdict()))
+    '''
+gosubdag.rcntobj.go2ancestors[goid]
+
+prtfmt.format(**gosubdag.go2nt[p_go]._asdict()).split()
